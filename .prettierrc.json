@@ -1,0 +1,20 @@
+{
+	"endOfLine": "auto",
+	"tailwindStylesheet": "./src/styles/global.css",
+	"overrides": [
+		{
+			"files": "*.jsonc",
+			"options": {
+				"trailingComma": "none"
+			}
+		},
+		{
+			"files": "*.md",
+			"options": {
+				"printWidth": 80,
+				"proseWrap": "always"
+			}
+		}
+	],
+	"singleAttributePerLine": true
+}

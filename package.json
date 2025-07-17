@@ -1,0 +1,96 @@
+{
+	"name": "@galeedgutierrez/shared-assets",
+	"version": "0.0.1",
+	"description": "Assets to shared with personal projects like galeed.link and galeedgutierrez.com",
+	"keywords": [
+		"typescript",
+		"assets"
+	],
+	"homepage": "https://github.com/GaleedGutierrez/shared-assets#readme",
+	"bugs": {
+		"url": "https://github.com/GaleedGutierrez/shared-assets/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GaleedGutierrez/shared-assets.git"
+	},
+	"license": "MIT",
+	"author": "Galeed Gutierrez <galeedeveloper@gmail.com> (https://galeedgutierrez.com/)",
+	"type": "module",
+	"main": "index.ts",
+	"scripts": {
+		"lint": "eslint ./ --max-warnings 0",
+		"lint:fix": "eslint --fix ./**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,json,astro}",
+		"prettier": "prettier ./ --check",
+		"prettier:fix": "prettier ./ --write",
+		"lint-text": "textlint ./**/*.md ",
+		"lint-text:fix": "textlint --fix ./**/*.md ",
+		"lint-md": "markdownlint-cli2 --config \".markdownlint-cli2.jsonc\" **/*.md \"#node_modules\" && npm run lint-text",
+		"lint-md:fix": "markdownlint-cli2 --config \".markdownlint-cli2.jsonc\" --fix **/*.md \"#node_modules\" && npm run lint-text:fix",
+		"check-for-dupes": "jscpd ./",
+		"test": "vitest run",
+		"prepare": "husky"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^19.8.1",
+		"@commitlint/config-conventional": "^19.8.1",
+		"@eslint/js": "^9.31.0",
+		"@stylistic/eslint-plugin": "^5.2.0",
+		"@vitest/eslint-plugin": "^1.3.4",
+		"eslint": "^9.31.0",
+		"eslint-config-prettier": "^10.1.5",
+		"eslint-import-resolver-typescript": "^4.4.4",
+		"eslint-plugin-check-file": "^3.3.0",
+		"eslint-plugin-import-x": "^4.16.1",
+		"eslint-plugin-jsdoc": "^51.4.1",
+		"eslint-plugin-jsonc": "^2.20.1",
+		"eslint-plugin-prettier": "^5.5.1",
+		"eslint-plugin-security": "^3.0.1",
+		"eslint-plugin-simple-import-sort": "^12.1.1",
+		"eslint-plugin-sort-class-members": "^1.21.0",
+		"eslint-plugin-tsdoc": "^0.4.0",
+		"eslint-plugin-unicorn": "^59.0.1",
+		"eslint-plugin-unused-imports": "^4.1.4",
+		"husky": "^9.1.7",
+		"jscpd": "^4.0.5",
+		"markdownlint-cli2": "^0.18.1",
+		"prettier": "^3.6.2",
+		"textlint": "^15.2.0",
+		"textlint-filter-rule-comments": "^1.2.2",
+		"textlint-rule-terminology": "^5.2.14",
+		"typescript": "^5.8.3",
+		"typescript-eslint": "^8.37.0"
+	},
+	"lint-staged": {
+		"*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,json,astro}": "eslint --fix",
+		"*.{md,mdx}": [
+			"markdownlint-cli2 --config \".markdownlint-cli2.jsonc\" --fix",
+			"textlint --fix",
+			"prettier --write"
+		],
+		"*.{json,jsonc}": [
+			"prettier --write"
+		]
+	},
+	"jscpd": {
+		"threshold": 5,
+		"reporters": [
+			"silent"
+		],
+		"ignore": [
+			"**/node_modules/**",
+			"**/dist/**",
+			"**/dist-dev/**",
+			"**/build/**",
+			"**/fonts/**",
+			"**/coverage/**",
+			"**/playwright-reports/**",
+			"**/test-results/**",
+			"**/lighthouse-report/**",
+			"**/tsconfig.*.json",
+			"**/components/ui/**",
+			"**/*.svg"
+		],
+		"absolute": true
+	}
+}
