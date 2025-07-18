@@ -17,7 +17,7 @@
 	"license": "MIT",
 	"author": "Galeed Gutierrez <galeedeveloper@gmail.com> (https://galeedgutierrez.com/)",
 	"type": "module",
-	"main": "index.ts",
+	"main": "./src/index.ts",
 	"scripts": {
 		"lint": "eslint ./ --max-warnings 0",
 		"lint:fix": "eslint --fix ./**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,json,astro}",
