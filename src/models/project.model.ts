@@ -2,7 +2,7 @@ export interface CoursePlatform {
 	name: string;
 	platform: string;
 	url: string;
-	img: string;
+	image: string;
 }
 
 export interface ImagesProject {
