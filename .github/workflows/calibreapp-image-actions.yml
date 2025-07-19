@@ -16,6 +16,7 @@ jobs:
   build:
     if: github.event.pull_request.head.repo.full_name == github.repository
     name: calibreapp/image-actions
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - name: 👍 Checkout Repo
