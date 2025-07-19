@@ -52,9 +52,9 @@ export const freelanceProjects: FreelanceProject[] = [
 			VITE_ICON,
 		],
 		images: {
-			small: '',
-			medium: '',
-			large: '',
+			small: './assets/images/screenshot-freelance-projects/large/0001-youtube-downloader.webp',
+			medium: './assets/images/screenshot-freelance-projects/medium/0001-youtube-downloader.webp',
+			large: './assets/images/screenshot-freelance-projects/large/0001-youtube-downloader.webp',
 		},
 		startDate: new Date('2025-02-24'),
 		endDate: new Date('2024-09-06'),
