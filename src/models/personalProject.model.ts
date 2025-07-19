@@ -11,7 +11,7 @@ export interface ImagesProject {
 	large: string;
 }
 
-export interface Project {
+export interface PersonalProject {
 	id: number;
 	name: string;
 	technologies: string[];
