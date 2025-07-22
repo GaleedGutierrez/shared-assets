@@ -7,7 +7,7 @@ export interface CoursePlatform {
 	name: string;
 	platform: string;
 	url: string;
-	image: ImageCoursePlatform;
+	logo: ImageCoursePlatform | `${string}.svg`;
 }
 
 export interface SizesImages {
