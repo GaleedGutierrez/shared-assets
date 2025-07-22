@@ -1,11 +1,12 @@
-import CSS_ICON from './assets/images/icons/technologies/css/css.svg';
-import EXPRESS_ICON from './assets/images/icons/technologies/express/express.svg';
-import YTDLP_ICON from './assets/images/icons/technologies/extras/yt-dlp.svg';
-import NODEJS_ICON from './assets/images/icons/technologies/nodejs/nodejs.svg';
-import PLAYWRIGHT_ICON from './assets/images/icons/technologies/playwright/playwright.svg';
-import REACT_ICON from './assets/images/icons/technologies/react/react.svg';
-import TYPESCRIPT_ICON from './assets/images/icons/technologies/typescript/typescript.svg';
-import VITE_ICON from './assets/images/icons/technologies/vite/vite.svg';
+import CSS_ICON from '@icons/technologies/css/css.svg';
+import EXPRESS_ICON from '@icons/technologies/express/express.svg';
+import YTDLP_ICON from '@icons/technologies/extras/yt-dlp.svg';
+import NODEJS_ICON from '@icons/technologies/nodejs/nodejs.svg';
+import PLAYWRIGHT_ICON from '@icons/technologies/playwright/playwright.svg';
+import REACT_ICON from '@icons/technologies/react/react.svg';
+import TYPESCRIPT_ICON from '@icons/technologies/typescript/typescript.svg';
+import VITE_ICON from '@icons/technologies/vite/vite.svg';
+
 import type { FreelanceProject } from './models/freelanceProject.model';
 
 export const freelanceProjects: FreelanceProject[] = [
@@ -52,9 +53,16 @@ export const freelanceProjects: FreelanceProject[] = [
 			VITE_ICON,
 		],
 		images: {
-			small: './assets/images/screenshot-freelance-projects/large/0001-youtube-downloader.webp',
-			medium: './assets/images/screenshot-freelance-projects/medium/0001-youtube-downloader.webp',
-			large: './assets/images/screenshot-freelance-projects/large/0001-youtube-downloader.webp',
+			avif: {
+				small: '@images/screenshot-freelance-projects/avif/small/0-youtube-downloader.avif',
+				medium: '@images/screenshot-freelance-projects/avif/medium/0-youtube-downloader.avif',
+				large: '@images/screenshot-freelance-projects/avif/large/0-youtube-downloader.avif',
+			},
+			webp: {
+				small: '@images/screenshot-freelance-projects/webp/small/0-youtube-downloader.webp',
+				medium: '@images/screenshot-freelance-projects/webp/medium/0-youtube-downloader.webp',
+				large: '@images/screenshot-freelance-projects/webp/large/0-youtube-downloader.webp',
+			},
 		},
 		startDate: new Date('2025-02-24'),
 		endDate: new Date('2024-09-06'),

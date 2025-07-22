@@ -43,10 +43,15 @@ export interface ProjectResults {
 	technicalAchievements: string[];
 }
 
-export interface ImagesProject {
+export interface SizesImages {
 	small: string;
 	medium: string;
 	large: string;
+}
+
+export interface ImagesProject {
+	avif: SizesImages;
+	webp: SizesImages;
 }
 
 export interface FreelanceProject {
