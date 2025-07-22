@@ -63,7 +63,7 @@ export interface FreelanceProject {
 	budget: ProjectBudget;
 	technologies: string[];
 	technologiesIcons: string[];
-	images: ImagesProject; // Screenshots anonimizados o mockups
+	screenshots: ImagesProject; // Screenshots anonimizados o mockups
 	startDate: Date;
 	endDate?: Date; // Opcional para proyectos en curso
 	status: 'completed' | 'in-progress' | 'on-hold';

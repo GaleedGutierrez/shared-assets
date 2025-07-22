@@ -52,7 +52,7 @@ export const freelanceProjects: FreelanceProject[] = [
 			PLAYWRIGHT_ICON,
 			VITE_ICON,
 		],
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-freelance-projects/avif/small/0-youtube-downloader.avif',
 				medium: '@images/screenshot-freelance-projects/avif/medium/0-youtube-downloader.avif',

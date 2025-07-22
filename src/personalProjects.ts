@@ -23,7 +23,7 @@ export const personalProjects: PersonalProject[] = [
 		],
 		repository: 'https://github.com/GaleedGutierrez/Curso-de-React-js-2023',
 		url: 'https://galeedgutierrez.com/Curso-de-React-js-2023/#all',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/28-to-do-app-con-react.avif',
 				medium: '@images/screenshot-projects/avif/medium/28-to-do-app-con-react.avif',
@@ -59,7 +59,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/laboratorio-mydayapp-js',
 		url: 'https://galeedgutierrez.com/laboratorio-mydayapp-js/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/27-mydayapp-js.avif',
 				medium: '@images/screenshot-projects/avif/medium/27-mydayapp-js.avif',
@@ -95,7 +95,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-CSS-Grid-a-fondo-Codely-2021',
 		url: 'https://galeedgutierrez.com/Curso-CSS-Grid-a-fondo-Codely-2021/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/26-helvetica-neue-css-gird-codely.avif',
 				medium: '@images/screenshot-projects/avif/medium/26-helvetica-neue-css-gird-codely.avif',
@@ -136,7 +136,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Layouts-Responsivos-Trabajando-con-layouts-mobile-Alura-G5-2023',
 		url: 'https://galeedgutierrez.com/Curso-de-Layouts-Responsivos-Trabajando-con-layouts-mobile-Alura-G5-2023/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/25-apeperia-alura.avif',
 				medium: '@images/screenshot-projects/avif/medium/25-apeperia-alura.avif',
@@ -177,7 +177,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Accesibilidad-Web-2019',
 		url: 'https://galeedgutierrez.com/Curso-de-Accesibilidad-Web-2019/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/24-mi-portafolio-juliana-gomez.avif',
 				medium: '@images/screenshot-projects/avif/medium/24-mi-portafolio-juliana-gomez.avif',
@@ -213,7 +213,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-Practico-de-Maquetacion-y-Animaciones-con-CSS-2021',
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-Maquetacion-y-Animaciones-con-CSS-2021/dist/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/23-lego.avif',
 				medium: '@images/screenshot-projects/avif/medium/23-lego.avif',
@@ -249,7 +249,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Single-Page-Application-con-JavaScript-Vanilla-2021',
 		url: 'https://galeedgutierrez.com/Curso-de-Single-Page-Application-con-JavaScript-Vanilla-2021/dist/public/index.html',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/22-100rifi.co.avif',
 				medium: '@images/screenshot-projects/avif/medium/22-100rifi.co.avif',
@@ -285,7 +285,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Encriptador-de-texto-Alura-Challenges-ONE-2023',
 		url: 'https://galeedgutierrez.com/Encriptador-de-texto-Alura-Challenges-ONE-2023/dist/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/21-encriptador-de-texto-alura-challenges-one.avif',
 				medium: '@images/screenshot-projects/avif/medium/21-encriptador-de-texto-alura-challenges-one.avif',
@@ -326,7 +326,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Introduccion-a-Empaquetadores-Web/tree/main/webpack',
 		url: 'https://galeedgutierrez.com/Curso-de-Introduccion-a-Empaquetadores-Web/webpack/dist/index.html',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/20-my-link-in-bio.avif',
 				medium: '@images/screenshot-projects/avif/medium/20-my-link-in-bio.avif',
@@ -362,7 +362,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-Profesional-de-Consumo-de-API-REST-con-JavaScript-2022',
 		url: 'https://galeedgutierrez.com/Curso-Profesional-de-Consumo-de-API-REST-con-JavaScript-2022/html/#home',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/19-platzi-movies-2022.avif',
 				medium: '@images/screenshot-projects/avif/medium/19-platzi-movies-2022.avif',
@@ -412,7 +412,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego-2022',
 		url: 'https://galeedgutierrez.com/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego-2022/html/index.html',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/18-platziv-juego-online.avif',
 				medium: '@images/screenshot-projects/avif/medium/18-platziv-juego-online.avif',
@@ -462,7 +462,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Consumo-de-API-REST-con-JavaScript',
 		url: 'https://galeedgutierrez.com/Curso-de-Consumo-de-API-REST-con-JavaScript/html/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/17-michis-app.avif',
 				medium: '@images/screenshot-projects/avif/medium/17-michis-app.avif',
@@ -504,7 +504,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Programacion-Orientada-a-Objetos-en-JavaScript/tree/main/TallerN1',
 		url: 'https://galeedgutierrez.com/Curso-de-Programacion-Orientada-a-Objetos-en-JavaScript/TallerN1/html/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/16-curso-practico-de-javascript.avif',
 				medium: '@images/screenshot-projects/avif/medium/16-curso-practico-de-javascript.avif',
@@ -546,7 +546,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-Practico-de-JavaScript/tree/main/TallerN2',
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-JavaScript/TallerN2/html/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/15-curso-practico-de-javascript-02.avif',
 				medium: '@images/screenshot-projects/avif/medium/15-curso-practico-de-javascript-02.avif',
@@ -582,7 +582,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Animaciones-con-CSS',
 		url: 'https://galeedgutierrez.com/Curso-de-Animaciones-con-CSS/html/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/14-curso-de-animaciones-con-css.avif',
 				medium: '@images/screenshot-projects/avif/medium/14-curso-de-animaciones-con-css.avif',
@@ -617,7 +617,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-CSS-Grid-Basico',
 		url: 'https://galeedgutierrez.com/Curso-de-CSS-Grid-Basico/Proyecto/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/13-check-the-best-food.avif',
 				medium: '@images/screenshot-projects/avif/medium/13-check-the-best-food.avif',
@@ -652,7 +652,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Responsive-Design-Maquetacion-Mobile-First',
 		url: 'https://galeedgutierrez.com/Curso-de-Responsive-Design-Maquetacion-Mobile-First/html/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/12-batabit.avif',
 				medium: '@images/screenshot-projects/avif/medium/12-batabit.avif',
@@ -688,7 +688,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-Practico-de-Frontend-Developer',
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-Frontend-Developer/html/homepage.html',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/11-curso-practico-de-frontend-developer.avif',
 				medium: '@images/screenshot-projects/avif/medium/11-curso-practico-de-frontend-developer.avif',
@@ -723,7 +723,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Disenio-para-Programadores',
 		url: 'https://galeedgutierrez.com/Curso-de-Disenio-para-Programadores/html/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/10-steam.avif',
 				medium: '@images/screenshot-projects/avif/medium/10-steam.avif',
@@ -758,7 +758,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Frontend-Developer-2019',
 		url: 'https://galeedgutierrez.com/Curso-de-Frontend-Developer-2019/platzi-video/html/homepage.html',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/9-platzi-video-curso-frontend-developer-2019.avif',
 				medium: '@images/screenshot-projects/avif/medium/9-platzi-video-curso-frontend-developer-2019.avif',
@@ -794,7 +794,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-practico-de-HTML-y-CSS/tree/main/WikipediaClone',
 		url: 'https://galeedgutierrez.com/Curso-practico-de-HTML-y-CSS/WikipediaClone/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/8-wikipedia-clone.avif',
 				medium: '@images/screenshot-projects/avif/medium/8-wikipedia-clone.avif',
@@ -829,7 +829,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-practico-de-HTML-y-CSS/tree/main/my-Google-clone',
 		url: 'https://galeedgutierrez.com/Curso-practico-de-HTML-y-CSS/my-Google-clone/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/7-google-clone.avif',
 				medium: '@images/screenshot-projects/avif/medium/7-google-clone.avif',
@@ -863,7 +863,7 @@ export const personalProjects: PersonalProject[] = [
 		technologiesIcons: [HTML_ICON, JAVASCRIPT_ICON],
 		repository: 'https://github.com/GaleedGutierrez/Villa-Platzi',
 		url: 'https://galeedgutierrez.com/Villa-Platzi/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/6-villa-platzi.avif',
 				medium: '@images/screenshot-projects/avif/medium/6-villa-platzi.avif',
@@ -898,7 +898,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Proyecto-generador-de-figuras',
 		url: 'https://galeedgutierrez.com/Proyecto-generador-de-figuras/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/5-proyecto-generador-de-figuras.avif',
 				medium: '@images/screenshot-projects/avif/medium/5-proyecto-generador-de-figuras.avif',
@@ -933,7 +933,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/galeedgutierrez.github.io',
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-Maquetacion-en-CSS/html/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/4-mi-blog.avif',
 				medium: '@images/screenshot-projects/avif/medium/4-mi-blog.avif',
@@ -967,7 +967,7 @@ export const personalProjects: PersonalProject[] = [
 		technologiesIcons: [HTML_ICON, CSS_ICON],
 		repository: 'https://github.com/GaleedGutierrez/Platzi-Video',
 		url: 'https://galeedgutierrez.com/Platzi-Video/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/3-platzi-video.avif',
 				medium: '@images/screenshot-projects/avif/medium/3-platzi-video.avif',
@@ -1001,7 +1001,7 @@ export const personalProjects: PersonalProject[] = [
 		technologiesIcons: [HTML_ICON, CSS_ICON],
 		repository: 'https://github.com/GaleedGutierrez/Movi.es',
 		url: 'https://galeedgutierrez.com/Movi.es/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/2-movie.es.avif',
 				medium: '@images/screenshot-projects/avif/medium/2-movie.es.avif',
@@ -1036,7 +1036,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Portafolio-LeonidasEsteban',
 		url: 'https://galeedgutierrez.com/Portafolio-LeonidasEsteban/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/1-portfolio-leonidas-esteban.avif',
 				medium: '@images/screenshot-projects/avif/medium/1-portfolio-leonidas-esteban.avif',
@@ -1071,7 +1071,7 @@ export const personalProjects: PersonalProject[] = [
 		technologiesIcons: [HTML_ICON, CSS_ICON],
 		repository: 'https://github.com/GaleedGutierrez/Brand-Platzi',
 		url: 'https://galeedgutierrez.com/Brand-Platzi/',
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-projects/avif/small/0-brand.avif',
 				medium: '@images/screenshot-projects/avif/medium/0-brand.avif',

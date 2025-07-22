@@ -98,7 +98,7 @@ export interface OpenSourceProject {
 	tags: string[]; // "first-contribution", "major-feature", "community-impact"
 
 	// Medios
-	images: ImagesProject; // Screenshots de tu contribución
+	screenshots: ImagesProject; // Screenshots de tu contribución
 	demoUrl?: string; // Demo de la feature que agregaste
 	blogPostUrl?: string; // Tu blog post sobre la contribución
 }

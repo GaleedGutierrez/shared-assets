@@ -28,7 +28,7 @@ export interface PersonalProject {
 	technologiesIcons: string[];
 	repository: string;
 	url: string;
-	images: ImagesProject;
+	screenshots: ImagesProject;
 	date: Date;
 	course: CoursePlatform;
 	description: string;

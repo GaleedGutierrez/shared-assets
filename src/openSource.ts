@@ -68,7 +68,7 @@ export const openSourceProjects: OpenSourceProject[] = [
 		isMaintainer: false,
 		isHighlighted: false,
 		tags: ['performance', 'user-experience', 'open-source'],
-		images: {
+		screenshots: {
 			avif: {
 				small: '@images/screenshot-open-source/avif/small/0-la-velada-del-ano-v.avif',
 				medium: '@images/screenshot-open-source/avif/medium/0-la-velada-del-ano-v.avif',
