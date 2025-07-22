@@ -1,6 +1,9 @@
 {
 	"name": "@galeedgutierrez/shared-assets",
 	"version": "0.0.1",
+	"publishConfig": {
+		"access": "public"
+	},
 	"description": "Assets to shared with personal projects like galeed.link and galeedgutierrez.com",
 	"keywords": [
 		"typescript",
