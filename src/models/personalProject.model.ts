@@ -1,14 +1,24 @@
+export interface ImageCoursePlatform {
+	avif: string;
+	webp: string;
+}
+
 export interface CoursePlatform {
 	name: string;
 	platform: string;
 	url: string;
-	image: string;
+	image: ImageCoursePlatform;
 }
 
-export interface ImagesProject {
+export interface SizesImages {
 	small: string;
 	medium: string;
 	large: string;
+}
+
+export interface ImagesProject {
+	avif: SizesImages;
+	webp: SizesImages;
 }
 
 export interface PersonalProject {
@@ -23,5 +33,5 @@ export interface PersonalProject {
 	course: CoursePlatform;
 	description: string;
 	author: string;
-	urlBlog: string;
+	blogPostUrl: string;
 }
