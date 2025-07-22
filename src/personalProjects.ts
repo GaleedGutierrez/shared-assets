@@ -3,7 +3,10 @@ import HTML_ICON from '@icons/technologies/html/html.svg';
 import JAVASCRIPT_ICON from '@icons/technologies/javascript/javascript.svg';
 import PLAYWRIGHT_ICON from '@icons/technologies/playwright/playwright.svg';
 import PUG_ICON from '@icons/technologies/pug/pug.svg';
+import REACT_ICON from '@icons/technologies/react/react.svg';
 import SASS_ICON from '@icons/technologies/sass/sass.svg';
+import SHADCN_ICON from '@icons/technologies/shadcn/shadcn.svg';
+import TAILWINDCSS_ICON from '@icons/technologies/tailwindcss/tailwindcss.svg';
 import TYPESCRIPT_ICON from '@icons/technologies/typescript/typescript.svg';
 import VITE_ICON from '@icons/technologies/vite/vite.svg';
 import WEBPACK_ICON from '@icons/technologies/webpack/webpack.svg';
@@ -12,10 +15,58 @@ import type { PersonalProject } from './models/personalProject.model';
 
 export const personalProjects: PersonalProject[] = [
 	{
+		id: 29,
+		name: 'Shop.co',
+		technologies: [
+			'React',
+			'TypeScript',
+			'TailwindCSS',
+			'Shadcn UI',
+			'Vite',
+			'Playwright',
+		],
+		technologiesIcons: [
+			REACT_ICON,
+			TYPESCRIPT_ICON,
+			TAILWINDCSS_ICON,
+			SHADCN_ICON,
+			PLAYWRIGHT_ICON,
+			VITE_ICON,
+		],
+		repository:
+			'https://github.com/GaleedGutierrez/pv_tp_integrador_grupo13_TS',
+		url: 'https://galeedgutierrez.com/pv_tp_integrador_grupo13_TS/iniciar-sesion',
+		screenshots: {
+			avif: {
+				small: '@images/screenshot-projects/avif/small/29-shop.co.avif',
+				medium: '@images/screenshot-projects/avif/medium/29-shop.co.avif',
+				large: '@images/screenshot-projects/avif/large/29-shop.co.avif',
+			},
+			webp: {
+				small: '@images/screenshot-projects/webp/small/29-shop.co.webp',
+				medium: '@images/screenshot-projects/webp/medium/29-shop.co.webp',
+				large: '@images/screenshot-projects/webp/large/29-shop.co.webp',
+			},
+		},
+		date: new Date('2025-07-05T03:00:00.000Z'),
+		course: {
+			name: 'Facultad de Ingeniería',
+			platform: 'Universidad Nacional de Jujuy',
+			url: 'https://www.unju.edu.ar/',
+			logo: '@icons/courses-platform/svg/platform/unju.svg',
+		},
+		description:
+			'Proyecto integrador de la carrera de Analista Programador Universitario, desarrollado con React y TypeScript. Incluye funcionalidades de autenticación y gestión de productos.',
+		author: 'Galeed Gutierrez',
+		blogPostUrl:
+			'https://galeedgutierrez.com/blog/personal-projects/29/shop-co/',
+	},
+	{
 		id: 28,
 		name: 'To Do App con React',
 		technologies: ['React', 'TypeScript', 'CSS', 'Vite', 'Playwright'],
 		technologiesIcons: [
+			REACT_ICON,
 			TYPESCRIPT_ICON,
 			CSS_ICON,
 			PLAYWRIGHT_ICON,
@@ -40,7 +91,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso de React.js',
 			platform: 'Platzi',
 			url: 'https://platzi.com/cursos/react/que-necesitas-para-aprender-reactjs/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-de-react.js-2023.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-de-react.js-2023.webp',
 			},
@@ -76,7 +127,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Prueba Técnica: Desarrollo Frontend con JavaScript',
 			platform: 'Platzi',
 			url: 'https://platzi.com/cursos/laboratorio-javascript-prueba/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/laboratorio-profesional-javascript-prueba-tecnica.avif',
 				webp: '@icons/courses-platform/webp/courses/laboratorio-profesional-javascript-prueba-tecnica.webp',
 			},
@@ -112,7 +163,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'CSS Grid a fondo',
 			platform: 'Codely',
 			url: 'https://pro.codely.com/library/css-grid-a-fondo-126731/307888/path/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/platform/codely.avif',
 				webp: '@icons/courses-platform/webp/platform/codely.webp',
 			},
@@ -153,7 +204,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso de Layouts Responsivos: Trabajando con layouts mobile',
 			platform: 'Alura',
 			url: 'https://app.aluracursos.com/course/layouts-responsivos-layouts-mobile',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/platform/alura.avif',
 				webp: '@icons/courses-platform/webp/platform/alura.webp',
 			},
@@ -194,7 +245,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso de Accesibilidad Web',
 			platform: 'Platzi',
 			url: 'https://platzi.com/cursos/accesibilidad-web/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-de-accesibilidad-web-2019.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-de-accesibilidad-web-2019.webp',
 			},
@@ -230,7 +281,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso Practico de Maquetacion y Animaciones con CSS',
 			platform: 'Platzi',
 			url: 'https://platzi.com/cursos/animaciones-css-practico/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-practico-de-maquetacion-y-animaciones-con-css.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-practico-de-maquetacion-y-animaciones-con-css.webp',
 			},
@@ -266,7 +317,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso de Single Page Application con JavaScript Vanilla 2021',
 			platform: 'Platzi',
 			url: 'https://platzi.com/cursos/spa-javascript/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-de-single-page-application-con-javaScript-vanilla-2021.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-de-single-page-application-con-javaScript-vanilla-2021.webp',
 			},
@@ -302,7 +353,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Challenge ONE: Principiante en programación',
 			platform: 'Alura',
 			url: 'https://www.aluracursos.com/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/platform/alura.avif',
 				webp: '@icons/courses-platform/webp/platform/alura.webp',
 			},
@@ -343,7 +394,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso de Introducción a Empaquetadores Web',
 			platform: 'Platzi',
 			url: 'https://platzi.com/cursos/empaquetadores/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-de-introduccion-a-empaquetadores-web.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-de-introduccion-a-empaquetadores-web.webp',
 			},
@@ -379,7 +430,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso de API REST con Javascript: Performance y Usabilidad',
 			platform: 'Platzi',
 			url: 'https://platzi.com/cursos/api-profesional/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-profesional-consumo-api-rest-con-javascript-performance-y-usabilidad-2022.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-profesional-consumo-api-rest-con-javascript-performance-y-usabilidad-2022.webp',
 			},
@@ -429,7 +480,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Taller Práctico de JavaScript: ¡Crea tu Primer Videojuego!',
 			platform: 'Platzi',
 			url: 'https://platzi.com/cursos/javascript-practico-videojuegos/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego.avif',
 				webp: '@icons/courses-platform/webp/courses/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego.webp',
 			},
@@ -479,7 +530,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso de Consumo de API REST con JavaScript',
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/2985-api/48425-que-es-una-api-rest/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-de-consumo-de-api-rest-con-javaScript.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-de-consumo-de-api-rest-con-javaScript.webp',
 			},
@@ -521,7 +572,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso de Programación Orientada a Objetos en JavaScript',
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/2332-javascript-poo/38616-javascript-orientado-a-objetos-basado-en-prototipo/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-practico-de-javascript.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-practico-de-javascript.webp',
 			},
@@ -563,7 +614,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso Practico de JavaScript',
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/2327-javascript-practico/38654-cual-es-tu-sueno-con-javascript/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-practico-de-javascript.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-practico-de-javascript.webp',
 			},
@@ -599,7 +650,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso de Animaciones con CSS',
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/2337-animaciones-css/37995-sabes-mas-de-animaciones-de-lo-que-crees/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/Curso-de-Animaciones-con-CSS.avif',
 				webp: '@icons/courses-platform/webp/courses/Curso-de-Animaciones-con-CSS.webp',
 			},
@@ -634,7 +685,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso de CSS Grid Básico',
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/2474-css-grid/42182-que-es-css-grid-layout/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-css-grid-basico.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-css-grid-basico.webp',
 			},
@@ -669,7 +720,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso de Responsive Design: Maquetación Mobile First',
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/2030-mobile-first/33326-introduccion-al-curso/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/Curso-de-Responsive-Design-Maquetación-Mobile-First.avif',
 				webp: '@icons/courses-platform/webp/courses/Curso-de-Responsive-Design-Maquetación-Mobile-First.webp',
 			},
@@ -705,7 +756,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso de Frontend Developer',
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/2477-frontend-developer-practico/41501-ya-tomaste-el-curso-de-frontend-developer/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-de-frontend-developer.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-de-frontend-developer.webp',
 			},
@@ -740,7 +791,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso de Diseño para Developers',
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/1906-diseno-programadores/28549-bienvenida/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-de-diseno-para-programadores.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-de-diseno-para-programadores.webp',
 			},
@@ -775,7 +826,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso de Frontend Developer 2019',
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/1640-frontend-developer-2019/21874-presentacion-y-bienvenida-al-curso-de-frontend-dev/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-de-frontend-developer-2019.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-de-frontend-developer-2019.webp',
 			},
@@ -811,7 +862,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso Práctico de HTML y CSS',
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/1758-html-practico/29888-platzicodingchallenge-platzicodingchallenge/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-practico-de-html-y-css.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-practico-de-html-y-css.webp',
 			},
@@ -846,7 +897,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso Práctico de HTML y CSS',
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/1758-html-practico/29888-platzicodingchallenge-platzicodingchallenge/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-practico-de-html-y-css.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-practico-de-html-y-css.webp',
 			},
@@ -880,7 +931,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso Gratis de Programación Básica',
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/1050-programacion-basica/5103-mi-primera-linea-de-codigo/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-gratis-de-programacion-basica.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-gratis-de-programacion-basica.webp',
 			},
@@ -915,7 +966,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso Gratis de Programación Básica',
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/1050-programacion-basica/5103-mi-primera-linea-de-codigo/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-gratis-de-programacion-basica.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-gratis-de-programacion-basica.webp',
 			},
@@ -950,7 +1001,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso Práctico de Maquetación en CSS',
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/1744-practico-css/24710-lo-que-aprenderas-sobre-maquetacion-en-css/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-practico-de-maquetacion-en-css.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-practico-de-maquetacion-en-css.webp',
 			},
@@ -984,7 +1035,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso de CSS Grid Layout 2017',
 			platform: 'Platzi',
 			url: 'https://platzi.com/r/galeedgutierrez',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-de-css-grid-layout-2017.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-de-css-grid-layout-2017.webp',
 			},
@@ -1018,7 +1069,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso de CSS Grid Layout 2017',
 			platform: 'Platzi',
 			url: 'https://platzi.com/r/galeedgutierrez',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-de-css-grid-layout-2017.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-de-css-grid-layout-2017.webp',
 			},
@@ -1053,7 +1104,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso de Responsive Design',
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/1362-responsive-design/13534-bienvenidos-al-curso-de-responsive-design/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-de-responsive-design-leonidas-esteban.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-de-responsive-design-leonidas-esteban.webp',
 			},
@@ -1088,7 +1139,7 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Curso de HTML y CSS 2019',
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/1492-html-css-2019/16971-introduccion-al-curso-profesional-de-desarrollo-we/',
-			image: {
+			logo: {
 				avif: '@icons/courses-platform/avif/courses/curso-de-html-y-css-2019.avif',
 				webp: '@icons/courses-platform/webp/courses/curso-de-html-y-css-2019.webp',
 			},
