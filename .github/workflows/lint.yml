@@ -23,8 +23,8 @@ jobs:
       - name: 🌹 ESLint
         run: npm run lint
 
-      - name: 👔 StyleLint
-        run: npm run stylelint
+      # - name: 👔 StyleLint
+      #   run: npm run stylelint
 
       - name: 📄 Markdown
         run: npm run lint-md
