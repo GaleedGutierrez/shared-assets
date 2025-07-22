@@ -28,7 +28,7 @@
 		"lint-md": "markdownlint-cli2 --config \".markdownlint-cli2.jsonc\" **/*.md \"#node_modules\" && npm run lint-text",
 		"lint-md:fix": "markdownlint-cli2 --config \".markdownlint-cli2.jsonc\" --fix **/*.md \"#node_modules\" && npm run lint-text:fix",
 		"check-for-dupes": "jscpd ./",
-		"test": "vitest run",
+		"test": "echo \"Error: no test specified\" && exit 1",
 		"prepare": "husky"
 	},
 	"devDependencies": {
