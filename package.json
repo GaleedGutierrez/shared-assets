@@ -1,6 +1,6 @@
 {
 	"name": "@galeedgutierrez/shared-assets",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"publishConfig": {
 		"access": "public"
 	},
@@ -22,6 +22,13 @@
 	"type": "module",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
+	"typesVersions": {
+		"*": {
+			"*": [
+				"./src/global.d.ts"
+			]
+		}
+	},
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
@@ -30,7 +37,8 @@
 	},
 	"files": [
 		"dist",
-		"src"
+		"src",
+		"src/global.d.ts"
 	],
 	"scripts": {
 		"build": "npm run build:clean && npm run build:tsc && npm run build:assets",
