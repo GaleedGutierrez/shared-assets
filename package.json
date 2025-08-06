@@ -1,6 +1,6 @@
 {
 	"name": "@galeedgutierrez/shared-assets",
-	"version": "0.1.2",
+	"version": "0.2.0",
 	"publishConfig": {
 		"access": "public"
 	},
@@ -37,11 +37,10 @@
 	},
 	"files": [
 		"dist",
-		"src",
 		"src/global.d.ts"
 	],
 	"scripts": {
-		"build": "npm run build:clean && npm run build:tsc && npm run build:assets",
+		"build": "npm run build:clean && npm run build:tsc",
 		"build:clean": "rimraf dist",
 		"build:tsc": "tsc --project tsconfig.build.json",
 		"build:assets": "tsx scripts/copyAssets.ts",
