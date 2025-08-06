@@ -23,7 +23,7 @@ export interface ImagesProject {
 
 export interface PersonalProject {
 	id: number;
-	name: string;
+	title: string;
 	technologies: string[];
 	technologiesIcons: string[];
 	repository: string;

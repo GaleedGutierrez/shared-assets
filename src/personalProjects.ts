@@ -16,7 +16,7 @@ import type { PersonalProject } from './models/personalProject.model';
 export const personalProjects: PersonalProject[] = [
 	{
 		id: 29,
-		name: 'Shop.co',
+		title: 'Shop.co',
 		technologies: [
 			'React',
 			'TypeScript',
@@ -63,7 +63,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 28,
-		name: 'To Do App con React',
+		title: 'To Do App con React',
 		technologies: ['React', 'TypeScript', 'CSS', 'Vite', 'Playwright'],
 		technologiesIcons: [
 			REACT_ICON,
@@ -104,7 +104,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 27,
-		name: 'My Day App - JS',
+		title: 'My Day App - JS',
 		technologies: ['JavaScript', 'HTML', 'CSS', 'Webpack'],
 		technologiesIcons: [JAVASCRIPT_ICON, HTML_ICON, CSS_ICON, WEBPACK_ICON],
 		repository:
@@ -140,7 +140,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 26,
-		name: 'Helvetica Neue',
+		title: 'Helvetica Neue',
 		technologies: ['SASS', 'HTML', 'Webpack'],
 		technologiesIcons: [SASS_ICON, HTML_ICON, WEBPACK_ICON],
 		repository:
@@ -176,7 +176,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 25,
-		name: 'Apeperia',
+		title: 'Apeperia',
 		technologies: ['TypeScript', 'SASS', 'HTML', 'Webpack'],
 		technologiesIcons: [
 			TYPESCRIPT_ICON,
@@ -217,7 +217,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 24,
-		name: 'Mi portafolio - Juliana Gómez',
+		title: 'Mi portafolio - Juliana Gómez',
 		technologies: ['TypeScript', 'SASS', 'HTML', 'Webpack'],
 		technologiesIcons: [
 			TYPESCRIPT_ICON,
@@ -258,7 +258,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 23,
-		name: 'LEGO',
+		title: 'LEGO',
 		technologies: ['TypeScript', 'SASS', 'HTML', 'ViteJS'],
 		technologiesIcons: [TYPESCRIPT_ICON, SASS_ICON, HTML_ICON, VITE_ICON],
 		repository:
@@ -294,7 +294,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 22,
-		name: '100tifi.co',
+		title: '100tifi.co',
 		technologies: ['TypeScript', 'SASS', 'HTML', 'ViteJS'],
 		technologiesIcons: [TYPESCRIPT_ICON, SASS_ICON, HTML_ICON, VITE_ICON],
 		repository:
@@ -330,7 +330,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 21,
-		name: 'Encriptador de texto',
+		title: 'Encriptador de texto',
 		technologies: ['TypeScript', 'SASS', 'HTML', 'ViteJS'],
 		technologiesIcons: [TYPESCRIPT_ICON, SASS_ICON, HTML_ICON, VITE_ICON],
 		repository:
@@ -366,7 +366,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 20,
-		name: 'Link in bio',
+		title: 'Link in bio',
 		technologies: ['TypeScript', 'SASS', 'HTML', 'Webpack'],
 		technologiesIcons: [
 			TYPESCRIPT_ICON,
@@ -407,7 +407,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 19,
-		name: 'Platzi Movies',
+		title: 'Platzi Movies',
 		technologies: ['TypeScript', 'SASS', 'PUG'],
 		technologiesIcons: [TYPESCRIPT_ICON, SASS_ICON, PUG_ICON],
 		repository:
@@ -443,7 +443,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 18,
-		name: 'Platziv - Juego Online',
+		title: 'Platziv - Juego Online',
 		technologies: [
 			'PUG',
 			'SASS',
@@ -493,7 +493,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 17,
-		name: 'Michi App',
+		title: 'Michi App',
 		technologies: [
 			'PUG',
 			'SASS',
@@ -543,7 +543,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 16,
-		name: 'Figura Geométricas',
+		title: 'Figura Geométricas',
 		technologies: ['PUG', 'SASS', 'HTML', 'CSS', 'JavaScript'],
 		technologiesIcons: [
 			PUG_ICON,
@@ -585,7 +585,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 15,
-		name: 'Tienda Online',
+		title: 'Tienda Online',
 		technologies: ['PUG', 'SASS', 'HTML', 'CSS', 'JavaScript'],
 		technologiesIcons: [
 			PUG_ICON,
@@ -627,7 +627,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 14,
-		name: 'Animationland',
+		title: 'Animationland',
 		technologies: ['PUG', 'SASS', 'HTML', 'CSS'],
 		technologiesIcons: [PUG_ICON, SASS_ICON, HTML_ICON, CSS_ICON],
 		repository:
@@ -662,7 +662,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 13,
-		name: 'Check the best food',
+		title: 'Check the best food',
 		technologies: ['HTML', 'CSS'],
 		technologiesIcons: [HTML_ICON, CSS_ICON],
 		repository:
@@ -697,7 +697,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 12,
-		name: 'Batabit',
+		title: 'Batabit',
 		technologies: ['PUG', 'SASS', 'HTML', 'CSS'],
 		technologiesIcons: [PUG_ICON, SASS_ICON, HTML_ICON, CSS_ICON],
 		repository:
@@ -733,7 +733,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 11,
-		name: 'Yard Sale',
+		title: 'Yard Sale',
 		technologies: ['PUG', 'SASS', 'HTML', 'CSS'],
 		technologiesIcons: [PUG_ICON, SASS_ICON, HTML_ICON, CSS_ICON],
 		repository:
@@ -768,7 +768,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 10,
-		name: 'Steam Burger',
+		title: 'Steam Burger',
 		technologies: ['PUG', 'SASS', 'HTML', 'CSS'],
 		technologiesIcons: [PUG_ICON, SASS_ICON, HTML_ICON, CSS_ICON],
 		repository:
@@ -803,7 +803,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 9,
-		name: 'Platzi Video',
+		title: 'Platzi Video',
 		technologies: ['PUG', 'SASS', 'HTML', 'CSS'],
 		technologiesIcons: [PUG_ICON, SASS_ICON, HTML_ICON, CSS_ICON],
 		repository:
@@ -839,7 +839,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 8,
-		name: 'Wikipedia Clone',
+		title: 'Wikipedia Clone',
 		technologies: ['HTML', 'CSS'],
 		technologiesIcons: [HTML_ICON, CSS_ICON],
 		repository:
@@ -874,7 +874,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 7,
-		name: 'Google Clone',
+		title: 'Google Clone',
 		technologies: ['HTML', 'CSS'],
 		technologiesIcons: [HTML_ICON, CSS_ICON],
 		repository:
@@ -909,7 +909,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 6,
-		name: 'Villa Platzi',
+		title: 'Villa Platzi',
 		technologies: ['HTML', 'JavaScript'],
 		technologiesIcons: [HTML_ICON, JAVASCRIPT_ICON],
 		repository: 'https://github.com/GaleedGutierrez/Villa-Platzi',
@@ -943,7 +943,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 5,
-		name: 'Generador de figuras geométricas',
+		title: 'Generador de figuras geométricas',
 		technologies: ['HTML', 'JavaScript'],
 		technologiesIcons: [HTML_ICON, JAVASCRIPT_ICON],
 		repository:
@@ -978,7 +978,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 4,
-		name: 'Mi Blog',
+		title: 'Mi Blog',
 		technologies: ['PUG', 'SASS', 'HTML', 'CSS'],
 		technologiesIcons: [PUG_ICON, SASS_ICON, HTML_ICON, CSS_ICON],
 		repository:
@@ -1013,7 +1013,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 3,
-		name: 'Platzi-Video',
+		title: 'Platzi-Video',
 		technologies: ['HTML', 'CSS'],
 		technologiesIcons: [HTML_ICON, CSS_ICON],
 		repository: 'https://github.com/GaleedGutierrez/Platzi-Video',
@@ -1047,7 +1047,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 2,
-		name: 'Movie.es',
+		title: 'Movie.es',
 		technologies: ['HTML', 'CSS'],
 		technologiesIcons: [HTML_ICON, CSS_ICON],
 		repository: 'https://github.com/GaleedGutierrez/Movi.es',
@@ -1081,7 +1081,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 1,
-		name: 'Portfolio Leonidas Esteban',
+		title: 'Portfolio Leonidas Esteban',
 		technologies: ['HTML', 'CSS'],
 		technologiesIcons: [HTML_ICON, CSS_ICON],
 		repository:
@@ -1117,7 +1117,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 0,
-		name: 'Brand',
+		title: 'Brand',
 		technologies: ['HTML', 'CSS'],
 		technologiesIcons: [HTML_ICON, CSS_ICON],
 		repository: 'https://github.com/GaleedGutierrez/Brand-Platzi',
