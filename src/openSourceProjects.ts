@@ -1,5 +1,5 @@
 import TAILWINDCSS_ICON from './assets/icons/technologies/tailwindcss/tailwindcss.svg';
-import type { OpenSourceProject } from './models/openSource.model';
+import type { OpenSourceProject } from './models/openSource.model.js';
 
 export const openSourceProjects: OpenSourceProject[] = [
 	{

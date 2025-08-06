@@ -10,7 +10,7 @@ import TAILWINDCSS_ICON from './assets/icons/technologies/tailwindcss/tailwindcs
 import TYPESCRIPT_ICON from './assets/icons/technologies/typescript/typescript.svg';
 import VITE_ICON from './assets/icons/technologies/vite/vite.svg';
 import WEBPACK_ICON from './assets/icons/technologies/webpack/webpack.svg';
-import type { PersonalProject } from './models/personalProject.model';
+import type { PersonalProject } from './models/personalProject.model.js';
 
 export const personalProjects: PersonalProject[] = [
 	{

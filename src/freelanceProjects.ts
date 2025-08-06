@@ -6,7 +6,7 @@ import PLAYWRIGHT_ICON from './assets/icons/technologies/playwright/playwright.s
 import REACT_ICON from './assets/icons/technologies/react/react.svg';
 import TYPESCRIPT_ICON from './assets/icons/technologies/typescript/typescript.svg';
 import VITE_ICON from './assets/icons/technologies/vite/vite.svg';
-import type { FreelanceProject } from './models/freelanceProject.model';
+import type { FreelanceProject } from './models/freelanceProject.model.js';
 
 export const freelanceProjects: FreelanceProject[] = [
 	{
