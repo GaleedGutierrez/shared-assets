@@ -1,5 +1,4 @@
-import TAILWINDCSS_ICON from '@icons/technologies/tailwindcss/tailwindcss.svg';
-
+import TAILWINDCSS_ICON from './assets/icons/technologies/tailwindcss/tailwindcss.svg';
 import type { OpenSourceProject } from './models/openSource.model';
 
 export const openSourceProjects: OpenSourceProject[] = [
@@ -70,14 +69,14 @@ export const openSourceProjects: OpenSourceProject[] = [
 		tags: ['performance', 'user-experience', 'open-source'],
 		screenshots: {
 			avif: {
-				small: '@images/screenshot-open-source/avif/small/0-la-velada-del-ano-v.avif',
-				medium: '@images/screenshot-open-source/avif/medium/0-la-velada-del-ano-v.avif',
-				large: '@images/screenshot-open-source/avif/large/0-la-velada-del-ano-v.avif',
+				small: './assets/images/screenshot-open-source/avif/small/0-la-velada-del-ano-v.avif',
+				medium: './assets/images/screenshot-open-source/avif/medium/0-la-velada-del-ano-v.avif',
+				large: './assets/images/screenshot-open-source/avif/large/0-la-velada-del-ano-v.avif',
 			},
 			webp: {
-				small: '@images/screenshot-open-source/webp/small/0-la-velada-del-ano-v.webp',
-				medium: '@images/screenshot-open-source/webp/medium/0-la-velada-del-ano-v.webp',
-				large: '@images/screenshot-open-source/webp/large/0-la-velada-del-ano-v.webp',
+				small: './assets/images/screenshot-open-source/webp/small/0-la-velada-del-ano-v.webp',
+				medium: './assets/images/screenshot-open-source/webp/medium/0-la-velada-del-ano-v.webp',
+				large: './assets/images/screenshot-open-source/webp/large/0-la-velada-del-ano-v.webp',
 			},
 		},
 	},
