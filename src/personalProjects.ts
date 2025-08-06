@@ -1,30 +1,19 @@
 import type { PersonalProject } from './models/personalProject.model.js';
 
 // URLs to publicly hosted assets
-const CSS_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/css/css.svg';
-const HTML_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/html/html.svg';
-const JAVASCRIPT_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/javascript/javascript.svg';
-const PLAYWRIGHT_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/playwright/playwright.svg';
-const PUG_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/pug/pug.svg';
-const REACT_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/react/react.svg';
-const SASS_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/sass/sass.svg';
-const SHADCN_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/shadcn/shadcn.svg';
+const CSS_ICON = './assets/icons/technologies/css/css.svg';
+const HTML_ICON = './assets/icons/technologies/html/html.svg';
+const JAVASCRIPT_ICON = './assets/icons/technologies/javascript/javascript.svg';
+const PLAYWRIGHT_ICON = './assets/icons/technologies/playwright/playwright.svg';
+const PUG_ICON = './assets/icons/technologies/pug/pug.svg';
+const REACT_ICON = './assets/icons/technologies/react/react.svg';
+const SASS_ICON = './assets/icons/technologies/sass/sass.svg';
+const SHADCN_ICON = './assets/icons/technologies/shadcn/shadcn.svg';
 const TAILWINDCSS_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/tailwindcss/tailwindcss.svg';
-const TYPESCRIPT_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/typescript/typescript.svg';
-const VITE_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/vite/vite.svg';
-const WEBPACK_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/webpack/webpack.svg';
+	'./assets/icons/technologies/tailwindcss/tailwindcss.svg';
+const TYPESCRIPT_ICON = './assets/icons/technologies/typescript/typescript.svg';
+const VITE_ICON = './assets/icons/technologies/vite/vite.svg';
+const WEBPACK_ICON = './assets/icons/technologies/webpack/webpack.svg';
 
 export const personalProjects: PersonalProject[] = [
 	{
@@ -51,14 +40,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/pv_tp_integrador_grupo13_TS/iniciar-sesion',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/29-shop.co.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/29-shop.co.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/29-shop.co.avif',
+				small: './assets/images/screenshot-projects/avif/small/29-shop.co.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/29-shop.co.avif',
+				large: './assets/images/screenshot-projects/avif/large/29-shop.co.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/29-shop.co.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/29-shop.co.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/29-shop.co.webp',
+				small: './assets/images/screenshot-projects/webp/small/29-shop.co.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/29-shop.co.webp',
+				large: './assets/images/screenshot-projects/webp/large/29-shop.co.webp',
 			},
 		},
 		date: new Date('2025-07-05T03:00:00.000Z'),
@@ -89,14 +78,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-React-js-2023/#all',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/28-to-do-app-con-react.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/28-to-do-app-con-react.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/28-to-do-app-con-react.avif',
+				small: './assets/images/screenshot-projects/avif/small/28-to-do-app-con-react.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/28-to-do-app-con-react.avif',
+				large: './assets/images/screenshot-projects/avif/large/28-to-do-app-con-react.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/28-to-do-app-con-react.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/28-to-do-app-con-react.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/28-to-do-app-con-react.webp',
+				small: './assets/images/screenshot-projects/webp/small/28-to-do-app-con-react.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/28-to-do-app-con-react.webp',
+				large: './assets/images/screenshot-projects/webp/large/28-to-do-app-con-react.webp',
 			},
 		},
 		date: new Date('2024-07-16T03:00:00.000Z'),
@@ -125,14 +114,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/laboratorio-mydayapp-js/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/27-mydayapp-js.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/27-mydayapp-js.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/27-mydayapp-js.avif',
+				small: './assets/images/screenshot-projects/avif/small/27-mydayapp-js.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/27-mydayapp-js.avif',
+				large: './assets/images/screenshot-projects/avif/large/27-mydayapp-js.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/27-mydayapp-js.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/27-mydayapp-js.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/27-mydayapp-js.webp',
+				small: './assets/images/screenshot-projects/webp/small/27-mydayapp-js.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/27-mydayapp-js.webp',
+				large: './assets/images/screenshot-projects/webp/large/27-mydayapp-js.webp',
 			},
 		},
 		date: new Date('2024-01-02T03:00:00.000Z'),
@@ -161,14 +150,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-CSS-Grid-a-fondo-Codely-2021/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/26-helvetica-neue-css-gird-codely.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/26-helvetica-neue-css-gird-codely.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/26-helvetica-neue-css-gird-codely.avif',
+				small: './assets/images/screenshot-projects/avif/small/26-helvetica-neue-css-gird-codely.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/26-helvetica-neue-css-gird-codely.avif',
+				large: './assets/images/screenshot-projects/avif/large/26-helvetica-neue-css-gird-codely.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/26-helvetica-neue-css-gird-codely.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/26-helvetica-neue-css-gird-codely.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/26-helvetica-neue-css-gird-codely.webp',
+				small: './assets/images/screenshot-projects/webp/small/26-helvetica-neue-css-gird-codely.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/26-helvetica-neue-css-gird-codely.webp',
+				large: './assets/images/screenshot-projects/webp/large/26-helvetica-neue-css-gird-codely.webp',
 			},
 		},
 		date: new Date('2023-09-25T03:00:00.000Z'),
@@ -202,14 +191,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-Layouts-Responsivos-Trabajando-con-layouts-mobile-Alura-G5-2023/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/25-apeperia-alura.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/25-apeperia-alura.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/25-apeperia-alura.avif',
+				small: './assets/images/screenshot-projects/avif/small/25-apeperia-alura.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/25-apeperia-alura.avif',
+				large: './assets/images/screenshot-projects/avif/large/25-apeperia-alura.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/25-apeperia-alura.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/25-apeperia-alura.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/25-apeperia-alura.webp',
+				small: './assets/images/screenshot-projects/webp/small/25-apeperia-alura.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/25-apeperia-alura.webp',
+				large: './assets/images/screenshot-projects/webp/large/25-apeperia-alura.webp',
 			},
 		},
 		date: new Date('2023-08-14T03:00:00.000Z'),
@@ -243,14 +232,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-Accesibilidad-Web-2019/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/24-mi-portafolio-juliana-gomez.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/24-mi-portafolio-juliana-gomez.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/24-mi-portafolio-juliana-gomez.avif',
+				small: './assets/images/screenshot-projects/avif/small/24-mi-portafolio-juliana-gomez.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/24-mi-portafolio-juliana-gomez.avif',
+				large: './assets/images/screenshot-projects/avif/large/24-mi-portafolio-juliana-gomez.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/24-mi-portafolio-juliana-gomez.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/24-mi-portafolio-juliana-gomez.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/24-mi-portafolio-juliana-gomez.webp',
+				small: './assets/images/screenshot-projects/webp/small/24-mi-portafolio-juliana-gomez.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/24-mi-portafolio-juliana-gomez.webp',
+				large: './assets/images/screenshot-projects/webp/large/24-mi-portafolio-juliana-gomez.webp',
 			},
 		},
 		date: new Date('2023-08-04T03:00:00.000Z'),
@@ -279,14 +268,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-Maquetacion-y-Animaciones-con-CSS-2021/dist/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/23-lego.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/23-lego.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/23-lego.avif',
+				small: './assets/images/screenshot-projects/avif/small/23-lego.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/23-lego.avif',
+				large: './assets/images/screenshot-projects/avif/large/23-lego.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/23-lego.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/23-lego.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/23-lego.webp',
+				small: './assets/images/screenshot-projects/webp/small/23-lego.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/23-lego.webp',
+				large: './assets/images/screenshot-projects/webp/large/23-lego.webp',
 			},
 		},
 		date: new Date('2023-04-22T03:00:00.000Z'),
@@ -315,14 +304,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-Single-Page-Application-con-JavaScript-Vanilla-2021/dist/public/index.html',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/22-100rifi.co.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/22-100rifi.co.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/22-100rifi.co.avif',
+				small: './assets/images/screenshot-projects/avif/small/22-100rifi.co.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/22-100rifi.co.avif',
+				large: './assets/images/screenshot-projects/avif/large/22-100rifi.co.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/22-100rifi.co.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/22-100rifi.co.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/22-100rifi.co.webp',
+				small: './assets/images/screenshot-projects/webp/small/22-100rifi.co.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/22-100rifi.co.webp',
+				large: './assets/images/screenshot-projects/webp/large/22-100rifi.co.webp',
 			},
 		},
 		date: new Date('2023-04-12T03:00:00.000Z'),
@@ -351,14 +340,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Encriptador-de-texto-Alura-Challenges-ONE-2023/dist/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/21-encriptador-de-texto-alura-challenges-one.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/21-encriptador-de-texto-alura-challenges-one.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/21-encriptador-de-texto-alura-challenges-one.avif',
+				small: './assets/images/screenshot-projects/avif/small/21-encriptador-de-texto-alura-challenges-one.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/21-encriptador-de-texto-alura-challenges-one.avif',
+				large: './assets/images/screenshot-projects/avif/large/21-encriptador-de-texto-alura-challenges-one.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/21-encriptador-de-texto-alura-challenges-one.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/21-encriptador-de-texto-alura-challenges-one.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/21-encriptador-de-texto-alura-challenges-one.webp',
+				small: './assets/images/screenshot-projects/webp/small/21-encriptador-de-texto-alura-challenges-one.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/21-encriptador-de-texto-alura-challenges-one.webp',
+				large: './assets/images/screenshot-projects/webp/large/21-encriptador-de-texto-alura-challenges-one.webp',
 			},
 		},
 		date: new Date('2023-04-01T03:00:00.000Z'),
@@ -392,14 +381,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-Introduccion-a-Empaquetadores-Web/webpack/dist/index.html',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/20-my-link-in-bio.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/20-my-link-in-bio.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/20-my-link-in-bio.avif',
+				small: './assets/images/screenshot-projects/avif/small/20-my-link-in-bio.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/20-my-link-in-bio.avif',
+				large: './assets/images/screenshot-projects/avif/large/20-my-link-in-bio.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/20-my-link-in-bio.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/20-my-link-in-bio.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/20-my-link-in-bio.webp',
+				small: './assets/images/screenshot-projects/webp/small/20-my-link-in-bio.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/20-my-link-in-bio.webp',
+				large: './assets/images/screenshot-projects/webp/large/20-my-link-in-bio.webp',
 			},
 		},
 		date: new Date('2023-03-11T03:00:00.000Z'),
@@ -428,14 +417,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-Profesional-de-Consumo-de-API-REST-con-JavaScript-2022/html/#home',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/19-platzi-movies-2022.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/19-platzi-movies-2022.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/19-platzi-movies-2022.avif',
+				small: './assets/images/screenshot-projects/avif/small/19-platzi-movies-2022.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/19-platzi-movies-2022.avif',
+				large: './assets/images/screenshot-projects/avif/large/19-platzi-movies-2022.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/19-platzi-movies-2022.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/19-platzi-movies-2022.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/19-platzi-movies-2022.webp',
+				small: './assets/images/screenshot-projects/webp/small/19-platzi-movies-2022.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/19-platzi-movies-2022.webp',
+				large: './assets/images/screenshot-projects/webp/large/19-platzi-movies-2022.webp',
 			},
 		},
 		date: new Date('2023-01-01T03:00:00.000Z'),
@@ -478,14 +467,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego-2022/html/index.html',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/18-platziv-juego-online.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/18-platziv-juego-online.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/18-platziv-juego-online.avif',
+				small: './assets/images/screenshot-projects/avif/small/18-platziv-juego-online.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/18-platziv-juego-online.avif',
+				large: './assets/images/screenshot-projects/avif/large/18-platziv-juego-online.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/18-platziv-juego-online.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/18-platziv-juego-online.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/18-platziv-juego-online.webp',
+				small: './assets/images/screenshot-projects/webp/small/18-platziv-juego-online.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/18-platziv-juego-online.webp',
+				large: './assets/images/screenshot-projects/webp/large/18-platziv-juego-online.webp',
 			},
 		},
 		date: new Date('2022-11-09T03:00:00.000Z'),
@@ -528,14 +517,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-Consumo-de-API-REST-con-JavaScript/html/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/17-michis-app.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/17-michis-app.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/17-michis-app.avif',
+				small: './assets/images/screenshot-projects/avif/small/17-michis-app.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/17-michis-app.avif',
+				large: './assets/images/screenshot-projects/avif/large/17-michis-app.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/17-michis-app.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/17-michis-app.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/17-michis-app.webp',
+				small: './assets/images/screenshot-projects/webp/small/17-michis-app.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/17-michis-app.webp',
+				large: './assets/images/screenshot-projects/webp/large/17-michis-app.webp',
 			},
 		},
 		date: new Date('2022-05-01T03:00:00.000Z'),
@@ -570,14 +559,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-Programacion-Orientada-a-Objetos-en-JavaScript/TallerN1/html/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/16-curso-practico-de-javascript.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/16-curso-practico-de-javascript.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/16-curso-practico-de-javascript.avif',
+				small: './assets/images/screenshot-projects/avif/small/16-curso-practico-de-javascript.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/16-curso-practico-de-javascript.avif',
+				large: './assets/images/screenshot-projects/avif/large/16-curso-practico-de-javascript.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/16-curso-practico-de-javascript.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/16-curso-practico-de-javascript.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/16-curso-practico-de-javascript.webp',
+				small: './assets/images/screenshot-projects/webp/small/16-curso-practico-de-javascript.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/16-curso-practico-de-javascript.webp',
+				large: './assets/images/screenshot-projects/webp/large/16-curso-practico-de-javascript.webp',
 			},
 		},
 		date: new Date('2022-02-01T03:00:00.000Z'),
@@ -612,14 +601,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-JavaScript/TallerN2/html/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/15-curso-practico-de-javascript-02.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/15-curso-practico-de-javascript-02.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/15-curso-practico-de-javascript-02.avif',
+				small: './assets/images/screenshot-projects/avif/small/15-curso-practico-de-javascript-02.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/15-curso-practico-de-javascript-02.avif',
+				large: './assets/images/screenshot-projects/avif/large/15-curso-practico-de-javascript-02.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/15-curso-practico-de-javascript-02.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/15-curso-practico-de-javascript-02.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/15-curso-practico-de-javascript-02.webp',
+				small: './assets/images/screenshot-projects/webp/small/15-curso-practico-de-javascript-02.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/15-curso-practico-de-javascript-02.webp',
+				large: './assets/images/screenshot-projects/webp/large/15-curso-practico-de-javascript-02.webp',
 			},
 		},
 		date: new Date('2021-12-01T03:00:00.000Z'),
@@ -648,14 +637,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-Animaciones-con-CSS/html/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/14-curso-de-animaciones-con-css.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/14-curso-de-animaciones-con-css.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/14-curso-de-animaciones-con-css.avif',
+				small: './assets/images/screenshot-projects/avif/small/14-curso-de-animaciones-con-css.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/14-curso-de-animaciones-con-css.avif',
+				large: './assets/images/screenshot-projects/avif/large/14-curso-de-animaciones-con-css.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/14-curso-de-animaciones-con-css.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/14-curso-de-animaciones-con-css.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/14-curso-de-animaciones-con-css.webp',
+				small: './assets/images/screenshot-projects/webp/small/14-curso-de-animaciones-con-css.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/14-curso-de-animaciones-con-css.webp',
+				large: './assets/images/screenshot-projects/webp/large/14-curso-de-animaciones-con-css.webp',
 			},
 		},
 		date: new Date('2021-12-01T03:00:00.000Z'),
@@ -683,14 +672,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-CSS-Grid-Basico/Proyecto/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/13-check-the-best-food.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/13-check-the-best-food.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/13-check-the-best-food.avif',
+				small: './assets/images/screenshot-projects/avif/small/13-check-the-best-food.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/13-check-the-best-food.avif',
+				large: './assets/images/screenshot-projects/avif/large/13-check-the-best-food.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/13-check-the-best-food.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/13-check-the-best-food.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/13-check-the-best-food.webp',
+				small: './assets/images/screenshot-projects/webp/small/13-check-the-best-food.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/13-check-the-best-food.webp',
+				large: './assets/images/screenshot-projects/webp/large/13-check-the-best-food.webp',
 			},
 		},
 		date: new Date('2021-11-01T03:00:00.000Z'),
@@ -718,14 +707,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-Responsive-Design-Maquetacion-Mobile-First/html/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/12-batabit.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/12-batabit.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/12-batabit.avif',
+				small: './assets/images/screenshot-projects/avif/small/12-batabit.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/12-batabit.avif',
+				large: './assets/images/screenshot-projects/avif/large/12-batabit.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/12-batabit.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/12-batabit.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/12-batabit.webp',
+				small: './assets/images/screenshot-projects/webp/small/12-batabit.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/12-batabit.webp',
+				large: './assets/images/screenshot-projects/webp/large/12-batabit.webp',
 			},
 		},
 		date: new Date('2021-11-01T03:00:00.000Z'),
@@ -754,14 +743,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-Frontend-Developer/html/homepage.html',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/11-curso-practico-de-frontend-developer.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/11-curso-practico-de-frontend-developer.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/11-curso-practico-de-frontend-developer.avif',
+				small: './assets/images/screenshot-projects/avif/small/11-curso-practico-de-frontend-developer.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/11-curso-practico-de-frontend-developer.avif',
+				large: './assets/images/screenshot-projects/avif/large/11-curso-practico-de-frontend-developer.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/11-curso-practico-de-frontend-developer.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/11-curso-practico-de-frontend-developer.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/11-curso-practico-de-frontend-developer.webp',
+				small: './assets/images/screenshot-projects/webp/small/11-curso-practico-de-frontend-developer.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/11-curso-practico-de-frontend-developer.webp',
+				large: './assets/images/screenshot-projects/webp/large/11-curso-practico-de-frontend-developer.webp',
 			},
 		},
 		date: new Date('2021-10-01T03:00:00.000Z'),
@@ -789,14 +778,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-Disenio-para-Programadores/html/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/10-steam.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/10-steam.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/10-steam.avif',
+				small: './assets/images/screenshot-projects/avif/small/10-steam.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/10-steam.avif',
+				large: './assets/images/screenshot-projects/avif/large/10-steam.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/10-steam.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/10-steam.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/10-steam.webp',
+				small: './assets/images/screenshot-projects/webp/small/10-steam.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/10-steam.webp',
+				large: './assets/images/screenshot-projects/webp/large/10-steam.webp',
 			},
 		},
 		date: new Date('2021-09-01T03:00:00.000Z'),
@@ -824,14 +813,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-Frontend-Developer-2019/platzi-video/html/homepage.html',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/9-platzi-video-curso-frontend-developer-2019.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/9-platzi-video-curso-frontend-developer-2019.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/9-platzi-video-curso-frontend-developer-2019.avif',
+				small: './assets/images/screenshot-projects/avif/small/9-platzi-video-curso-frontend-developer-2019.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/9-platzi-video-curso-frontend-developer-2019.avif',
+				large: './assets/images/screenshot-projects/avif/large/9-platzi-video-curso-frontend-developer-2019.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/9-platzi-video-curso-frontend-developer-2019.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/9-platzi-video-curso-frontend-developer-2019.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/9-platzi-video-curso-frontend-developer-2019.webp',
+				small: './assets/images/screenshot-projects/webp/small/9-platzi-video-curso-frontend-developer-2019.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/9-platzi-video-curso-frontend-developer-2019.webp',
+				large: './assets/images/screenshot-projects/webp/large/9-platzi-video-curso-frontend-developer-2019.webp',
 			},
 		},
 		date: new Date('2021-09-01T03:00:00.000Z'),
@@ -860,14 +849,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-practico-de-HTML-y-CSS/WikipediaClone/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/8-wikipedia-clone.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/8-wikipedia-clone.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/8-wikipedia-clone.avif',
+				small: './assets/images/screenshot-projects/avif/small/8-wikipedia-clone.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/8-wikipedia-clone.avif',
+				large: './assets/images/screenshot-projects/avif/large/8-wikipedia-clone.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/8-wikipedia-clone.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/8-wikipedia-clone.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/8-wikipedia-clone.webp',
+				small: './assets/images/screenshot-projects/webp/small/8-wikipedia-clone.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/8-wikipedia-clone.webp',
+				large: './assets/images/screenshot-projects/webp/large/8-wikipedia-clone.webp',
 			},
 		},
 		date: new Date('2021-09-01T03:00:00.000Z'),
@@ -895,14 +884,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-practico-de-HTML-y-CSS/my-Google-clone/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/7-google-clone.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/7-google-clone.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/7-google-clone.avif',
+				small: './assets/images/screenshot-projects/avif/small/7-google-clone.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/7-google-clone.avif',
+				large: './assets/images/screenshot-projects/avif/large/7-google-clone.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/7-google-clone.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/7-google-clone.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/7-google-clone.webp',
+				small: './assets/images/screenshot-projects/webp/small/7-google-clone.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/7-google-clone.webp',
+				large: './assets/images/screenshot-projects/webp/large/7-google-clone.webp',
 			},
 		},
 		date: new Date('2021-09-01T03:00:00.000Z'),
@@ -929,14 +918,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Villa-Platzi/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/6-villa-platzi.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/6-villa-platzi.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/6-villa-platzi.avif',
+				small: './assets/images/screenshot-projects/avif/small/6-villa-platzi.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/6-villa-platzi.avif',
+				large: './assets/images/screenshot-projects/avif/large/6-villa-platzi.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/6-villa-platzi.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/6-villa-platzi.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/6-villa-platzi.webp',
+				small: './assets/images/screenshot-projects/webp/small/6-villa-platzi.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/6-villa-platzi.webp',
+				large: './assets/images/screenshot-projects/webp/large/6-villa-platzi.webp',
 			},
 		},
 		date: new Date('2021-01-01T03:00:00.000Z'),
@@ -964,14 +953,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Proyecto-generador-de-figuras/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/5-proyecto-generador-de-figuras.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/5-proyecto-generador-de-figuras.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/5-proyecto-generador-de-figuras.avif',
+				small: './assets/images/screenshot-projects/avif/small/5-proyecto-generador-de-figuras.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/5-proyecto-generador-de-figuras.avif',
+				large: './assets/images/screenshot-projects/avif/large/5-proyecto-generador-de-figuras.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/5-proyecto-generador-de-figuras.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/5-proyecto-generador-de-figuras.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/5-proyecto-generador-de-figuras.webp',
+				small: './assets/images/screenshot-projects/webp/small/5-proyecto-generador-de-figuras.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/5-proyecto-generador-de-figuras.webp',
+				large: './assets/images/screenshot-projects/webp/large/5-proyecto-generador-de-figuras.webp',
 			},
 		},
 		date: new Date('2021-01-01T03:00:00.000Z'),
@@ -999,14 +988,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-Maquetacion-en-CSS/html/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/4-mi-blog.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/4-mi-blog.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/4-mi-blog.avif',
+				small: './assets/images/screenshot-projects/avif/small/4-mi-blog.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/4-mi-blog.avif',
+				large: './assets/images/screenshot-projects/avif/large/4-mi-blog.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/4-mi-blog.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/4-mi-blog.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/4-mi-blog.webp',
+				small: './assets/images/screenshot-projects/webp/small/4-mi-blog.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/4-mi-blog.webp',
+				large: './assets/images/screenshot-projects/webp/large/4-mi-blog.webp',
 			},
 		},
 		date: new Date('2020-07-01T03:00:00.000Z'),
@@ -1033,14 +1022,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Platzi-Video/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/3-platzi-video.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/3-platzi-video.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/3-platzi-video.avif',
+				small: './assets/images/screenshot-projects/avif/small/3-platzi-video.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/3-platzi-video.avif',
+				large: './assets/images/screenshot-projects/avif/large/3-platzi-video.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/3-platzi-video.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/3-platzi-video.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/3-platzi-video.webp',
+				small: './assets/images/screenshot-projects/webp/small/3-platzi-video.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/3-platzi-video.webp',
+				large: './assets/images/screenshot-projects/webp/large/3-platzi-video.webp',
 			},
 		},
 		date: new Date('2020-05-01T03:00:00.000Z'),
@@ -1067,14 +1056,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Movi.es/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/2-movie.es.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/2-movie.es.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/2-movie.es.avif',
+				small: './assets/images/screenshot-projects/avif/small/2-movie.es.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/2-movie.es.avif',
+				large: './assets/images/screenshot-projects/avif/large/2-movie.es.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/2-movie.es.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/2-movie.es.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/2-movie.es.webp',
+				small: './assets/images/screenshot-projects/webp/small/2-movie.es.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/2-movie.es.webp',
+				large: './assets/images/screenshot-projects/webp/large/2-movie.es.webp',
 			},
 		},
 		date: new Date('2020-05-01T03:00:00.000Z'),
@@ -1102,14 +1091,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Portafolio-LeonidasEsteban/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/1-portfolio-leonidas-esteban.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/1-portfolio-leonidas-esteban.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/1-portfolio-leonidas-esteban.avif',
+				small: './assets/images/screenshot-projects/avif/small/1-portfolio-leonidas-esteban.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/1-portfolio-leonidas-esteban.avif',
+				large: './assets/images/screenshot-projects/avif/large/1-portfolio-leonidas-esteban.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/1-portfolio-leonidas-esteban.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/1-portfolio-leonidas-esteban.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/1-portfolio-leonidas-esteban.webp',
+				small: './assets/images/screenshot-projects/webp/small/1-portfolio-leonidas-esteban.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/1-portfolio-leonidas-esteban.webp',
+				large: './assets/images/screenshot-projects/webp/large/1-portfolio-leonidas-esteban.webp',
 			},
 		},
 		date: new Date('2020-02-01T03:00:00.000Z'),
@@ -1137,14 +1126,14 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Brand-Platzi/',
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/small/0-brand.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/medium/0-brand.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/avif/large/0-brand.avif',
+				small: './assets/images/screenshot-projects/avif/small/0-brand.avif',
+				medium: './assets/images/screenshot-projects/avif/medium/0-brand.avif',
+				large: './assets/images/screenshot-projects/avif/large/0-brand.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/small/0-brand.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/medium/0-brand.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-projects/webp/large/0-brand.webp',
+				small: './assets/images/screenshot-projects/webp/small/0-brand.webp',
+				medium: './assets/images/screenshot-projects/webp/medium/0-brand.webp',
+				large: './assets/images/screenshot-projects/webp/large/0-brand.webp',
 			},
 		},
 		date: new Date('2020-01-01T03:00:00.000Z'),

@@ -2,7 +2,7 @@ import type { OpenSourceProject } from './models/openSource.model.js';
 
 // URLs to publicly hosted assets
 const TAILWINDCSS_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/tailwindcss/tailwindcss.svg';
+	'./assets/icons/technologies/tailwindcss/tailwindcss.svg';
 
 export const openSourceProjects: OpenSourceProject[] = [
 	{
@@ -72,14 +72,14 @@ export const openSourceProjects: OpenSourceProject[] = [
 		tags: ['performance', 'user-experience', 'open-source'],
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-open-source/avif/small/0-la-velada-del-ano-v.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-open-source/avif/medium/0-la-velada-del-ano-v.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-open-source/avif/large/0-la-velada-del-ano-v.avif',
+				small: './assets/images/screenshot-open-source/avif/small/0-la-velada-del-ano-v.avif',
+				medium: './assets/images/screenshot-open-source/avif/medium/0-la-velada-del-ano-v.avif',
+				large: './assets/images/screenshot-open-source/avif/large/0-la-velada-del-ano-v.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-open-source/webp/small/0-la-velada-del-ano-v.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-open-source/webp/medium/0-la-velada-del-ano-v.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-open-source/webp/large/0-la-velada-del-ano-v.webp',
+				small: './assets/images/screenshot-open-source/webp/small/0-la-velada-del-ano-v.webp',
+				medium: './assets/images/screenshot-open-source/webp/medium/0-la-velada-del-ano-v.webp',
+				large: './assets/images/screenshot-open-source/webp/large/0-la-velada-del-ano-v.webp',
 			},
 		},
 	},

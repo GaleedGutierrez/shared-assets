@@ -1,22 +1,14 @@
 import type { FreelanceProject } from './models/freelanceProject.model.js';
 
 // URLs to publicly hosted assets
-const CSS_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/css/css.svg';
-const EXPRESS_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/express/express.svg';
-const YTDLP_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/extras/yt-dlp.svg';
-const NODEJS_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/nodejs/nodejs.svg';
-const PLAYWRIGHT_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/playwright/playwright.svg';
-const REACT_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/react/react.svg';
-const TYPESCRIPT_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/typescript/typescript.svg';
-const VITE_ICON =
-	'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/icons/technologies/vite/vite.svg';
+const CSS_ICON = './assets/icons/technologies/css/css.svg';
+const EXPRESS_ICON = './assets/icons/technologies/express/express.svg';
+const YTDLP_ICON = './assets/icons/technologies/extras/yt-dlp.svg';
+const NODEJS_ICON = './assets/icons/technologies/nodejs/nodejs.svg';
+const PLAYWRIGHT_ICON = './assets/icons/technologies/playwright/playwright.svg';
+const REACT_ICON = './assets/icons/technologies/react/react.svg';
+const TYPESCRIPT_ICON = './assets/icons/technologies/typescript/typescript.svg';
+const VITE_ICON = './assets/icons/technologies/vite/vite.svg';
 
 export const freelanceProjects: FreelanceProject[] = [
 	{
@@ -63,14 +55,14 @@ export const freelanceProjects: FreelanceProject[] = [
 		],
 		screenshots: {
 			avif: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-freelance-projects/avif/small/0-youtube-downloader.avif',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-freelance-projects/avif/medium/0-youtube-downloader.avif',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-freelance-projects/avif/large/0-youtube-downloader.avif',
+				small: './assets/images/screenshot-freelance-projects/avif/small/0-youtube-downloader.avif',
+				medium: './assets/images/screenshot-freelance-projects/avif/medium/0-youtube-downloader.avif',
+				large: './assets/images/screenshot-freelance-projects/avif/large/0-youtube-downloader.avif',
 			},
 			webp: {
-				small: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-freelance-projects/webp/small/0-youtube-downloader.webp',
-				medium: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-freelance-projects/webp/medium/0-youtube-downloader.webp',
-				large: 'https://cdn.jsdelivr.net/gh/GaleedGutierrez/shared-assets@main/src/assets/images/screenshot-freelance-projects/webp/large/0-youtube-downloader.webp',
+				small: './assets/images/screenshot-freelance-projects/webp/small/0-youtube-downloader.webp',
+				medium: './assets/images/screenshot-freelance-projects/webp/medium/0-youtube-downloader.webp',
+				large: './assets/images/screenshot-freelance-projects/webp/large/0-youtube-downloader.webp',
 			},
 		},
 		startDate: new Date('2025-02-24'),
