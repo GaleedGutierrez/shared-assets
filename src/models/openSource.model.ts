@@ -44,9 +44,9 @@ export interface PullRequest {
 }
 
 export interface SizesImages {
-	small: string;
-	medium: string;
-	large: string;
+	small: Promise<{ default: string }>;
+	medium: Promise<{ default: string }>;
+	large: Promise<{ default: string }>;
 }
 
 export interface ImagesProject {
@@ -67,7 +67,7 @@ export interface OpenSourceProject {
 
 	// Tecnologías y herramientas
 	technologies: string[];
-	technologiesIcons: string[];
+	technologiesIcons: Promise<{ default: string }>[];
 
 	// Contribuciones
 	contributions: PullRequest[];

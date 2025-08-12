@@ -1,19 +1,20 @@
 export interface ImageCoursePlatform {
-	avif: string;
-	webp: string;
+	avif?: Promise<{ default: string }>;
+	webp?: Promise<{ default: string }>;
+	svg?: Promise<{ default: string }>;
 }
 
 export interface CoursePlatform {
 	name: string;
 	platform: string;
 	url: string;
-	logo: ImageCoursePlatform | `${string}.svg`;
+	logo: ImageCoursePlatform;
 }
 
 export interface SizesImages {
-	small: string;
-	medium: string;
-	large: string;
+	small: Promise<{ default: string }>;
+	medium: Promise<{ default: string }>;
+	large: Promise<{ default: string }>;
 }
 
 export interface ImagesProject {
@@ -25,7 +26,7 @@ export interface PersonalProject {
 	id: number;
 	title: string;
 	technologies: string[];
-	technologiesIcons: string[];
+	technologiesIcons: Promise<{ default: string }>[];
 	repository: string;
 	url: string;
 	screenshots: ImagesProject;

@@ -44,9 +44,9 @@ export interface ProjectResults {
 }
 
 export interface SizesImages {
-	small: string;
-	medium: string;
-	large: string;
+	small: Promise<{ default: string }>;
+	medium: Promise<{ default: string }>;
+	large: Promise<{ default: string }>;
 }
 
 export interface ImagesProject {
@@ -62,7 +62,7 @@ export interface FreelanceProject {
 	scope: ProjectScope;
 	budget: ProjectBudget;
 	technologies: string[];
-	technologiesIcons: string[];
+	technologiesIcons: Promise<{ default: string }>[]; // Cambiado a un array de Promesas
 	screenshots: ImagesProject; // Screenshots anonimizados o mockups
 	startDate: Date;
 	endDate?: Date; // Opcional para proyectos en curso
