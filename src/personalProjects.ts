@@ -1,19 +1,28 @@
-import type { PersonalProject } from './models/personalProject.model.js';
+import type { PersonalProject } from './models/personalProject.model';
 
 // URLs to publicly hosted assets
-const CSS_ICON = './assets/icons/technologies/css/css.svg';
-const HTML_ICON = './assets/icons/technologies/html/html.svg';
-const JAVASCRIPT_ICON = './assets/icons/technologies/javascript/javascript.svg';
-const PLAYWRIGHT_ICON = './assets/icons/technologies/playwright/playwright.svg';
-const PUG_ICON = './assets/icons/technologies/pug/pug.svg';
-const REACT_ICON = './assets/icons/technologies/react/react.svg';
-const SASS_ICON = './assets/icons/technologies/sass/sass.svg';
-const SHADCN_ICON = './assets/icons/technologies/shadcn/shadcn.svg';
-const TAILWINDCSS_ICON =
-	'./assets/icons/technologies/tailwindcss/tailwindcss.svg';
-const TYPESCRIPT_ICON = './assets/icons/technologies/typescript/typescript.svg';
-const VITE_ICON = './assets/icons/technologies/vite/vite.svg';
-const WEBPACK_ICON = './assets/icons/technologies/webpack/webpack.svg';
+const CSS_ICON = import('./assets/icons/technologies/css/css.svg?raw');
+const HTML_ICON = import('./assets/icons/technologies/html/html.svg?raw');
+const JAVASCRIPT_ICON = import(
+	'./assets/icons/technologies/javascript/javascript.svg?raw'
+);
+const PLAYWRIGHT_ICON = import(
+	'./assets/icons/technologies/playwright/playwright.svg?raw'
+);
+const PUG_ICON = import('./assets/icons/technologies/pug/pug.svg?raw');
+const REACT_ICON = import('./assets/icons/technologies/react/react.svg?raw');
+const SASS_ICON = import('./assets/icons/technologies/sass/sass.svg?raw');
+const SHADCN_ICON = import('./assets/icons/technologies/shadcn/shadcn.svg?raw');
+const TAILWINDCSS_ICON = import(
+	'./assets/icons/technologies/tailwindcss/tailwindcss.svg?raw'
+);
+const TYPESCRIPT_ICON = import(
+	'./assets/icons/technologies/typescript/typescript.svg?raw'
+);
+const VITE_ICON = import('./assets/icons/technologies/vite/vite.svg?raw');
+const WEBPACK_ICON = import(
+	'./assets/icons/technologies/webpack/webpack.svg?raw'
+);
 
 export const personalProjects: PersonalProject[] = [
 	{
@@ -40,14 +49,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/pv_tp_integrador_grupo13_TS/iniciar-sesion',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/29-shop.co.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/29-shop.co.avif',
-				large: './assets/images/screenshot-projects/avif/large/29-shop.co.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/29-shop.co.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/29-shop.co.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/29-shop.co.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/29-shop.co.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/29-shop.co.webp',
-				large: './assets/images/screenshot-projects/webp/large/29-shop.co.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/29-shop.co.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/29-shop.co.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/29-shop.co.webp'
+				),
 			},
 		},
 		date: new Date('2025-07-05T03:00:00.000Z'),
@@ -55,7 +76,11 @@ export const personalProjects: PersonalProject[] = [
 			name: 'Facultad de Ingeniería',
 			platform: 'Universidad Nacional de Jujuy',
 			url: 'https://www.unju.edu.ar/',
-			logo: '@icons/courses-platform/svg/platform/unju.svg',
+			logo: {
+				svg: import(
+					'./assets/icons/courses-platform/svg/platform/unju.svg?raw'
+				),
+			},
 		},
 		description:
 			'Proyecto integrador de la carrera de Analista Programador Universitario, desarrollado con React y TypeScript. Incluye funcionalidades de autenticación y gestión de productos.',
@@ -78,14 +103,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-React-js-2023/#all',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/28-to-do-app-con-react.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/28-to-do-app-con-react.avif',
-				large: './assets/images/screenshot-projects/avif/large/28-to-do-app-con-react.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/28-to-do-app-con-react.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/28-to-do-app-con-react.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/28-to-do-app-con-react.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/28-to-do-app-con-react.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/28-to-do-app-con-react.webp',
-				large: './assets/images/screenshot-projects/webp/large/28-to-do-app-con-react.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/28-to-do-app-con-react.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/28-to-do-app-con-react.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/28-to-do-app-con-react.webp'
+				),
 			},
 		},
 		date: new Date('2024-07-16T03:00:00.000Z'),
@@ -94,8 +131,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/cursos/react/que-necesitas-para-aprender-reactjs/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-de-react.js-2023.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-de-react.js-2023.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-de-react.js-2023.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-de-react.js-2023.webp'
+				),
 			},
 		},
 		description:
@@ -114,14 +155,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/laboratorio-mydayapp-js/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/27-mydayapp-js.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/27-mydayapp-js.avif',
-				large: './assets/images/screenshot-projects/avif/large/27-mydayapp-js.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/27-mydayapp-js.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/27-mydayapp-js.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/27-mydayapp-js.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/27-mydayapp-js.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/27-mydayapp-js.webp',
-				large: './assets/images/screenshot-projects/webp/large/27-mydayapp-js.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/27-mydayapp-js.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/27-mydayapp-js.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/27-mydayapp-js.webp'
+				),
 			},
 		},
 		date: new Date('2024-01-02T03:00:00.000Z'),
@@ -130,8 +183,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/cursos/laboratorio-javascript-prueba/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/laboratorio-profesional-javascript-prueba-tecnica.avif',
-				webp: '@icons/courses-platform/webp/courses/laboratorio-profesional-javascript-prueba-tecnica.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/laboratorio-profesional-javascript-prueba-tecnica.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/laboratorio-profesional-javascript-prueba-tecnica.webp'
+				),
 			},
 		},
 		description:
@@ -150,14 +207,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-CSS-Grid-a-fondo-Codely-2021/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/26-helvetica-neue-css-gird-codely.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/26-helvetica-neue-css-gird-codely.avif',
-				large: './assets/images/screenshot-projects/avif/large/26-helvetica-neue-css-gird-codely.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/26-helvetica-neue-css-gird-codely.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/26-helvetica-neue-css-gird-codely.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/26-helvetica-neue-css-gird-codely.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/26-helvetica-neue-css-gird-codely.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/26-helvetica-neue-css-gird-codely.webp',
-				large: './assets/images/screenshot-projects/webp/large/26-helvetica-neue-css-gird-codely.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/26-helvetica-neue-css-gird-codely.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/26-helvetica-neue-css-gird-codely.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/26-helvetica-neue-css-gird-codely.webp'
+				),
 			},
 		},
 		date: new Date('2023-09-25T03:00:00.000Z'),
@@ -166,8 +235,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Codely',
 			url: 'https://pro.codely.com/library/css-grid-a-fondo-126731/307888/path/',
 			logo: {
-				avif: '@icons/courses-platform/avif/platform/codely.avif',
-				webp: '@icons/courses-platform/webp/platform/codely.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/platform/codely.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/platform/codely.webp'
+				),
 			},
 		},
 		description:
@@ -191,14 +264,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-Layouts-Responsivos-Trabajando-con-layouts-mobile-Alura-G5-2023/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/25-apeperia-alura.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/25-apeperia-alura.avif',
-				large: './assets/images/screenshot-projects/avif/large/25-apeperia-alura.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/25-apeperia-alura.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/25-apeperia-alura.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/25-apeperia-alura.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/25-apeperia-alura.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/25-apeperia-alura.webp',
-				large: './assets/images/screenshot-projects/webp/large/25-apeperia-alura.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/25-apeperia-alura.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/25-apeperia-alura.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/25-apeperia-alura.webp'
+				),
 			},
 		},
 		date: new Date('2023-08-14T03:00:00.000Z'),
@@ -207,8 +292,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Alura',
 			url: 'https://app.aluracursos.com/course/layouts-responsivos-layouts-mobile',
 			logo: {
-				avif: '@icons/courses-platform/avif/platform/alura.avif',
-				webp: '@icons/courses-platform/webp/platform/alura.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/platform/alura.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/platform/alura.webp'
+				),
 			},
 		},
 		description:
@@ -232,14 +321,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-Accesibilidad-Web-2019/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/24-mi-portafolio-juliana-gomez.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/24-mi-portafolio-juliana-gomez.avif',
-				large: './assets/images/screenshot-projects/avif/large/24-mi-portafolio-juliana-gomez.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/24-mi-portafolio-juliana-gomez.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/24-mi-portafolio-juliana-gomez.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/24-mi-portafolio-juliana-gomez.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/24-mi-portafolio-juliana-gomez.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/24-mi-portafolio-juliana-gomez.webp',
-				large: './assets/images/screenshot-projects/webp/large/24-mi-portafolio-juliana-gomez.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/24-mi-portafolio-juliana-gomez.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/24-mi-portafolio-juliana-gomez.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/24-mi-portafolio-juliana-gomez.webp'
+				),
 			},
 		},
 		date: new Date('2023-08-04T03:00:00.000Z'),
@@ -248,8 +349,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/cursos/accesibilidad-web/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-de-accesibilidad-web-2019.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-de-accesibilidad-web-2019.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-de-accesibilidad-web-2019.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-de-accesibilidad-web-2019.webp'
+				),
 			},
 		},
 		description:
@@ -268,14 +373,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-Maquetacion-y-Animaciones-con-CSS-2021/dist/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/23-lego.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/23-lego.avif',
-				large: './assets/images/screenshot-projects/avif/large/23-lego.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/23-lego.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/23-lego.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/23-lego.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/23-lego.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/23-lego.webp',
-				large: './assets/images/screenshot-projects/webp/large/23-lego.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/23-lego.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/23-lego.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/23-lego.webp'
+				),
 			},
 		},
 		date: new Date('2023-04-22T03:00:00.000Z'),
@@ -284,8 +401,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/cursos/animaciones-css-practico/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-practico-de-maquetacion-y-animaciones-con-css.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-practico-de-maquetacion-y-animaciones-con-css.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-practico-de-maquetacion-y-animaciones-con-css.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-practico-de-maquetacion-y-animaciones-con-css.webp'
+				),
 			},
 		},
 		description:
@@ -304,14 +425,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-Single-Page-Application-con-JavaScript-Vanilla-2021/dist/public/index.html',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/22-100rifi.co.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/22-100rifi.co.avif',
-				large: './assets/images/screenshot-projects/avif/large/22-100rifi.co.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/22-100rifi.co.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/22-100rifi.co.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/22-100rifi.co.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/22-100rifi.co.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/22-100rifi.co.webp',
-				large: './assets/images/screenshot-projects/webp/large/22-100rifi.co.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/22-100rifi.co.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/22-100rifi.co.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/22-100rifi.co.webp'
+				),
 			},
 		},
 		date: new Date('2023-04-12T03:00:00.000Z'),
@@ -320,8 +453,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/cursos/spa-javascript/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-de-single-page-application-con-javaScript-vanilla-2021.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-de-single-page-application-con-javaScript-vanilla-2021.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-de-single-page-application-con-javaScript-vanilla-2021.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-de-single-page-application-con-javaScript-vanilla-2021.webp'
+				),
 			},
 		},
 		description:
@@ -340,14 +477,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Encriptador-de-texto-Alura-Challenges-ONE-2023/dist/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/21-encriptador-de-texto-alura-challenges-one.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/21-encriptador-de-texto-alura-challenges-one.avif',
-				large: './assets/images/screenshot-projects/avif/large/21-encriptador-de-texto-alura-challenges-one.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/21-encriptador-de-texto-alura-challenges-one.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/21-encriptador-de-texto-alura-challenges-one.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/21-encriptador-de-texto-alura-challenges-one.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/21-encriptador-de-texto-alura-challenges-one.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/21-encriptador-de-texto-alura-challenges-one.webp',
-				large: './assets/images/screenshot-projects/webp/large/21-encriptador-de-texto-alura-challenges-one.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/21-encriptador-de-texto-alura-challenges-one.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/21-encriptador-de-texto-alura-challenges-one.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/21-encriptador-de-texto-alura-challenges-one.webp'
+				),
 			},
 		},
 		date: new Date('2023-04-01T03:00:00.000Z'),
@@ -356,8 +505,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Alura',
 			url: 'https://www.aluracursos.com/',
 			logo: {
-				avif: '@icons/courses-platform/avif/platform/alura.avif',
-				webp: '@icons/courses-platform/webp/platform/alura.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/platform/alura.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/platform/alura.webp'
+				),
 			},
 		},
 		description:
@@ -381,14 +534,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-Introduccion-a-Empaquetadores-Web/webpack/dist/index.html',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/20-my-link-in-bio.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/20-my-link-in-bio.avif',
-				large: './assets/images/screenshot-projects/avif/large/20-my-link-in-bio.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/20-my-link-in-bio.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/20-my-link-in-bio.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/20-my-link-in-bio.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/20-my-link-in-bio.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/20-my-link-in-bio.webp',
-				large: './assets/images/screenshot-projects/webp/large/20-my-link-in-bio.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/20-my-link-in-bio.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/20-my-link-in-bio.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/20-my-link-in-bio.webp'
+				),
 			},
 		},
 		date: new Date('2023-03-11T03:00:00.000Z'),
@@ -397,8 +562,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/cursos/empaquetadores/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-de-introduccion-a-empaquetadores-web.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-de-introduccion-a-empaquetadores-web.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-de-introduccion-a-empaquetadores-web.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-de-introduccion-a-empaquetadores-web.webp'
+				),
 			},
 		},
 		description:
@@ -417,14 +586,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-Profesional-de-Consumo-de-API-REST-con-JavaScript-2022/html/#home',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/19-platzi-movies-2022.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/19-platzi-movies-2022.avif',
-				large: './assets/images/screenshot-projects/avif/large/19-platzi-movies-2022.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/19-platzi-movies-2022.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/19-platzi-movies-2022.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/19-platzi-movies-2022.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/19-platzi-movies-2022.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/19-platzi-movies-2022.webp',
-				large: './assets/images/screenshot-projects/webp/large/19-platzi-movies-2022.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/19-platzi-movies-2022.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/19-platzi-movies-2022.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/19-platzi-movies-2022.webp'
+				),
 			},
 		},
 		date: new Date('2023-01-01T03:00:00.000Z'),
@@ -433,8 +614,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/cursos/api-profesional/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-profesional-consumo-api-rest-con-javascript-performance-y-usabilidad-2022.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-profesional-consumo-api-rest-con-javascript-performance-y-usabilidad-2022.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-profesional-consumo-api-rest-con-javascript-performance-y-usabilidad-2022.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-profesional-consumo-api-rest-con-javascript-performance-y-usabilidad-2022.webp'
+				),
 			},
 		},
 		description:
@@ -467,14 +652,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego-2022/html/index.html',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/18-platziv-juego-online.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/18-platziv-juego-online.avif',
-				large: './assets/images/screenshot-projects/avif/large/18-platziv-juego-online.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/18-platziv-juego-online.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/18-platziv-juego-online.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/18-platziv-juego-online.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/18-platziv-juego-online.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/18-platziv-juego-online.webp',
-				large: './assets/images/screenshot-projects/webp/large/18-platziv-juego-online.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/18-platziv-juego-online.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/18-platziv-juego-online.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/18-platziv-juego-online.webp'
+				),
 			},
 		},
 		date: new Date('2022-11-09T03:00:00.000Z'),
@@ -483,8 +680,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/cursos/javascript-practico-videojuegos/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego.avif',
-				webp: '@icons/courses-platform/webp/courses/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego.webp'
+				),
 			},
 		},
 		description:
@@ -517,14 +718,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-Consumo-de-API-REST-con-JavaScript/html/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/17-michis-app.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/17-michis-app.avif',
-				large: './assets/images/screenshot-projects/avif/large/17-michis-app.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/17-michis-app.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/17-michis-app.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/17-michis-app.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/17-michis-app.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/17-michis-app.webp',
-				large: './assets/images/screenshot-projects/webp/large/17-michis-app.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/17-michis-app.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/17-michis-app.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/17-michis-app.webp'
+				),
 			},
 		},
 		date: new Date('2022-05-01T03:00:00.000Z'),
@@ -533,8 +746,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/2985-api/48425-que-es-una-api-rest/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-de-consumo-de-api-rest-con-javaScript.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-de-consumo-de-api-rest-con-javaScript.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-de-consumo-de-api-rest-con-javaScript.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-de-consumo-de-api-rest-con-javaScript.webp'
+				),
 			},
 		},
 		description:
@@ -559,14 +776,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-Programacion-Orientada-a-Objetos-en-JavaScript/TallerN1/html/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/16-curso-practico-de-javascript.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/16-curso-practico-de-javascript.avif',
-				large: './assets/images/screenshot-projects/avif/large/16-curso-practico-de-javascript.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/16-curso-practico-de-javascript.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/16-curso-practico-de-javascript.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/16-curso-practico-de-javascript.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/16-curso-practico-de-javascript.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/16-curso-practico-de-javascript.webp',
-				large: './assets/images/screenshot-projects/webp/large/16-curso-practico-de-javascript.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/16-curso-practico-de-javascript.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/16-curso-practico-de-javascript.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/16-curso-practico-de-javascript.webp'
+				),
 			},
 		},
 		date: new Date('2022-02-01T03:00:00.000Z'),
@@ -575,8 +804,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/2332-javascript-poo/38616-javascript-orientado-a-objetos-basado-en-prototipo/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-practico-de-javascript.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-practico-de-javascript.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-practico-de-javascript.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-practico-de-javascript.webp'
+				),
 			},
 		},
 		description:
@@ -601,14 +834,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-JavaScript/TallerN2/html/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/15-curso-practico-de-javascript-02.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/15-curso-practico-de-javascript-02.avif',
-				large: './assets/images/screenshot-projects/avif/large/15-curso-practico-de-javascript-02.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/15-curso-practico-de-javascript-02.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/15-curso-practico-de-javascript-02.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/15-curso-practico-de-javascript-02.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/15-curso-practico-de-javascript-02.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/15-curso-practico-de-javascript-02.webp',
-				large: './assets/images/screenshot-projects/webp/large/15-curso-practico-de-javascript-02.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/15-curso-practico-de-javascript-02.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/15-curso-practico-de-javascript-02.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/15-curso-practico-de-javascript-02.webp'
+				),
 			},
 		},
 		date: new Date('2021-12-01T03:00:00.000Z'),
@@ -617,8 +862,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/2327-javascript-practico/38654-cual-es-tu-sueno-con-javascript/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-practico-de-javascript.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-practico-de-javascript.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-practico-de-javascript.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-practico-de-javascript.webp'
+				),
 			},
 		},
 		description:
@@ -637,14 +886,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-Animaciones-con-CSS/html/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/14-curso-de-animaciones-con-css.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/14-curso-de-animaciones-con-css.avif',
-				large: './assets/images/screenshot-projects/avif/large/14-curso-de-animaciones-con-css.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/14-curso-de-animaciones-con-css.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/14-curso-de-animaciones-con-css.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/14-curso-de-animaciones-con-css.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/14-curso-de-animaciones-con-css.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/14-curso-de-animaciones-con-css.webp',
-				large: './assets/images/screenshot-projects/webp/large/14-curso-de-animaciones-con-css.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/14-curso-de-animaciones-con-css.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/14-curso-de-animaciones-con-css.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/14-curso-de-animaciones-con-css.webp'
+				),
 			},
 		},
 		date: new Date('2021-12-01T03:00:00.000Z'),
@@ -653,8 +914,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/2337-animaciones-css/37995-sabes-mas-de-animaciones-de-lo-que-crees/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/Curso-de-Animaciones-con-CSS.avif',
-				webp: '@icons/courses-platform/webp/courses/Curso-de-Animaciones-con-CSS.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/Curso-de-Animaciones-con-CSS.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/Curso-de-Animaciones-con-CSS.webp'
+				),
 			},
 		},
 		description: 'Una pequeña animación con el perrito de Cheems.',
@@ -672,14 +937,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-CSS-Grid-Basico/Proyecto/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/13-check-the-best-food.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/13-check-the-best-food.avif',
-				large: './assets/images/screenshot-projects/avif/large/13-check-the-best-food.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/13-check-the-best-food.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/13-check-the-best-food.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/13-check-the-best-food.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/13-check-the-best-food.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/13-check-the-best-food.webp',
-				large: './assets/images/screenshot-projects/webp/large/13-check-the-best-food.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/13-check-the-best-food.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/13-check-the-best-food.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/13-check-the-best-food.webp'
+				),
 			},
 		},
 		date: new Date('2021-11-01T03:00:00.000Z'),
@@ -688,8 +965,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/2474-css-grid/42182-que-es-css-grid-layout/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-css-grid-basico.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-css-grid-basico.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-css-grid-basico.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-css-grid-basico.webp'
+				),
 			},
 		},
 		description: 'Maquetación de una página para un restaurante.',
@@ -707,14 +988,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-Responsive-Design-Maquetacion-Mobile-First/html/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/12-batabit.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/12-batabit.avif',
-				large: './assets/images/screenshot-projects/avif/large/12-batabit.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/12-batabit.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/12-batabit.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/12-batabit.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/12-batabit.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/12-batabit.webp',
-				large: './assets/images/screenshot-projects/webp/large/12-batabit.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/12-batabit.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/12-batabit.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/12-batabit.webp'
+				),
 			},
 		},
 		date: new Date('2021-11-01T03:00:00.000Z'),
@@ -723,8 +1016,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/2030-mobile-first/33326-introduccion-al-curso/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/Curso-de-Responsive-Design-Maquetación-Mobile-First.avif',
-				webp: '@icons/courses-platform/webp/courses/Curso-de-Responsive-Design-Maquetación-Mobile-First.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/Curso-de-Responsive-Design-Maquetación-Mobile-First.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/Curso-de-Responsive-Design-Maquetación-Mobile-First.webp'
+				),
 			},
 		},
 		description:
@@ -743,14 +1040,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-Frontend-Developer/html/homepage.html',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/11-curso-practico-de-frontend-developer.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/11-curso-practico-de-frontend-developer.avif',
-				large: './assets/images/screenshot-projects/avif/large/11-curso-practico-de-frontend-developer.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/11-curso-practico-de-frontend-developer.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/11-curso-practico-de-frontend-developer.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/11-curso-practico-de-frontend-developer.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/11-curso-practico-de-frontend-developer.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/11-curso-practico-de-frontend-developer.webp',
-				large: './assets/images/screenshot-projects/webp/large/11-curso-practico-de-frontend-developer.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/11-curso-practico-de-frontend-developer.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/11-curso-practico-de-frontend-developer.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/11-curso-practico-de-frontend-developer.webp'
+				),
 			},
 		},
 		date: new Date('2021-10-01T03:00:00.000Z'),
@@ -759,8 +1068,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/2477-frontend-developer-practico/41501-ya-tomaste-el-curso-de-frontend-developer/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-de-frontend-developer.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-de-frontend-developer.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-de-frontend-developer.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-de-frontend-developer.webp'
+				),
 			},
 		},
 		description: 'Maquetación de una tienda online.',
@@ -778,14 +1091,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-Disenio-para-Programadores/html/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/10-steam.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/10-steam.avif',
-				large: './assets/images/screenshot-projects/avif/large/10-steam.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/10-steam.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/10-steam.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/10-steam.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/10-steam.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/10-steam.webp',
-				large: './assets/images/screenshot-projects/webp/large/10-steam.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/10-steam.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/10-steam.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/10-steam.webp'
+				),
 			},
 		},
 		date: new Date('2021-09-01T03:00:00.000Z'),
@@ -794,8 +1119,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/1906-diseno-programadores/28549-bienvenida/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-de-diseno-para-programadores.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-de-diseno-para-programadores.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-de-diseno-para-programadores.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-de-diseno-para-programadores.webp'
+				),
 			},
 		},
 		description: 'Página web para un restaurante.',
@@ -813,14 +1142,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-de-Frontend-Developer-2019/platzi-video/html/homepage.html',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/9-platzi-video-curso-frontend-developer-2019.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/9-platzi-video-curso-frontend-developer-2019.avif',
-				large: './assets/images/screenshot-projects/avif/large/9-platzi-video-curso-frontend-developer-2019.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/9-platzi-video-curso-frontend-developer-2019.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/9-platzi-video-curso-frontend-developer-2019.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/9-platzi-video-curso-frontend-developer-2019.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/9-platzi-video-curso-frontend-developer-2019.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/9-platzi-video-curso-frontend-developer-2019.webp',
-				large: './assets/images/screenshot-projects/webp/large/9-platzi-video-curso-frontend-developer-2019.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/9-platzi-video-curso-frontend-developer-2019.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/9-platzi-video-curso-frontend-developer-2019.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/9-platzi-video-curso-frontend-developer-2019.webp'
+				),
 			},
 		},
 		date: new Date('2021-09-01T03:00:00.000Z'),
@@ -829,8 +1170,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/1640-frontend-developer-2019/21874-presentacion-y-bienvenida-al-curso-de-frontend-dev/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-de-frontend-developer-2019.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-de-frontend-developer-2019.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-de-frontend-developer-2019.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-de-frontend-developer-2019.webp'
+				),
 			},
 		},
 		description:
@@ -849,14 +1194,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-practico-de-HTML-y-CSS/WikipediaClone/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/8-wikipedia-clone.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/8-wikipedia-clone.avif',
-				large: './assets/images/screenshot-projects/avif/large/8-wikipedia-clone.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/8-wikipedia-clone.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/8-wikipedia-clone.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/8-wikipedia-clone.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/8-wikipedia-clone.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/8-wikipedia-clone.webp',
-				large: './assets/images/screenshot-projects/webp/large/8-wikipedia-clone.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/8-wikipedia-clone.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/8-wikipedia-clone.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/8-wikipedia-clone.webp'
+				),
 			},
 		},
 		date: new Date('2021-09-01T03:00:00.000Z'),
@@ -865,8 +1222,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/1758-html-practico/29888-platzicodingchallenge-platzicodingchallenge/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-practico-de-html-y-css.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-practico-de-html-y-css.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-practico-de-html-y-css.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-practico-de-html-y-css.webp'
+				),
 			},
 		},
 		description: 'Un clone del home de Wikipedia.',
@@ -884,14 +1245,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-practico-de-HTML-y-CSS/my-Google-clone/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/7-google-clone.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/7-google-clone.avif',
-				large: './assets/images/screenshot-projects/avif/large/7-google-clone.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/7-google-clone.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/7-google-clone.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/7-google-clone.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/7-google-clone.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/7-google-clone.webp',
-				large: './assets/images/screenshot-projects/webp/large/7-google-clone.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/7-google-clone.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/7-google-clone.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/7-google-clone.webp'
+				),
 			},
 		},
 		date: new Date('2021-09-01T03:00:00.000Z'),
@@ -900,8 +1273,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/1758-html-practico/29888-platzicodingchallenge-platzicodingchallenge/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-practico-de-html-y-css.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-practico-de-html-y-css.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-practico-de-html-y-css.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-practico-de-html-y-css.webp'
+				),
 			},
 		},
 		description: 'Un clone de la clásica página de búsqueda de Google.',
@@ -918,14 +1295,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Villa-Platzi/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/6-villa-platzi.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/6-villa-platzi.avif',
-				large: './assets/images/screenshot-projects/avif/large/6-villa-platzi.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/6-villa-platzi.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/6-villa-platzi.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/6-villa-platzi.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/6-villa-platzi.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/6-villa-platzi.webp',
-				large: './assets/images/screenshot-projects/webp/large/6-villa-platzi.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/6-villa-platzi.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/6-villa-platzi.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/6-villa-platzi.webp'
+				),
 			},
 		},
 		date: new Date('2021-01-01T03:00:00.000Z'),
@@ -934,8 +1323,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/1050-programacion-basica/5103-mi-primera-linea-de-codigo/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-gratis-de-programacion-basica.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-gratis-de-programacion-basica.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-gratis-de-programacion-basica.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-gratis-de-programacion-basica.webp'
+				),
 			},
 		},
 		description: 'Una pequeña granja en donde puedes mover a un cerdo.',
@@ -953,14 +1346,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Proyecto-generador-de-figuras/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/5-proyecto-generador-de-figuras.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/5-proyecto-generador-de-figuras.avif',
-				large: './assets/images/screenshot-projects/avif/large/5-proyecto-generador-de-figuras.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/5-proyecto-generador-de-figuras.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/5-proyecto-generador-de-figuras.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/5-proyecto-generador-de-figuras.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/5-proyecto-generador-de-figuras.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/5-proyecto-generador-de-figuras.webp',
-				large: './assets/images/screenshot-projects/webp/large/5-proyecto-generador-de-figuras.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/5-proyecto-generador-de-figuras.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/5-proyecto-generador-de-figuras.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/5-proyecto-generador-de-figuras.webp'
+				),
 			},
 		},
 		date: new Date('2021-01-01T03:00:00.000Z'),
@@ -969,8 +1374,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/1050-programacion-basica/5103-mi-primera-linea-de-codigo/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-gratis-de-programacion-basica.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-gratis-de-programacion-basica.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-gratis-de-programacion-basica.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-gratis-de-programacion-basica.webp'
+				),
 			},
 		},
 		description: 'Generador de figuras geométricas.',
@@ -988,14 +1397,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-Maquetacion-en-CSS/html/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/4-mi-blog.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/4-mi-blog.avif',
-				large: './assets/images/screenshot-projects/avif/large/4-mi-blog.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/4-mi-blog.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/4-mi-blog.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/4-mi-blog.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/4-mi-blog.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/4-mi-blog.webp',
-				large: './assets/images/screenshot-projects/webp/large/4-mi-blog.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/4-mi-blog.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/4-mi-blog.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/4-mi-blog.webp'
+				),
 			},
 		},
 		date: new Date('2020-07-01T03:00:00.000Z'),
@@ -1004,8 +1425,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/1744-practico-css/24710-lo-que-aprenderas-sobre-maquetacion-en-css/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-practico-de-maquetacion-en-css.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-practico-de-maquetacion-en-css.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-practico-de-maquetacion-en-css.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-practico-de-maquetacion-en-css.webp'
+				),
 			},
 		},
 		description: 'Maquetación de un blog personal.',
@@ -1022,14 +1447,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Platzi-Video/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/3-platzi-video.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/3-platzi-video.avif',
-				large: './assets/images/screenshot-projects/avif/large/3-platzi-video.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/3-platzi-video.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/3-platzi-video.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/3-platzi-video.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/3-platzi-video.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/3-platzi-video.webp',
-				large: './assets/images/screenshot-projects/webp/large/3-platzi-video.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/3-platzi-video.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/3-platzi-video.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/3-platzi-video.webp'
+				),
 			},
 		},
 		date: new Date('2020-05-01T03:00:00.000Z'),
@@ -1038,8 +1475,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/r/galeedgutierrez',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-de-css-grid-layout-2017.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-de-css-grid-layout-2017.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-de-css-grid-layout-2017.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-de-css-grid-layout-2017.webp'
+				),
 			},
 		},
 		description: 'Maquetación de una web reproductora de videos.',
@@ -1056,14 +1497,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Movi.es/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/2-movie.es.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/2-movie.es.avif',
-				large: './assets/images/screenshot-projects/avif/large/2-movie.es.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/2-movie.es.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/2-movie.es.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/2-movie.es.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/2-movie.es.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/2-movie.es.webp',
-				large: './assets/images/screenshot-projects/webp/large/2-movie.es.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/2-movie.es.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/2-movie.es.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/2-movie.es.webp'
+				),
 			},
 		},
 		date: new Date('2020-05-01T03:00:00.000Z'),
@@ -1072,8 +1525,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/r/galeedgutierrez',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-de-css-grid-layout-2017.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-de-css-grid-layout-2017.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-de-css-grid-layout-2017.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-de-css-grid-layout-2017.webp'
+				),
 			},
 		},
 		description: 'Maquetación de una página de películas y series.',
@@ -1091,14 +1548,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Portafolio-LeonidasEsteban/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/1-portfolio-leonidas-esteban.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/1-portfolio-leonidas-esteban.avif',
-				large: './assets/images/screenshot-projects/avif/large/1-portfolio-leonidas-esteban.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/1-portfolio-leonidas-esteban.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/1-portfolio-leonidas-esteban.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/1-portfolio-leonidas-esteban.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/1-portfolio-leonidas-esteban.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/1-portfolio-leonidas-esteban.webp',
-				large: './assets/images/screenshot-projects/webp/large/1-portfolio-leonidas-esteban.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/1-portfolio-leonidas-esteban.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/1-portfolio-leonidas-esteban.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/1-portfolio-leonidas-esteban.webp'
+				),
 			},
 		},
 		date: new Date('2020-02-01T03:00:00.000Z'),
@@ -1107,8 +1576,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/1362-responsive-design/13534-bienvenidos-al-curso-de-responsive-design/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-de-responsive-design-leonidas-esteban.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-de-responsive-design-leonidas-esteban.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-de-responsive-design-leonidas-esteban.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-de-responsive-design-leonidas-esteban.webp'
+				),
 			},
 		},
 		description:
@@ -1126,14 +1599,26 @@ export const personalProjects: PersonalProject[] = [
 		url: 'https://galeedgutierrez.com/Brand-Platzi/',
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-projects/avif/small/0-brand.avif',
-				medium: './assets/images/screenshot-projects/avif/medium/0-brand.avif',
-				large: './assets/images/screenshot-projects/avif/large/0-brand.avif',
+				small: import(
+					'./assets/images/screenshot-projects/avif/small/0-brand.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/avif/medium/0-brand.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/avif/large/0-brand.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-projects/webp/small/0-brand.webp',
-				medium: './assets/images/screenshot-projects/webp/medium/0-brand.webp',
-				large: './assets/images/screenshot-projects/webp/large/0-brand.webp',
+				small: import(
+					'./assets/images/screenshot-projects/webp/small/0-brand.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-projects/webp/medium/0-brand.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-projects/webp/large/0-brand.webp'
+				),
 			},
 		},
 		date: new Date('2020-01-01T03:00:00.000Z'),
@@ -1142,8 +1627,12 @@ export const personalProjects: PersonalProject[] = [
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/1492-html-css-2019/16971-introduccion-al-curso-profesional-de-desarrollo-we/',
 			logo: {
-				avif: '@icons/courses-platform/avif/courses/curso-de-html-y-css-2019.avif',
-				webp: '@icons/courses-platform/webp/courses/curso-de-html-y-css-2019.webp',
+				avif: import(
+					'./assets/icons/courses-platform/avif/courses/curso-de-html-y-css-2019.avif'
+				),
+				webp: import(
+					'./assets/icons/courses-platform/webp/courses/curso-de-html-y-css-2019.webp'
+				),
 			},
 		},
 		description:
