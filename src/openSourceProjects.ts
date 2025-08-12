@@ -1,8 +1,9 @@
-import type { OpenSourceProject } from './models/openSource.model.js';
+import type { OpenSourceProject } from './models/openSource.model';
 
 // URLs to publicly hosted assets
-const TAILWINDCSS_ICON =
-	'./assets/icons/technologies/tailwindcss/tailwindcss.svg';
+const TAILWINDCSS_ICON = import(
+	'./assets/icons/technologies/tailwindcss/tailwindcss.svg?raw'
+);
 
 export const openSourceProjects: OpenSourceProject[] = [
 	{
@@ -72,14 +73,26 @@ export const openSourceProjects: OpenSourceProject[] = [
 		tags: ['performance', 'user-experience', 'open-source'],
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-open-source/avif/small/0-la-velada-del-ano-v.avif',
-				medium: './assets/images/screenshot-open-source/avif/medium/0-la-velada-del-ano-v.avif',
-				large: './assets/images/screenshot-open-source/avif/large/0-la-velada-del-ano-v.avif',
+				small: import(
+					'./assets/images/screenshot-open-source/avif/small/0-la-velada-del-ano-v.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-open-source/avif/medium/0-la-velada-del-ano-v.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-open-source/avif/large/0-la-velada-del-ano-v.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-open-source/webp/small/0-la-velada-del-ano-v.webp',
-				medium: './assets/images/screenshot-open-source/webp/medium/0-la-velada-del-ano-v.webp',
-				large: './assets/images/screenshot-open-source/webp/large/0-la-velada-del-ano-v.webp',
+				small: import(
+					'./assets/images/screenshot-open-source/webp/small/0-la-velada-del-ano-v.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-open-source/webp/medium/0-la-velada-del-ano-v.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-open-source/webp/large/0-la-velada-del-ano-v.webp'
+				),
 			},
 		},
 	},
