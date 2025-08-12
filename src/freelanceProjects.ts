@@ -1,14 +1,20 @@
-import type { FreelanceProject } from './models/freelanceProject.model.js';
-
 // URLs to publicly hosted assets
-const CSS_ICON = './assets/icons/technologies/css/css.svg';
-const EXPRESS_ICON = './assets/icons/technologies/express/express.svg';
-const YTDLP_ICON = './assets/icons/technologies/extras/yt-dlp.svg';
-const NODEJS_ICON = './assets/icons/technologies/nodejs/nodejs.svg';
-const PLAYWRIGHT_ICON = './assets/icons/technologies/playwright/playwright.svg';
-const REACT_ICON = './assets/icons/technologies/react/react.svg';
-const TYPESCRIPT_ICON = './assets/icons/technologies/typescript/typescript.svg';
-const VITE_ICON = './assets/icons/technologies/vite/vite.svg';
+import type { FreelanceProject } from './models/freelanceProject.model';
+
+const CSS_ICON = import('./assets/icons/technologies/css/css.svg?raw');
+const EXPRESS_ICON = import(
+	'./assets/icons/technologies/express/express.svg?raw'
+);
+const YTDLP_ICON = import('./assets/icons/technologies/extras/yt-dlp.svg?raw');
+const NODEJS_ICON = import('./assets/icons/technologies/nodejs/nodejs.svg?raw');
+const PLAYWRIGHT_ICON = import(
+	'./assets/icons/technologies/playwright/playwright.svg?raw'
+);
+const REACT_ICON = import('./assets/icons/technologies/react/react.svg?raw');
+const TYPESCRIPT_ICON = import(
+	'./assets/icons/technologies/typescript/typescript.svg?raw'
+);
+const VITE_ICON = import('./assets/icons/technologies/vite/vite.svg?raw');
 
 export const freelanceProjects: FreelanceProject[] = [
 	{
@@ -55,14 +61,26 @@ export const freelanceProjects: FreelanceProject[] = [
 		],
 		screenshots: {
 			avif: {
-				small: './assets/images/screenshot-freelance-projects/avif/small/0-youtube-downloader.avif',
-				medium: './assets/images/screenshot-freelance-projects/avif/medium/0-youtube-downloader.avif',
-				large: './assets/images/screenshot-freelance-projects/avif/large/0-youtube-downloader.avif',
+				small: import(
+					'./assets/images/screenshot-freelance-projects/avif/small/0-youtube-downloader.avif'
+				),
+				medium: import(
+					'./assets/images/screenshot-freelance-projects/avif/medium/0-youtube-downloader.avif'
+				),
+				large: import(
+					'./assets/images/screenshot-freelance-projects/avif/large/0-youtube-downloader.avif'
+				),
 			},
 			webp: {
-				small: './assets/images/screenshot-freelance-projects/webp/small/0-youtube-downloader.webp',
-				medium: './assets/images/screenshot-freelance-projects/webp/medium/0-youtube-downloader.webp',
-				large: './assets/images/screenshot-freelance-projects/webp/large/0-youtube-downloader.webp',
+				small: import(
+					'./assets/images/screenshot-freelance-projects/webp/small/0-youtube-downloader.webp'
+				),
+				medium: import(
+					'./assets/images/screenshot-freelance-projects/webp/medium/0-youtube-downloader.webp'
+				),
+				large: import(
+					'./assets/images/screenshot-freelance-projects/webp/large/0-youtube-downloader.webp'
+				),
 			},
 		},
 		startDate: new Date('2025-02-24'),
