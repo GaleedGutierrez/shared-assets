@@ -58,7 +58,7 @@
 	"scripts": {
 		"build": "npm run build:clean && npm run build:tsc && npm run build:assets",
 		"build:clean": "rimraf dist",
-		"build:tsc": "tsc --project tsconfig.json",
+		"build:tsc": "tsc --project tsconfig.build.json",
 		"build:assets": "tsx scripts/copyAssets.ts",
 		"prepublishOnly": "npm run build",
 		"lint": "eslint ./ --max-warnings 0",
