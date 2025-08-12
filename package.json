@@ -1,6 +1,6 @@
 {
 	"name": "@galeedgutierrez/shared-assets",
-	"version": "0.2.1",
+	"version": "0.2.2",
 	"publishConfig": {
 		"access": "public"
 	},
@@ -33,6 +33,22 @@
 		".": {
 			"types": "./dist/index.d.ts",
 			"import": "./dist/index.js"
+		},
+		"./models": {
+			"types": "./dist/models/index.d.ts",
+			"import": "./dist/models/index.js"
+		},
+		"./models/*": {
+			"types": "./dist/models/*.d.ts",
+			"import": "./dist/models/*.js"
+		},
+		"./assets": {
+			"types": "./dist/assets/index.d.ts",
+			"import": "./dist/assets/index.js"
+		},
+		"./assets/*": {
+			"types": "./dist/assets/*.d.ts",
+			"import": "./dist/assets/*.js"
 		}
 	},
 	"files": [
@@ -40,9 +56,9 @@
 		"src/global.d.ts"
 	],
 	"scripts": {
-		"build": "npm run build:clean && npm run build:tsc",
+		"build": "npm run build:clean && npm run build:tsc && npm run build:assets",
 		"build:clean": "rimraf dist",
-		"build:tsc": "tsc --project tsconfig.build.json",
+		"build:tsc": "tsc --project tsconfig.json",
 		"build:assets": "tsx scripts/copyAssets.ts",
 		"prepublishOnly": "npm run build",
 		"lint": "eslint ./ --max-warnings 0",
