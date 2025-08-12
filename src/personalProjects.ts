@@ -1,4 +1,4 @@
-import type { PersonalProject } from './models/personalProject.model';
+import type { PersonalProject } from './models/personalProject.model.js';
 
 // URLs to publicly hosted assets
 const CSS_ICON = import('./assets/icons/technologies/css/css.svg?raw');

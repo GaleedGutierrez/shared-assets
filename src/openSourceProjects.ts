@@ -1,4 +1,4 @@
-import type { OpenSourceProject } from './models/openSource.model';
+import type { OpenSourceProject } from './models/openSource.model.js';
 
 // URLs to publicly hosted assets
 const TAILWINDCSS_ICON = import(

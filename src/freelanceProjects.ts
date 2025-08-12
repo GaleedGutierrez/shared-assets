@@ -1,5 +1,5 @@
 // URLs to publicly hosted assets
-import type { FreelanceProject } from './models/freelanceProject.model';
+import type { FreelanceProject } from './models/freelanceProject.model.js';
 
 const CSS_ICON = import('./assets/icons/technologies/css/css.svg?raw');
 const EXPRESS_ICON = import(
