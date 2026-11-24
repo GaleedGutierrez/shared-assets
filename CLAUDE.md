@@ -100,10 +100,16 @@ and is gitignored. On a fresh clone, run
 ## Release flow
 
 Every push to `main` runs `.github/workflows/npm-publish.yml` (lint → test →
-build → check-package → `JS-DevTools/npm-publish` with provenance). That action
-publishes only when the `version` in `package.json` differs from the registry,
-so to release, bump `version` in `package.json` (this is what the
-`chore: bumps package version` commits do), and add an entry to `CHANGELOG.md`.
+build → check-package → `npm publish`). Publishing uses npm trusted publishing
+(OIDC, npm ≥ 11.5.1, which the workflow installs): there is no `NPM_TOKEN`
+secret, and provenance is attached automatically. The trusted publisher on
+npmjs.com is tied to this workflow's filename, so renaming `npm-publish.yml`
+breaks publishing.
+
+A step before `npm publish` skips it when the `version` in `package.json` is
+already on npm, so to release, bump `version` in `package.json` (this is what
+the `chore: bumps package version` commits do), and add an entry to
+`CHANGELOG.md`.
 
 Pick the bump by what changed, because galeed.link acts on it:
 
