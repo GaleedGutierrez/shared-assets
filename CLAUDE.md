@@ -59,8 +59,8 @@ The only consumer is galeed.link (Astro). Types target Astro.
   numeric `id`, and its screenshot files are named after that ID.
 - `src/assets/` holds the raw files: `icons/technologies/<tech>/`,
   `icons/courses-platform/`,
-  `images/screenshot-{projects,freelance-projects,open-source}/`, `images/me/`
-  and `favicon/`.
+  `images/screenshot-{projects,freelance-projects,open-source}/`, `images/me/`,
+  `images/certificates/` and `favicon/`.
 
 ### How assets are referenced (non-obvious)
 
@@ -87,13 +87,31 @@ The only consumer is galeed.link (Astro). Types target Astro.
   recaptured. Optimize new PNGs losslessly only, never with palette
   quantization. `calibreapp-image-actions.yml` skips `screenshot-*` for that
   reason.
-- Course logos still ship as AVIF + WebP (or a raw SVG).
+- Course and platform logos still ship as AVIF + WebP, a PNG or a raw SVG, in
+  `icons/courses-platform/<format>/{courses,platform}/`.
+- Platzi certificates live in `images/certificates/platzi/`: `diplomas/` holds
+  each diploma as JPEG (864×667, Platzi's `diploma-og` image) and `badges/`
+  holds the course badge as PNG. Both are named
+  `<approval-year>-<platzi-course-id>-<slug>`, so a diploma and its badge share
+  a name and the folder sorts by year (a year inside the slug, like
+  `marca-personal-2018`, is Platzi's course version, not the approval year). The
+  year is taken from the UTC `approved_date`. They were downloaded from Platzi's
+  public diplomas API (`api.platzi.com/students/v1/diplomas/<user>/`), which
+  only answers from a browser. No data entry references them yet, and
+  `calibreapp-image-actions.yml` skips them too.
+- Codely and Código Facilito diplomas live in
+  `images/certificates/{codely,codigo-facilito}/diplomas/` as
+  `<completion-year>-<slug>.jpg`. Neither platform has a public course ID, so
+  the slug comes from the course name. They are the first page of the PDF
+  certificates, rendered at 2x (Codely 1584×1224, Código Facilito 1684×1190)
+  with PyMuPDF, JPEG quality 90. The year is the date printed on the
+  certificate.
 
 ### Package exports
 
 `.`, `./models`, `./models/*` and `./assets/*`. The last one maps straight to
-`dist/assets/*`, so raw files that no data entry uses (`images/me/`, `favicon/`)
-are imported by path, for example
+`dist/assets/*`, so raw files that no data entry uses (`images/me/`,
+`images/certificates/`, `favicon/`) are imported by path, for example
 `@galeedgutierrez/shared-assets/assets/images/me/me-large.webp`.
 
 ### Agent skills

@@ -26,7 +26,7 @@ jobs:
         uses: calibreapp/image-actions@main
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
-          # Screenshots are full-quality PNG sources: the consumer's image
-          # pipeline derives every format from them, so they must not be
-          # palette-quantized here.
-          ignorePaths: "node_modules/**,src/assets/images/screenshot-*/**"
+          # Screenshots and certificates are full-quality sources: the
+          # consumer's image pipeline derives every format from them, so they
+          # must not be recompressed here.
+          ignorePaths: "node_modules/**,src/assets/images/screenshot-*/**,src/assets/images/certificates/**"
