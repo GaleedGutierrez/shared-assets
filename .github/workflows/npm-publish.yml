@@ -25,18 +25,31 @@ jobs:
       - run: npm run build
       # publint + attw: fail before publishing a broken export.
       - run: npm run check-package
-      # `npm publish` fails on an existing version, so only publish when
-      # package.json has a version the registry doesn't have yet.
-      - name: Check whether this version is already published
+      # Publish only when this push bumps `version` in package.json. Asking
+      # npm alone is not enough: a new version takes minutes to show up in
+      # `npm view`, so a push right after a release would try to publish it
+      # again and fail with E409. The registry check stays as a second guard,
+      # for re-runs of a release that already went out.
+      - name: Check whether this push releases a new version
         id: version
+        env:
+          BEFORE: ${{ github.event.before }}
         run: |
           NAME=$(node -p "require('./package.json').name")
           VERSION=$(node -p "require('./package.json').version")
-          if npm view "$NAME@$VERSION" version > /dev/null 2>&1; then
+          PREVIOUS=""
+          if git fetch --quiet --depth=1 origin "$BEFORE" 2>/dev/null; then
+            PREVIOUS=$(git show "$BEFORE:package.json" | node -p "JSON.parse(require('fs').readFileSync(0, 'utf8')).version")
+          fi
+          if [ "$VERSION" = "$PREVIOUS" ]; then
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+            echo "version is still $VERSION, skipping publish."
+          elif npm view "$NAME@$VERSION" version > /dev/null 2>&1; then
             echo "publish=false" >> "$GITHUB_OUTPUT"
             echo "$NAME@$VERSION is already on npm, skipping publish."
           else
             echo "publish=true" >> "$GITHUB_OUTPUT"
+            echo "releasing $NAME@$VERSION (was ${PREVIOUS:-unknown})."
           fi
       # Provenance is attached automatically with trusted publishing.
       - if: steps.version.outputs.publish == 'true'

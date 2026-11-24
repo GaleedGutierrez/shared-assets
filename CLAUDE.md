@@ -149,10 +149,12 @@ secret, and provenance is attached automatically. The trusted publisher on
 npmjs.com is tied to this workflow's filename, so renaming `npm-publish.yml`
 breaks publishing.
 
-A step before `npm publish` skips it when the `version` in `package.json` is
-already on npm, so to release, bump `version` in `package.json` (this is what
-the `chore: bumps package version` commits do), and add an entry to
-`CHANGELOG.md`.
+A step before `npm publish` runs it only when the push changes `version` in
+`package.json` (compared with `github.event.before`) and npm doesn't have that
+version yet. Do not rely on the npm check alone: a new version takes minutes to
+show up in `npm view`, and a push in that window used to retry the publish and
+fail with E409. To release, bump `version` in `package.json` (this is what the
+`chore: bumps package version` commits do), and add an entry to `CHANGELOG.md`.
 
 Pick the bump by what changed, because galeed.link acts on it:
 
