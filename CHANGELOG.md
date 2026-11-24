@@ -6,6 +6,15 @@
 Este proyecto sigue [Semantic Versioning](https://semver.org/lang/es/). Antes de
 `1.0.0`, un cambio de versión menor (`0.x.0`) puede romper la API.
 
+## 0.4.1
+
+### Correcciones
+
+- Gramática y ortografía de las descripciones, los títulos y los demás textos de
+  todos los proyectos. Por ejemplo: `cree` → `creé` (LEGO), `clone` → `clon`,
+  `Figura Geométricas` → `Figuras geométricas` y tildes en los nombres de
+  cursos.
+
 ## 0.4.0
 
 ### Cambios que rompen la API
