@@ -13,6 +13,10 @@ Este proyecto sigue [Semantic Versioning](https://semver.org/lang/es/). Antes de
 - Se eliminó el workflow de compresión de imágenes. Astro regenera cada imagen
   en el build, así que comprimirlas acá solo sumaba una pérdida de calidad y un
   commit del bot en cada PR.
+- El workflow de publicación solo publica cuando el push cambia `version` en
+  `package.json`. Antes solo consultaba el registro de npm, que tarda unos
+  minutos en mostrar una versión nueva, así que un merge justo después de
+  publicar intentaba publicarla de nuevo y fallaba.
 
 ## 0.6.0
 
