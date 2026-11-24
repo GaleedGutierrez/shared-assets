@@ -6,6 +6,32 @@
 Este proyecto sigue [Semantic Versioning](https://semver.org/lang/es/). Antes de
 `1.0.0`, un cambio de versión menor (`0.x.0`) puede romper la API.
 
+## 0.6.0
+
+### Novedades
+
+- `education`: la formación universitaria y técnica, de la más nueva a la más
+  vieja. Cada entrada tiene `id`, `level` (`university` o `technical-school`),
+  `status` (`in-progress`, `graduated` o `unfinished`), `title`, `institution`
+  (`{ name, faculty?, location, url?, logo? }`), `startDate` y, si terminó,
+  `endDate`. Las fechas son por mes. Opcionales: `description` y `achievements`.
+  - Universidad Nacional de Chilecito: Tecnicatura Universitaria en Ciencia de
+    Datos (en curso).
+  - Universidad Nacional de Jujuy: Analista Programador Universitario (en
+    curso).
+  - EET N.º 1 "Escolástico Zegada": Técnico en Equipos e Instalaciones
+    Electromecánicas (recibido).
+  - EET N.º 1 "General Savio": Técnico Informático (sin terminar).
+- Nuevos tipos: `Education`, `EducationLevel`, `EducationStatus` e
+  `Institution`.
+- Los logos de la Universidad Nacional de Chilecito (SVG) y de las dos escuelas
+  técnicas (PNG), en `assets/icons/courses-platform/`.
+
+### Mantenimiento
+
+- Los tests validan la formación: IDs únicos, orden por fecha de inicio, fecha
+  de fin según el estado y links `https`.
+
 ## 0.5.0
 
 ### Cambios que rompen la API

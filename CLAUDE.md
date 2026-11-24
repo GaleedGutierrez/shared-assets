@@ -46,8 +46,8 @@ The only consumer is galeed.link (Astro). Types target Astro.
 
 - `src/index.ts` is the root entry point. It reexports the three project arrays
   (`personalProjects`, `freelanceProjects`, `openSourceProjects`), the
-  `certificates` array, the `technologies` and `certificatePlatforms` catalogs
-  and every model type.
+  `certificates` and `education` arrays, the `technologies` and
+  `certificatePlatforms` catalogs and every model type.
 - `src/models/shared.model.ts` holds the shared types: `ImageAsset` (assignable
   to Astro's `ImageMetadata`), `LazyImage`, `LazySvg`, `ImageCoursePlatform`,
   `Screenshot`, `Technology` and the `TechnologyId` union.
@@ -68,6 +68,10 @@ The only consumer is galeed.link (Astro). Types target Astro.
   UUID: Platzi's `diploma_token` (only in the HTML of the public diploma page,
   not in the API), the "Código" on Código Facilito's PDF, or the ID in Alura's
   certificate URL. Codely diplomas have none.
+- `src/education.ts` lists university and technical school studies, newest first
+  by `startDate`. Dates have month precision (the 1st, at local midnight).
+  `status` is `in-progress` (no `endDate`), `graduated` or `unfinished`. Online
+  platforms (Platzi, Alura) are not education: they belong in `certificates`.
 - `src/*Projects.ts` are large hand-written data arrays. Each entry has a
   numeric `id`, and its screenshot files are named after that ID.
 - `src/assets/` holds the raw files: `icons/technologies/<tech>/`,
