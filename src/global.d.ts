@@ -9,6 +9,13 @@ declare module '*.png' {
 	export default image;
 }
 
+// Diplomas ship as JPEG.
+declare module '*.jpg' {
+	const image: { src: string; width: number; height: number; format: 'jpg' };
+
+	export default image;
+}
+
 // Course logos still ship as AVIF and WebP.
 declare module '*.avif' {
 	const image: { src: string; width: number; height: number; format: 'avif' };

@@ -4,6 +4,8 @@ import path from 'node:path';
 
 import { describe, expect, it } from 'vitest';
 
+import { certificatePlatforms } from '../src/certificatePlatforms.js';
+import { certificates } from '../src/certificates.js';
 import { freelanceProjects } from '../src/freelanceProjects.js';
 import type { LazyImage } from '../src/models/shared.model.js';
 import { openSourceProjects } from '../src/openSourceProjects.js';
@@ -120,19 +122,112 @@ describe('technologies', () => {
 	});
 });
 
+describe('certificates', () => {
+	it('has unique ids', () => {
+		const ids = certificates.map((certificate) => certificate.id);
+
+		expect(new Set(ids).size).toBe(ids.length);
+	});
+
+	it('lists the newest first', () => {
+		const times = certificates.map((certificate) =>
+			certificate.date.getTime(),
+		);
+
+		expect(times).toStrictEqual(times.toSorted((a, b) => b - a));
+	});
+
+	it('prefixes each id with its platform', () => {
+		for (const certificate of certificates) {
+			expect(
+				certificate.id.startsWith(`${certificate.platform.id}-`),
+				`id ${certificate.id}`,
+			).toBe(true);
+		}
+	});
+
+	it('names each diploma as a JPEG after its year', async () => {
+		const results = await Promise.all(
+			certificates.map(async ({ id, date, diploma }) => ({
+				id,
+				year: date.getUTCFullYear(),
+				file: path.basename(await resolveUrl(diploma)),
+			})),
+		);
+
+		for (const { id, year, file } of results) {
+			expect(path.extname(file), `id ${id}`).toBe('.jpg');
+			expect(file.startsWith(`${year}-`), `id ${id}: ${file}`).toBe(true);
+		}
+	});
+
+	it('names each badge like its diploma', async () => {
+		const results = await Promise.all(
+			certificates
+				.filter((certificate) => certificate.badge !== undefined)
+				.map(async ({ id, diploma, badge }) => ({
+					id,
+					diploma: path.parse(await resolveUrl(diploma)).name,
+					badge: path.parse(await resolveUrl(badge as LazyImage))
+						.name,
+				})),
+		);
+
+		for (const { id, diploma, badge } of results) {
+			expect(badge, `id ${id}`).toBe(diploma);
+		}
+	});
+
+	it('has a UUID credential id on every platform but Codely', () => {
+		const uuid =
+			/^[\da-f]{8}-[\da-f]{4}-[\da-f]{4}-[\da-f]{4}-[\da-f]{12}$/;
+		// Codely diplomas have no code.
+		const wrong = certificates
+			.filter(({ platform, credentialId }) =>
+				platform.id === 'codely'
+					? credentialId !== undefined
+					: !uuid.test(credentialId ?? ''),
+			)
+			.map(({ id }) => id);
+
+		expect(wrong).toStrictEqual([]);
+	});
+
+	it('only uses https links', () => {
+		for (const certificate of certificates) {
+			for (const url of [
+				certificate.url,
+				certificate.platform.url,
+			].filter(Boolean)) {
+				expect(url, `id ${certificate.id}`).toMatch(/^https:\/\//);
+			}
+		}
+	});
+});
+
+describe('certificatePlatforms', () => {
+	it('keys each entry by its own id', () => {
+		for (const [key, platform] of Object.entries(certificatePlatforms)) {
+			expect(platform.id).toBe(key);
+		}
+	});
+
+	it('has a logo for each platform', () => {
+		for (const platform of Object.values(certificatePlatforms)) {
+			expect(
+				Object.keys(platform.logo),
+				`platform ${platform.id}`,
+			).not.toHaveLength(0);
+		}
+	});
+});
+
 describe('assets', () => {
 	// Exported by path through `./assets/*`, not referenced by any entry.
-	const EXPORTED_BY_PATH = [
-		'assets/favicon/',
-		'assets/images/me/',
-		'assets/images/certificates/',
-	];
+	const EXPORTED_BY_PATH = ['assets/favicon/', 'assets/images/me/'];
 
-	// Unused files: delete them, or reference them from the data, and empty
-	// this list. The platform logos are waiting for the certificates data.
+	// Unused files from before; delete them and empty this list.
 	const KNOWN_UNUSED = new Set([
-		'assets/icons/courses-platform/png/platform/codigo-facilito.png',
-		'assets/icons/courses-platform/svg/platform/platzi.svg',
 		'assets/icons/courses-platform/avif/courses/curso-de-programacion-orientada-a-objetos-en-javascript.avif',
 		'assets/icons/courses-platform/webp/courses/curso-de-programacion-orientada-a-objetos-en-javascript.webp',
 		'assets/icons/technologies/api/icon-api-small.webp',
