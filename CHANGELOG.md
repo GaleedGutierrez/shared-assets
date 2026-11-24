@@ -1,5 +1,8 @@
 # Changelog
 
+<!-- Same rule as .markdownlint-cli2.jsonc, for super-linter's markdownlint -->
+<!-- markdownlint-configure-file { "MD024": { "siblings_only": true } } -->
+
 Este proyecto sigue [Semantic Versioning](https://semver.org/lang/es/). Antes de
 `1.0.0`, un cambio de versión menor (`0.x.0`) puede romper la API.
 
