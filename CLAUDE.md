@@ -102,8 +102,7 @@ The only consumer is galeed.link (Astro). Types target Astro.
   1280×800 viewport at DPR 2, so 2560×1600. The freelance and open-source ones
   are 1280×720, converted from the old WebP because those projects can't be
   recaptured. Optimize new PNGs losslessly only, never with palette
-  quantization. `calibreapp-image-actions.yml` skips `screenshot-*` for that
-  reason.
+  quantization.
 - Course and platform logos still ship as AVIF + WebP, a PNG or a raw SVG, in
   `icons/courses-platform/<format>/{courses,platform}/`.
 - Platzi certificates live in `images/certificates/platzi/`: `diplomas/` holds
@@ -115,8 +114,7 @@ The only consumer is galeed.link (Astro). Types target Astro.
   year is taken from the UTC `approved_date`. Learning paths (routes) follow the
   same layout in `platzi/paths/`. They were downloaded from Platzi's public API
   (`api.platzi.com/students/v1/{diplomas,learning-paths}/<user>/`), which only
-  answers from a browser. `calibreapp-image-actions.yml` skips
-  `images/certificates/`.
+  answers from a browser.
 - Codely and Código Facilito diplomas live in
   `images/certificates/{codely,codigo-facilito}/diplomas/` as
   `<completion-year>-<slug>.jpg`. Neither platform has a public course ID, so
@@ -175,5 +173,8 @@ Pick the bump by what changed, because galeed.link acts on it:
   under `src/`. Imports use `simple-import-sort`, and relative TS imports use
   the `.js` extension (`verbatimModuleSyntax`, ESM).
 - Formatting: tabs (`.editorconfig`), and Prettier wraps Markdown at 80 columns.
-- PRs use `.github/PULL_REQUEST_TEMPLATE.md`. A workflow compresses jpg/png/webp
-  images on PRs, except the screenshot sources.
+- PRs use `.github/PULL_REQUEST_TEMPLATE.md`.
+- No workflow compresses images. Every image is a source for the consumer's
+  pipeline (Astro re-encodes them at build time), so lossy compression here only
+  stacks a second loss. Compress new images losslessly, if at all, before
+  committing them.
