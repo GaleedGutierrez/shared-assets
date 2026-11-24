@@ -19,12 +19,12 @@ export const openSourceProjects: OpenSourceProject[] = [
 		contributions: [
 			{
 				number: 1004,
-				title: 'Se agregó una fuente de respaldo para reducir el FOUT',
+				title: 'Se agregó una fuente de respaldo para reducir el parpadeo de texto sin estilo (FOUT)',
 				url: 'https://github.com/midudev/la-velada-web-oficial/pull/1004',
 				status: 'merged',
 				mergeDate: new Date('2024-03-20'),
 				description:
-					'Se agregó la variable --font-fallback en @theme con “Adjusted Arial Fallback”, una versión de Arial ajustada con size-adjust y ascent-override. Así, la fuente de respaldo mantiene proporciones más parecidas a las de Anisette y se reduce el Flash of Unstyled Text (FOUT).',
+					'Se agregó la variable --font-fallback en @theme con “Adjusted Arial Fallback”, una versión de Arial ajustada con size-adjust y ascent-override. Así, la fuente de respaldo mantiene proporciones más parecidas a las de Anisette y se reduce el parpadeo de texto sin estilo (FOUT).',
 				type: {
 					type: 'performance',
 					impact: 'minor',
@@ -42,7 +42,7 @@ export const openSourceProjects: OpenSourceProject[] = [
 			filesChanged: 1,
 		},
 		impact: [
-			'Mejora en la experiencia del usuario al reducir el FOUT',
+			'Mejora en la experiencia del usuario al reducir el parpadeo de texto sin estilo (FOUT)',
 			'Optimización de la carga de fuentes',
 		],
 		skills: [
@@ -51,11 +51,11 @@ export const openSourceProjects: OpenSourceProject[] = [
 			'Contribución a proyectos de código abierto',
 		],
 		challenges: [
-			'Entender el impacto del FOUT en la experiencia del usuario',
+			'Entender el impacto del parpadeo de texto sin estilo (FOUT) en la experiencia del usuario',
 			'Identificar la mejor forma de implementar una fuente de respaldo efectiva',
 		],
 		solutions: [
-			'Implementación de una fuente de respaldo ajustada para reducir el FOUT',
+			'Implementación de una fuente de respaldo ajustada para reducir el parpadeo de texto sin estilo (FOUT)',
 			'Pruebas de rendimiento para asegurar una mejora en la carga de fuentes',
 		],
 		lessons: [
