@@ -1,3 +1,5 @@
+import type { ResponsiveImages, Technology } from './shared.model.js';
+
 export interface RepositoryInfo {
 	owner: string; // "microsoft", "facebook", "vuejs"
 	name: string; // "vscode", "react", "vue"
@@ -43,17 +45,6 @@ export interface PullRequest {
 	reviewers?: string[]; // Usernames de los reviewers
 }
 
-export interface SizesImages {
-	small: Promise<{ default: string }>;
-	medium: Promise<{ default: string }>;
-	large: Promise<{ default: string }>;
-}
-
-export interface ImagesProject {
-	avif: SizesImages;
-	webp: SizesImages;
-}
-
 export interface OpenSourceProject {
 	id: number;
 	title: string; // Tu descripción del proyecto: "Added Dark Mode Support to VSCode"
@@ -66,8 +57,7 @@ export interface OpenSourceProject {
 	endDate?: Date; // Si ya no contribuyes activamente
 
 	// Tecnologías y herramientas
-	technologies: string[];
-	technologiesIcons: Promise<{ default: string }>[];
+	technologies: Technology[];
 
 	// Contribuciones
 	contributions: PullRequest[];
@@ -98,7 +88,7 @@ export interface OpenSourceProject {
 	tags: string[]; // "first-contribution", "major-feature", "community-impact"
 
 	// Medios
-	screenshots: ImagesProject; // Screenshots de tu contribución
+	screenshots: ResponsiveImages; // Screenshots de tu contribución
 	demoUrl?: string; // Demo de la feature que agregaste
 	blogPostUrl?: string; // Tu blog post sobre la contribución
 }

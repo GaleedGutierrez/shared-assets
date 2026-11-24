@@ -1,48 +1,17 @@
 import type { PersonalProject } from './models/personalProject.model.js';
-
-// URLs to publicly hosted assets
-const CSS_ICON = import('./assets/icons/technologies/css/css.svg?raw');
-const HTML_ICON = import('./assets/icons/technologies/html/html.svg?raw');
-const JAVASCRIPT_ICON = import(
-	'./assets/icons/technologies/javascript/javascript.svg?raw'
-);
-const PLAYWRIGHT_ICON = import(
-	'./assets/icons/technologies/playwright/playwright.svg?raw'
-);
-const PUG_ICON = import('./assets/icons/technologies/pug/pug.svg?raw');
-const REACT_ICON = import('./assets/icons/technologies/react/react.svg?raw');
-const SASS_ICON = import('./assets/icons/technologies/sass/sass.svg?raw');
-const SHADCN_ICON = import('./assets/icons/technologies/shadcn/shadcn.svg?raw');
-const TAILWINDCSS_ICON = import(
-	'./assets/icons/technologies/tailwindcss/tailwindcss.svg?raw'
-);
-const TYPESCRIPT_ICON = import(
-	'./assets/icons/technologies/typescript/typescript.svg?raw'
-);
-const VITE_ICON = import('./assets/icons/technologies/vite/vite.svg?raw');
-const WEBPACK_ICON = import(
-	'./assets/icons/technologies/webpack/webpack.svg?raw'
-);
+import { technologies } from './technologies.js';
 
 export const personalProjects: PersonalProject[] = [
 	{
 		id: 29,
 		title: 'Shop.co',
 		technologies: [
-			'React',
-			'TypeScript',
-			'TailwindCSS',
-			'Shadcn UI',
-			'Vite',
-			'Playwright',
-		],
-		technologiesIcons: [
-			REACT_ICON,
-			TYPESCRIPT_ICON,
-			TAILWINDCSS_ICON,
-			SHADCN_ICON,
-			PLAYWRIGHT_ICON,
-			VITE_ICON,
+			technologies.react,
+			technologies.typescript,
+			technologies.tailwindcss,
+			technologies.shadcn,
+			technologies.vite,
+			technologies.playwright,
 		],
 		repository:
 			'https://github.com/GaleedGutierrez/pv_tp_integrador_grupo13_TS',
@@ -91,13 +60,12 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 28,
 		title: 'To Do App con React',
-		technologies: ['React', 'TypeScript', 'CSS', 'Vite', 'Playwright'],
-		technologiesIcons: [
-			REACT_ICON,
-			TYPESCRIPT_ICON,
-			CSS_ICON,
-			PLAYWRIGHT_ICON,
-			VITE_ICON,
+		technologies: [
+			technologies.react,
+			technologies.typescript,
+			technologies.css,
+			technologies.vite,
+			technologies.playwright,
 		],
 		repository: 'https://github.com/GaleedGutierrez/Curso-de-React-js-2023',
 		url: 'https://galeedgutierrez.com/Curso-de-React-js-2023/#all',
@@ -148,8 +116,12 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 27,
 		title: 'My Day App - JS',
-		technologies: ['JavaScript', 'HTML', 'CSS', 'Webpack'],
-		technologiesIcons: [JAVASCRIPT_ICON, HTML_ICON, CSS_ICON, WEBPACK_ICON],
+		technologies: [
+			technologies.javascript,
+			technologies.html,
+			technologies.css,
+			technologies.webpack,
+		],
 		repository:
 			'https://github.com/GaleedGutierrez/laboratorio-mydayapp-js',
 		url: 'https://galeedgutierrez.com/laboratorio-mydayapp-js/',
@@ -200,8 +172,11 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 26,
 		title: 'Helvetica Neue',
-		technologies: ['SASS', 'HTML', 'Webpack'],
-		technologiesIcons: [SASS_ICON, HTML_ICON, WEBPACK_ICON],
+		technologies: [
+			technologies.sass,
+			technologies.html,
+			technologies.webpack,
+		],
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-CSS-Grid-a-fondo-Codely-2021',
 		url: 'https://galeedgutierrez.com/Curso-CSS-Grid-a-fondo-Codely-2021/',
@@ -252,12 +227,11 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 25,
 		title: 'Apeperia',
-		technologies: ['TypeScript', 'SASS', 'HTML', 'Webpack'],
-		technologiesIcons: [
-			TYPESCRIPT_ICON,
-			SASS_ICON,
-			HTML_ICON,
-			WEBPACK_ICON,
+		technologies: [
+			technologies.typescript,
+			technologies.sass,
+			technologies.html,
+			technologies.webpack,
 		],
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Layouts-Responsivos-Trabajando-con-layouts-mobile-Alura-G5-2023',
@@ -309,12 +283,11 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 24,
 		title: 'Mi portafolio - Juliana Gómez',
-		technologies: ['TypeScript', 'SASS', 'HTML', 'Webpack'],
-		technologiesIcons: [
-			TYPESCRIPT_ICON,
-			SASS_ICON,
-			HTML_ICON,
-			WEBPACK_ICON,
+		technologies: [
+			technologies.typescript,
+			technologies.sass,
+			technologies.html,
+			technologies.webpack,
 		],
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Accesibilidad-Web-2019',
@@ -366,8 +339,12 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 23,
 		title: 'LEGO',
-		technologies: ['TypeScript', 'SASS', 'HTML', 'ViteJS'],
-		technologiesIcons: [TYPESCRIPT_ICON, SASS_ICON, HTML_ICON, VITE_ICON],
+		technologies: [
+			technologies.typescript,
+			technologies.sass,
+			technologies.html,
+			technologies.vite,
+		],
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-Practico-de-Maquetacion-y-Animaciones-con-CSS-2021',
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-Maquetacion-y-Animaciones-con-CSS-2021/dist/',
@@ -418,8 +395,12 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 22,
 		title: '100tifi.co',
-		technologies: ['TypeScript', 'SASS', 'HTML', 'ViteJS'],
-		technologiesIcons: [TYPESCRIPT_ICON, SASS_ICON, HTML_ICON, VITE_ICON],
+		technologies: [
+			technologies.typescript,
+			technologies.sass,
+			technologies.html,
+			technologies.vite,
+		],
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Single-Page-Application-con-JavaScript-Vanilla-2021',
 		url: 'https://galeedgutierrez.com/Curso-de-Single-Page-Application-con-JavaScript-Vanilla-2021/dist/public/index.html',
@@ -470,8 +451,12 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 21,
 		title: 'Encriptador de texto',
-		technologies: ['TypeScript', 'SASS', 'HTML', 'ViteJS'],
-		technologiesIcons: [TYPESCRIPT_ICON, SASS_ICON, HTML_ICON, VITE_ICON],
+		technologies: [
+			technologies.typescript,
+			technologies.sass,
+			technologies.html,
+			technologies.vite,
+		],
 		repository:
 			'https://github.com/GaleedGutierrez/Encriptador-de-texto-Alura-Challenges-ONE-2023',
 		url: 'https://galeedgutierrez.com/Encriptador-de-texto-Alura-Challenges-ONE-2023/dist/',
@@ -522,12 +507,11 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 20,
 		title: 'Link in bio',
-		technologies: ['TypeScript', 'SASS', 'HTML', 'Webpack'],
-		technologiesIcons: [
-			TYPESCRIPT_ICON,
-			SASS_ICON,
-			HTML_ICON,
-			WEBPACK_ICON,
+		technologies: [
+			technologies.typescript,
+			technologies.sass,
+			technologies.html,
+			technologies.webpack,
 		],
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Introduccion-a-Empaquetadores-Web/tree/main/webpack',
@@ -579,8 +563,11 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 19,
 		title: 'Platzi Movies',
-		technologies: ['TypeScript', 'SASS', 'PUG'],
-		technologiesIcons: [TYPESCRIPT_ICON, SASS_ICON, PUG_ICON],
+		technologies: [
+			technologies.typescript,
+			technologies.sass,
+			technologies.pug,
+		],
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-Profesional-de-Consumo-de-API-REST-con-JavaScript-2022',
 		url: 'https://galeedgutierrez.com/Curso-Profesional-de-Consumo-de-API-REST-con-JavaScript-2022/html/#home',
@@ -632,20 +619,12 @@ export const personalProjects: PersonalProject[] = [
 		id: 18,
 		title: 'Platziv - Juego Online',
 		technologies: [
-			'PUG',
-			'SASS',
-			'TypeScript',
-			'HTML',
-			'CSS',
-			'JavaScript',
-		],
-		technologiesIcons: [
-			PUG_ICON,
-			SASS_ICON,
-			TYPESCRIPT_ICON,
-			HTML_ICON,
-			CSS_ICON,
-			JAVASCRIPT_ICON,
+			technologies.pug,
+			technologies.sass,
+			technologies.typescript,
+			technologies.html,
+			technologies.css,
+			technologies.javascript,
 		],
 		repository:
 			'https://github.com/GaleedGutierrez/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego-2022',
@@ -698,20 +677,12 @@ export const personalProjects: PersonalProject[] = [
 		id: 17,
 		title: 'Michi App',
 		technologies: [
-			'PUG',
-			'SASS',
-			'TypeScript',
-			'HTML',
-			'CSS',
-			'JavaScript',
-		],
-		technologiesIcons: [
-			PUG_ICON,
-			SASS_ICON,
-			TYPESCRIPT_ICON,
-			HTML_ICON,
-			CSS_ICON,
-			JAVASCRIPT_ICON,
+			technologies.pug,
+			technologies.sass,
+			technologies.typescript,
+			technologies.html,
+			technologies.css,
+			technologies.javascript,
 		],
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Consumo-de-API-REST-con-JavaScript',
@@ -763,13 +734,12 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 16,
 		title: 'Figura Geométricas',
-		technologies: ['PUG', 'SASS', 'HTML', 'CSS', 'JavaScript'],
-		technologiesIcons: [
-			PUG_ICON,
-			SASS_ICON,
-			HTML_ICON,
-			CSS_ICON,
-			JAVASCRIPT_ICON,
+		technologies: [
+			technologies.pug,
+			technologies.sass,
+			technologies.html,
+			technologies.css,
+			technologies.javascript,
 		],
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Programacion-Orientada-a-Objetos-en-JavaScript/tree/main/TallerN1',
@@ -821,13 +791,12 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 15,
 		title: 'Tienda Online',
-		technologies: ['PUG', 'SASS', 'HTML', 'CSS', 'JavaScript'],
-		technologiesIcons: [
-			PUG_ICON,
-			SASS_ICON,
-			HTML_ICON,
-			CSS_ICON,
-			JAVASCRIPT_ICON,
+		technologies: [
+			technologies.pug,
+			technologies.sass,
+			technologies.html,
+			technologies.css,
+			technologies.javascript,
 		],
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-Practico-de-JavaScript/tree/main/TallerN2',
@@ -879,8 +848,12 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 14,
 		title: 'Animationland',
-		technologies: ['PUG', 'SASS', 'HTML', 'CSS'],
-		technologiesIcons: [PUG_ICON, SASS_ICON, HTML_ICON, CSS_ICON],
+		technologies: [
+			technologies.pug,
+			technologies.sass,
+			technologies.html,
+			technologies.css,
+		],
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Animaciones-con-CSS',
 		url: 'https://galeedgutierrez.com/Curso-de-Animaciones-con-CSS/html/',
@@ -930,8 +903,7 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 13,
 		title: 'Check the best food',
-		technologies: ['HTML', 'CSS'],
-		technologiesIcons: [HTML_ICON, CSS_ICON],
+		technologies: [technologies.html, technologies.css],
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-CSS-Grid-Basico',
 		url: 'https://galeedgutierrez.com/Curso-de-CSS-Grid-Basico/Proyecto/',
@@ -981,8 +953,12 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 12,
 		title: 'Batabit',
-		technologies: ['PUG', 'SASS', 'HTML', 'CSS'],
-		technologiesIcons: [PUG_ICON, SASS_ICON, HTML_ICON, CSS_ICON],
+		technologies: [
+			technologies.pug,
+			technologies.sass,
+			technologies.html,
+			technologies.css,
+		],
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Responsive-Design-Maquetacion-Mobile-First',
 		url: 'https://galeedgutierrez.com/Curso-de-Responsive-Design-Maquetacion-Mobile-First/html/',
@@ -1033,8 +1009,12 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 11,
 		title: 'Yard Sale',
-		technologies: ['PUG', 'SASS', 'HTML', 'CSS'],
-		technologiesIcons: [PUG_ICON, SASS_ICON, HTML_ICON, CSS_ICON],
+		technologies: [
+			technologies.pug,
+			technologies.sass,
+			technologies.html,
+			technologies.css,
+		],
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-Practico-de-Frontend-Developer',
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-Frontend-Developer/html/homepage.html',
@@ -1084,8 +1064,12 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 10,
 		title: 'Steam Burger',
-		technologies: ['PUG', 'SASS', 'HTML', 'CSS'],
-		technologiesIcons: [PUG_ICON, SASS_ICON, HTML_ICON, CSS_ICON],
+		technologies: [
+			technologies.pug,
+			technologies.sass,
+			technologies.html,
+			technologies.css,
+		],
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Disenio-para-Programadores',
 		url: 'https://galeedgutierrez.com/Curso-de-Disenio-para-Programadores/html/',
@@ -1135,8 +1119,12 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 9,
 		title: 'Platzi Video',
-		technologies: ['PUG', 'SASS', 'HTML', 'CSS'],
-		technologiesIcons: [PUG_ICON, SASS_ICON, HTML_ICON, CSS_ICON],
+		technologies: [
+			technologies.pug,
+			technologies.sass,
+			technologies.html,
+			technologies.css,
+		],
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Frontend-Developer-2019',
 		url: 'https://galeedgutierrez.com/Curso-de-Frontend-Developer-2019/platzi-video/html/homepage.html',
@@ -1187,8 +1175,7 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 8,
 		title: 'Wikipedia Clone',
-		technologies: ['HTML', 'CSS'],
-		technologiesIcons: [HTML_ICON, CSS_ICON],
+		technologies: [technologies.html, technologies.css],
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-practico-de-HTML-y-CSS/tree/main/WikipediaClone',
 		url: 'https://galeedgutierrez.com/Curso-practico-de-HTML-y-CSS/WikipediaClone/',
@@ -1238,8 +1225,7 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 7,
 		title: 'Google Clone',
-		technologies: ['HTML', 'CSS'],
-		technologiesIcons: [HTML_ICON, CSS_ICON],
+		technologies: [technologies.html, technologies.css],
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-practico-de-HTML-y-CSS/tree/main/my-Google-clone',
 		url: 'https://galeedgutierrez.com/Curso-practico-de-HTML-y-CSS/my-Google-clone/',
@@ -1289,8 +1275,7 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 6,
 		title: 'Villa Platzi',
-		technologies: ['HTML', 'JavaScript'],
-		technologiesIcons: [HTML_ICON, JAVASCRIPT_ICON],
+		technologies: [technologies.html, technologies.javascript],
 		repository: 'https://github.com/GaleedGutierrez/Villa-Platzi',
 		url: 'https://galeedgutierrez.com/Villa-Platzi/',
 		screenshots: {
@@ -1339,8 +1324,7 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 5,
 		title: 'Generador de figuras geométricas',
-		technologies: ['HTML', 'JavaScript'],
-		technologiesIcons: [HTML_ICON, JAVASCRIPT_ICON],
+		technologies: [technologies.html, technologies.javascript],
 		repository:
 			'https://github.com/GaleedGutierrez/Proyecto-generador-de-figuras',
 		url: 'https://galeedgutierrez.com/Proyecto-generador-de-figuras/',
@@ -1390,8 +1374,12 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 4,
 		title: 'Mi Blog',
-		technologies: ['PUG', 'SASS', 'HTML', 'CSS'],
-		technologiesIcons: [PUG_ICON, SASS_ICON, HTML_ICON, CSS_ICON],
+		technologies: [
+			technologies.pug,
+			technologies.sass,
+			technologies.html,
+			technologies.css,
+		],
 		repository:
 			'https://github.com/GaleedGutierrez/galeedgutierrez.github.io',
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-Maquetacion-en-CSS/html/',
@@ -1441,8 +1429,7 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 3,
 		title: 'Platzi-Video',
-		technologies: ['HTML', 'CSS'],
-		technologiesIcons: [HTML_ICON, CSS_ICON],
+		technologies: [technologies.html, technologies.css],
 		repository: 'https://github.com/GaleedGutierrez/Platzi-Video',
 		url: 'https://galeedgutierrez.com/Platzi-Video/',
 		screenshots: {
@@ -1491,8 +1478,7 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 2,
 		title: 'Movie.es',
-		technologies: ['HTML', 'CSS'],
-		technologiesIcons: [HTML_ICON, CSS_ICON],
+		technologies: [technologies.html, technologies.css],
 		repository: 'https://github.com/GaleedGutierrez/Movi.es',
 		url: 'https://galeedgutierrez.com/Movi.es/',
 		screenshots: {
@@ -1541,8 +1527,7 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 1,
 		title: 'Portfolio Leonidas Esteban',
-		technologies: ['HTML', 'CSS'],
-		technologiesIcons: [HTML_ICON, CSS_ICON],
+		technologies: [technologies.html, technologies.css],
 		repository:
 			'https://github.com/GaleedGutierrez/Portafolio-LeonidasEsteban',
 		url: 'https://galeedgutierrez.com/Portafolio-LeonidasEsteban/',
@@ -1593,8 +1578,7 @@ export const personalProjects: PersonalProject[] = [
 	{
 		id: 0,
 		title: 'Brand',
-		technologies: ['HTML', 'CSS'],
-		technologiesIcons: [HTML_ICON, CSS_ICON],
+		technologies: [technologies.html, technologies.css],
 		repository: 'https://github.com/GaleedGutierrez/Brand-Platzi',
 		url: 'https://galeedgutierrez.com/Brand-Platzi/',
 		screenshots: {

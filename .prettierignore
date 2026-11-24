@@ -9,3 +9,6 @@
 /playwright-report/*
 **/fonts/*
 **/font/*
+/.agents/*
+/.claude/*
+skills-lock.json

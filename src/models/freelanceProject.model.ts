@@ -1,3 +1,5 @@
+import type { ResponsiveImages, Technology } from './shared.model.js';
+
 export interface ClientInfo {
 	// Datos públicos y generalizados
 	industry: string; // "E-commerce", "Healthcare", "Education"
@@ -43,17 +45,6 @@ export interface ProjectResults {
 	technicalAchievements: string[];
 }
 
-export interface SizesImages {
-	small: Promise<{ default: string }>;
-	medium: Promise<{ default: string }>;
-	large: Promise<{ default: string }>;
-}
-
-export interface ImagesProject {
-	avif: SizesImages;
-	webp: SizesImages;
-}
-
 export interface FreelanceProject {
 	id: number;
 	title: string; // Título genérico: "E-commerce Platform for Fashion Retailer"
@@ -61,9 +52,8 @@ export interface FreelanceProject {
 	client: ClientInfo; // Info generalizada
 	scope: ProjectScope;
 	budget: ProjectBudget;
-	technologies: string[];
-	technologiesIcons: Promise<{ default: string }>[]; // Cambiado a un array de Promesas
-	screenshots: ImagesProject; // Screenshots anonimizados o mockups
+	technologies: Technology[];
+	screenshots: ResponsiveImages; // Screenshots anonimizados o mockups
 	startDate: Date;
 	endDate?: Date; // Opcional para proyectos en curso
 	status: 'completed' | 'in-progress' | 'on-hold';

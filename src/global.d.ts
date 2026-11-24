@@ -1,57 +1,22 @@
-// Global asset type declarations
-// This file will be included in the distributed package to provide
-// type support for asset imports in consuming projects
+// Asset module types used only to compile this package. They are not
+// published: consumers get their types from the models, and their own bundler
+// (Astro) declares these modules. The shapes match `ImageAsset` in
+// models/shared.model.ts.
 
-declare module '*.webp' {
-	const value: string;
+declare module '*.avif' {
+	const image: { src: string; width: number; height: number; format: 'avif' };
 
-	export default value;
+	export default image;
 }
 
-declare module '*.svg' {
-	const value: string;
+declare module '*.webp' {
+	const image: { src: string; width: number; height: number; format: 'webp' };
 
-	export default value;
+	export default image;
 }
 
 declare module '*.svg?raw' {
 	const content: string;
 
 	export default content;
-}
-
-declare module '*.png' {
-	const value: string;
-
-	export default value;
-}
-
-declare module '*.jpg' {
-	const value: string;
-
-	export default value;
-}
-
-declare module '*.jpeg' {
-	const value: string;
-
-	export default value;
-}
-
-declare module '*.gif' {
-	const value: string;
-
-	export default value;
-}
-
-declare module '*.avif' {
-	const value: string;
-
-	export default value;
-}
-
-declare module '*.ico' {
-	const value: string;
-
-	export default value;
 }

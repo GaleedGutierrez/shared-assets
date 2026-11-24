@@ -30,6 +30,9 @@ export default tseslint.config(
 			'**/test-results/**',
 			'**/lighthouse-report/**',
 			'.markdownlint-cli2.jsonc',
+			'.agents/**',
+			'.claude/**',
+			'skills-lock.json',
 		],
 	},
 

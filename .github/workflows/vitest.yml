@@ -14,8 +14,13 @@ jobs:
       - name: 👍 Checkout code
         uses: actions/checkout@v4.2.2
 
+      - name: 🟢 Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+
       - name: 📥 Install Dependencies
         run: npm ci
 
-      # - name: ⚡ Vitest
-      #   run: npm test
+      - name: ⚡ Vitest
+        run: npm test

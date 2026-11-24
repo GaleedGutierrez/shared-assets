@@ -1,20 +1,5 @@
-// URLs to publicly hosted assets
 import type { FreelanceProject } from './models/freelanceProject.model.js';
-
-const CSS_ICON = import('./assets/icons/technologies/css/css.svg?raw');
-const EXPRESS_ICON = import(
-	'./assets/icons/technologies/express/express.svg?raw'
-);
-const YTDLP_ICON = import('./assets/icons/technologies/extras/yt-dlp.svg?raw');
-const NODEJS_ICON = import('./assets/icons/technologies/nodejs/nodejs.svg?raw');
-const PLAYWRIGHT_ICON = import(
-	'./assets/icons/technologies/playwright/playwright.svg?raw'
-);
-const REACT_ICON = import('./assets/icons/technologies/react/react.svg?raw');
-const TYPESCRIPT_ICON = import(
-	'./assets/icons/technologies/typescript/typescript.svg?raw'
-);
-const VITE_ICON = import('./assets/icons/technologies/vite/vite.svg?raw');
+import { technologies } from './technologies.js';
 
 export const freelanceProjects: FreelanceProject[] = [
 	{
@@ -40,24 +25,14 @@ export const freelanceProjects: FreelanceProject[] = [
 			paymentType: 'fixed-price',
 		},
 		technologies: [
-			'React',
-			'Nodejs',
-			'Express',
-			'TypeScript',
-			'CSS',
-			'ytdlp',
-			'Playwright',
-			'Vite',
-		],
-		technologiesIcons: [
-			REACT_ICON,
-			NODEJS_ICON,
-			EXPRESS_ICON,
-			TYPESCRIPT_ICON,
-			CSS_ICON,
-			YTDLP_ICON,
-			PLAYWRIGHT_ICON,
-			VITE_ICON,
+			technologies.react,
+			technologies.nodejs,
+			technologies.express,
+			technologies.typescript,
+			technologies.css,
+			technologies.ytdlp,
+			technologies.playwright,
+			technologies.vite,
 		],
 		screenshots: {
 			avif: {
@@ -97,9 +72,6 @@ export const freelanceProjects: FreelanceProject[] = [
 		solutions: ['Ver documentación de youtube-dl'],
 		lessons: ['La importancia de las pruebas E2E'],
 		isPrivate: true,
-		demoUrl:
-			'El proyecto no tiene demo, es un proyecto privado que funciona en local.',
-		caseStudyUrl: '',
 		isHighlighted: false,
 		tags: ['Downloader', 'YouTube'],
 	},
