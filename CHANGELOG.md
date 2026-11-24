@@ -6,6 +6,25 @@
 Este proyecto sigue [Semantic Versioning](https://semver.org/lang/es/). Antes de
 `1.0.0`, un cambio de versión menor (`0.x.0`) puede romper la API.
 
+## 0.4.2
+
+### Novedades
+
+- Los 119 certificados aprobados en Platzi, en
+  `assets/images/certificates/platzi/`: `diplomas/` tiene cada diploma en JPEG
+  (864×667) y `badges/`, el ícono del curso en PNG. El diploma y su ícono tienen
+  el mismo nombre, `<año>-<id>-<slug>`, donde `año` es el año en que se aprobó
+  el curso e `id` es el ID del curso en Platzi. Se importan por ruta con el
+  export `./assets/*`, por ejemplo
+  `assets/images/certificates/platzi/badges/2025-7395-react.png`.
+- Los diplomas de Codely (9) y Código Facilito (6) en JPEG, en
+  `assets/images/certificates/{codely,codigo-facilito}/diplomas/`, con el nombre
+  `<año>-<slug>`, por ejemplo `codely/diplomas/2023-css-grid-a-fondo.jpg`.
+
+### Mantenimiento
+
+- El workflow de compresión de imágenes no toca los certificados.
+
 ## 0.4.1
 
 ### Correcciones
