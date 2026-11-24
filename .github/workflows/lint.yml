@@ -61,6 +61,8 @@ jobs:
         env:
           # To report GitHub Actions status checks
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Agent skills are third-party files, installed as-is.
+          FILTER_REGEX_EXCLUDE: (^|/)\.(agents|claude)/
           VALIDATE_EDITORCONFIG: false
           VALIDATE_CSS: false
           VALIDATE_CSS_PRETTIER: false

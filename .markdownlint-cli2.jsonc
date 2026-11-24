@@ -1,5 +1,5 @@
 {
-	"ignores": ["./.github/CODEOWNERS"],
+	"ignores": ["./.github/CODEOWNERS", "./.agents/**", "./.claude/**"],
 	"config": {
 		"MD046": {
 			"style": "fenced"
