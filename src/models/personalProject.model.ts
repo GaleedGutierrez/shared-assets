@@ -1,15 +1,8 @@
 import type {
-	LazyImage,
-	LazySvg,
+	ImageCoursePlatform,
 	Screenshot,
 	Technology,
 } from './shared.model.js';
-
-export interface ImageCoursePlatform {
-	avif?: LazyImage;
-	webp?: LazyImage;
-	svg?: LazySvg;
-}
 
 export interface CoursePlatform {
 	name: string;
