@@ -20,6 +20,8 @@ Este proyecto sigue [Semantic Versioning](https://semver.org/lang/es/). Antes de
 - Los diplomas de Codely (9) y Código Facilito (6) en JPEG, en
   `assets/images/certificates/{codely,codigo-facilito}/diplomas/`, con el nombre
   `<año>-<slug>`, por ejemplo `codely/diplomas/2023-css-grid-a-fondo.jpg`.
+- Los logos de Platzi (SVG) y Código Facilito (PNG) en
+  `assets/icons/courses-platform/`, junto a los de Alura y Codely.
 
 ### Mantenimiento
 
