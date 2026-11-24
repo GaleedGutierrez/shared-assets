@@ -6,6 +6,14 @@
 Este proyecto sigue [Semantic Versioning](https://semver.org/lang/es/). Antes de
 `1.0.0`, un cambio de versión menor (`0.x.0`) puede romper la API.
 
+## Sin publicar
+
+### Mantenimiento
+
+- Se eliminó el workflow de compresión de imágenes. Astro regenera cada imagen
+  en el build, así que comprimirlas acá solo sumaba una pérdida de calidad y un
+  commit del bot en cada PR.
+
 ## 0.6.0
 
 ### Novedades
