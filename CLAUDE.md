@@ -87,7 +87,8 @@ The only consumer is galeed.link (Astro). Types target Astro.
   recaptured. Optimize new PNGs losslessly only, never with palette
   quantization. `calibreapp-image-actions.yml` skips `screenshot-*` for that
   reason.
-- Course logos still ship as AVIF + WebP (or a raw SVG).
+- Course and platform logos still ship as AVIF + WebP, a PNG or a raw SVG, in
+  `icons/courses-platform/<format>/{courses,platform}/`.
 - Platzi certificates live in `images/certificates/platzi/`: `diplomas/` holds
   each diploma as JPEG (864×667, Platzi's `diploma-og` image) and `badges/`
   holds the course badge as PNG. Both are named
