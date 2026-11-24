@@ -25,8 +25,9 @@ npm run check-package  # publint + attw on the packed tarball; needs a build
 ```
 
 `tests/data.test.ts` validates the data: unique IDs, one PNG screenshot per
-entry named `<id>-…` and at least 1280px wide, `https` links, SVG icons, and no
-unused assets. A file that is meant to stay unused goes in `KNOWN_UNUSED`.
+entry named `<id>-…` and at least 1280px wide, `https` links, SVG icons,
+certificates sorted newest first with a JPEG diploma named after their year, and
+no unused assets. A file that is meant to stay unused goes in `KNOWN_UNUSED`.
 
 Node version: `.nvmrc` pins 22.17.1, and every workflow reads it.
 
@@ -43,18 +44,30 @@ Node version: `.nvmrc` pins 22.17.1, and every workflow reads it.
 
 The only consumer is galeed.link (Astro). Types target Astro.
 
-- `src/index.ts` is the root entry point. It reexports the three data arrays
+- `src/index.ts` is the root entry point. It reexports the three project arrays
   (`personalProjects`, `freelanceProjects`, `openSourceProjects`), the
-  `technologies` catalog and every model type.
-- `src/models/shared.model.ts` holds the types shared by all project kinds:
-  `ImageAsset` (assignable to Astro's `ImageMetadata`), `LazyImage`, `LazySvg`,
+  `certificates` array, the `technologies` and `certificatePlatforms` catalogs
+  and every model type.
+- `src/models/shared.model.ts` holds the shared types: `ImageAsset` (assignable
+  to Astro's `ImageMetadata`), `LazyImage`, `LazySvg`, `ImageCoursePlatform`,
   `Screenshot`, `Technology` and the `TechnologyId` union.
-  `src/models/*.model.ts` holds one interface file per project kind, and
+  `src/models/*.model.ts` holds one interface file per kind of data, and
   `src/models/index.ts` reexports them all.
 - `src/technologies.ts` is the single catalog of technology names and icons.
   Projects list `technologies: [technologies.react, ...]`, so a name can't drift
   from its icon. Adding a technology means adding it to `TechnologyId` and to
   the catalog.
+- `src/certificates.ts` lists every approved course, Platzi learning path and
+  program, newest first. `kind` tells them apart: `course`, `learning-path` or
+  `program`. Each `id` is `<platform>-<key>`, where the key is Platzi's own ID
+  (`platzi-7395`, `platzi-path-7040`) or the file slug elsewhere. The platform
+  comes from `src/certificatePlatforms.ts`, the catalog of platform names and
+  logos, so adding a platform means adding it to `CertificatePlatformId` and to
+  that catalog. The array was generated once from the files and Platzi's API and
+  is edited by hand from now on. `credentialId` is the diploma's verification
+  UUID: Platzi's `diploma_token` (only in the HTML of the public diploma page,
+  not in the API), the "Código" on Código Facilito's PDF, or the ID in Alura's
+  certificate URL. Codely diplomas have none.
 - `src/*Projects.ts` are large hand-written data arrays. Each entry has a
   numeric `id`, and its screenshot files are named after that ID.
 - `src/assets/` holds the raw files: `icons/technologies/<tech>/`,
@@ -74,10 +87,10 @@ The only consumer is galeed.link (Astro). Types target Astro.
   into `dist/assets` so that the relative imports still resolve from
   `dist/*.js`. Moving or renaming an asset breaks those paths without any
   compile-time error.
-- `src/global.d.ts` declares the `*.png`, `*.avif`, `*.webp` and `*.svg?raw`
-  modules for compiling this package only. It is not published. Keep exported
-  values explicitly typed (as `technologies` is), or the emitted `.d.ts` will
-  reference the asset modules and break for consumers.
+- `src/global.d.ts` declares the `*.png`, `*.jpg`, `*.avif`, `*.webp` and
+  `*.svg?raw` modules for compiling this package only. It is not published. Keep
+  exported values explicitly typed (as `technologies` is), or the emitted
+  `.d.ts` will reference the asset modules and break for consumers.
 - Screenshot layout: one full-quality PNG per entry,
   `images/<dir>/<id>-<slug>.png`. Do not ship sizes or formats: Astro's
   `<Picture>` derives AVIF/WebP and every width from this one source at build
@@ -95,23 +108,26 @@ The only consumer is galeed.link (Astro). Types target Astro.
   `<approval-year>-<platzi-course-id>-<slug>`, so a diploma and its badge share
   a name and the folder sorts by year (a year inside the slug, like
   `marca-personal-2018`, is Platzi's course version, not the approval year). The
-  year is taken from the UTC `approved_date`. They were downloaded from Platzi's
-  public diplomas API (`api.platzi.com/students/v1/diplomas/<user>/`), which
-  only answers from a browser. No data entry references them yet, and
-  `calibreapp-image-actions.yml` skips them too.
+  year is taken from the UTC `approved_date`. Learning paths (routes) follow the
+  same layout in `platzi/paths/`. They were downloaded from Platzi's public API
+  (`api.platzi.com/students/v1/{diplomas,learning-paths}/<user>/`), which only
+  answers from a browser. `calibreapp-image-actions.yml` skips
+  `images/certificates/`.
 - Codely and Código Facilito diplomas live in
   `images/certificates/{codely,codigo-facilito}/diplomas/` as
   `<completion-year>-<slug>.jpg`. Neither platform has a public course ID, so
   the slug comes from the course name. They are the first page of the PDF
   certificates, rendered at 2x (Codely 1584×1224, Código Facilito 1684×1190)
   with PyMuPDF, JPEG quality 90. The year is the date printed on the
-  certificate.
+  certificate. The PDFs are not kept. Alura's ONE program diploma is in
+  `alura/diplomas/`. Non-Platzi dates are local midnight (`T03:00:00.000Z`), as
+  in the project data.
 
 ### Package exports
 
 `.`, `./models`, `./models/*` and `./assets/*`. The last one maps straight to
-`dist/assets/*`, so raw files that no data entry uses (`images/me/`,
-`images/certificates/`, `favicon/`) are imported by path, for example
+`dist/assets/*`, so raw files that no data entry uses (`images/me/`, `favicon/`)
+are imported by path, for example
 `@galeedgutierrez/shared-assets/assets/images/me/me-large.webp`.
 
 ### Agent skills
