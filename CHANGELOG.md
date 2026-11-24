@@ -40,4 +40,5 @@ Este proyecto sigue [Semantic Versioning](https://semver.org/lang/es/). Antes de
 - Pruebas de datos con Vitest: IDs únicos, las 6 variantes de cada captura con
   el nombre correcto, links `https`, íconos SVG válidos y assets sin usar.
 - `publint` y `@arethetypeswrong/cli` corren antes de publicar.
-- El CI usa la versión de Node de `.nvmrc` y publica con provenance.
+- El CI usa la versión de Node de `.nvmrc` y publica con trusted publishing
+  (OIDC) de npm, sin token y con provenance.
