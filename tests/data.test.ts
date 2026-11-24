@@ -6,6 +6,7 @@ import { describe, expect, it } from 'vitest';
 
 import { certificatePlatforms } from '../src/certificatePlatforms.js';
 import { certificates } from '../src/certificates.js';
+import { education } from '../src/education.js';
 import { freelanceProjects } from '../src/freelanceProjects.js';
 import type { LazyImage } from '../src/models/shared.model.js';
 import { openSourceProjects } from '../src/openSourceProjects.js';
@@ -201,6 +202,40 @@ describe('certificates', () => {
 			].filter(Boolean)) {
 				expect(url, `id ${certificate.id}`).toMatch(/^https:\/\//);
 			}
+		}
+	});
+});
+
+describe('education', () => {
+	it('has unique ids', () => {
+		const ids = education.map((entry) => entry.id);
+
+		expect(new Set(ids).size).toBe(ids.length);
+	});
+
+	it('lists the newest first', () => {
+		const times = education.map((entry) => entry.startDate.getTime());
+
+		expect(times).toStrictEqual(times.toSorted((a, b) => b - a));
+	});
+
+	it('has an end date unless it is in progress, after its start', () => {
+		const wrong = education
+			.filter(({ status, startDate, endDate }) =>
+				status === 'in-progress'
+					? endDate !== undefined
+					: endDate === undefined || endDate <= startDate,
+			)
+			.map(({ id }) => id);
+
+		expect(wrong).toStrictEqual([]);
+	});
+
+	it('only uses https links', () => {
+		for (const { id, institution } of education) {
+			expect(institution.url ?? 'https://', `id ${id}`).toMatch(
+				/^https:\/\//,
+			);
 		}
 	});
 });
