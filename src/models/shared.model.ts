@@ -28,6 +28,14 @@ export type LazyImage = Promise<{ default: ImageAsset }>;
 /** Raw SVG markup loaded with `import('...svg?raw')`. */
 export type LazySvg = Promise<{ default: string }>;
 
+/** A course or platform logo, in whichever formats the file ships in. */
+export interface ImageCoursePlatform {
+	avif?: LazyImage;
+	webp?: LazyImage;
+	png?: LazyImage;
+	svg?: LazySvg;
+}
+
 /**
  * A single full-quality PNG. The consumer's image pipeline (Astro's
  * `<Picture>`) derives every format and width from it at build time.
