@@ -34,30 +34,9 @@ export const freelanceProjects: FreelanceProject[] = [
 			technologies.playwright,
 			technologies.vite,
 		],
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-freelance-projects/avif/small/0-youtube-downloader.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-freelance-projects/avif/medium/0-youtube-downloader.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-freelance-projects/avif/large/0-youtube-downloader.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-freelance-projects/webp/small/0-youtube-downloader.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-freelance-projects/webp/medium/0-youtube-downloader.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-freelance-projects/webp/large/0-youtube-downloader.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-freelance-projects/0-youtube-downloader.png'
+		),
 		startDate: new Date('2025-02-24'),
 		endDate: new Date('2024-09-06'),
 		status: 'completed',

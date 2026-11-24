@@ -1,4 +1,4 @@
-import type { ResponsiveImages, Technology } from './shared.model.js';
+import type { Screenshot, Technology } from './shared.model.js';
 
 export interface RepositoryInfo {
 	owner: string; // "microsoft", "facebook", "vuejs"
@@ -88,7 +88,7 @@ export interface OpenSourceProject {
 	tags: string[]; // "first-contribution", "major-feature", "community-impact"
 
 	// Medios
-	screenshots: ResponsiveImages; // Screenshots de tu contribución
+	screenshot: Screenshot; // Screenshots de tu contribución
 	demoUrl?: string; // Demo de la feature que agregaste
 	blogPostUrl?: string; // Tu blog post sobre la contribución
 }

@@ -28,15 +28,11 @@ export type LazyImage = Promise<{ default: ImageAsset }>;
 /** Raw SVG markup loaded with `import('...svg?raw')`. */
 export type LazySvg = Promise<{ default: string }>;
 
-export type ImageSize = 'large' | 'medium' | 'small';
-
-export type SizedImages = Record<ImageSize, LazyImage>;
-
-/** Every screenshot ships in both formats and all three sizes. */
-export interface ResponsiveImages {
-	avif: SizedImages;
-	webp: SizedImages;
-}
+/**
+ * A single full-quality PNG. The consumer's image pipeline (Astro's
+ * `<Picture>`) derives every format and width from it at build time.
+ */
+export type Screenshot = LazyImage;
 
 export type TechnologyId =
 	| 'css'

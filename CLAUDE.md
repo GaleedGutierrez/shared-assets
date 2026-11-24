@@ -24,9 +24,9 @@ npm test               # Vitest data checks (tests/data.test.ts)
 npm run check-package  # publint + attw on the packed tarball; needs a build
 ```
 
-`tests/data.test.ts` validates the data: unique IDs, all six screenshot variants
-named `<id>-…` in the right slot, `https` links, SVG icons, and no unused
-assets. A file that is meant to stay unused goes in `KNOWN_UNUSED`.
+`tests/data.test.ts` validates the data: unique IDs, one PNG screenshot per
+entry named `<id>-…` and at least 1280px wide, `https` links, SVG icons, and no
+unused assets. A file that is meant to stay unused goes in `KNOWN_UNUSED`.
 
 Node version: `.nvmrc` pins 22.17.1, and every workflow reads it.
 
@@ -48,7 +48,7 @@ The only consumer is galeed.link (Astro). Types target Astro.
   `technologies` catalog and every model type.
 - `src/models/shared.model.ts` holds the types shared by all project kinds:
   `ImageAsset` (assignable to Astro's `ImageMetadata`), `LazyImage`, `LazySvg`,
-  `ResponsiveImages`, `Technology` and the `TechnologyId` union.
+  `Screenshot`, `Technology` and the `TechnologyId` union.
   `src/models/*.model.ts` holds one interface file per project kind, and
   `src/models/index.ts` reexports them all.
 - `src/technologies.ts` is the single catalog of technology names and icons.
@@ -74,13 +74,20 @@ The only consumer is galeed.link (Astro). Types target Astro.
   into `dist/assets` so that the relative imports still resolve from
   `dist/*.js`. Moving or renaming an asset breaks those paths without any
   compile-time error.
-- `src/global.d.ts` declares the `*.avif`, `*.webp` and `*.svg?raw` modules for
-  compiling this package only. It is not published. Keep exported values
-  explicitly typed (as `technologies` is), or the emitted `.d.ts` will reference
-  the asset modules and break for consumers.
-- Screenshot layout:
-  `images/<dir>/{avif,webp}/{small,medium,large}/<id>-<slug>.<ext>`. Every entry
-  needs all six variants.
+- `src/global.d.ts` declares the `*.png`, `*.avif`, `*.webp` and `*.svg?raw`
+  modules for compiling this package only. It is not published. Keep exported
+  values explicitly typed (as `technologies` is), or the emitted `.d.ts` will
+  reference the asset modules and break for consumers.
+- Screenshot layout: one full-quality PNG per entry,
+  `images/<dir>/<id>-<slug>.png`. Do not ship sizes or formats: Astro's
+  `<Picture>` derives AVIF/WebP and every width from this one source at build
+  time. Personal-project screenshots are DevTools "Nest Hub Max" captures, a
+  1280×800 viewport at DPR 2, so 2560×1600. The freelance and open-source ones
+  are 1280×720, converted from the old WebP because those projects can't be
+  recaptured. Optimize new PNGs losslessly only, never with palette
+  quantization. `calibreapp-image-actions.yml` skips `screenshot-*` for that
+  reason.
+- Course logos still ship as AVIF + WebP (or a raw SVG).
 
 ### Package exports
 
@@ -113,7 +120,7 @@ the `chore: bumps package version` commits do), and add an entry to
 
 Pick the bump by what changed, because galeed.link acts on it:
 
-- **Patch** (`0.3.x`): content only (new project, text fix, new screenshot).
+- **Patch** (`0.4.x`): content only (new project, text fix, new screenshot).
   Dependabot in galeed.link opens the PR without a cooldown, and
   `shared-assets-automerge.yml` merges it once CI passes.
 - **Minor** (`0.x.0`): any change to the types or exports. Before `1.0.0` that
@@ -131,4 +138,4 @@ Pick the bump by what changed, because galeed.link acts on it:
   the `.js` extension (`verbatimModuleSyntax`, ESM).
 - Formatting: tabs (`.editorconfig`), and Prettier wraps Markdown at 80 columns.
 - PRs use `.github/PULL_REQUEST_TEMPLATE.md`. A workflow compresses jpg/png/webp
-  images on PRs.
+  images on PRs, except the screenshot sources.

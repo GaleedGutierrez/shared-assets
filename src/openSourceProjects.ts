@@ -66,29 +66,8 @@ export const openSourceProjects: OpenSourceProject[] = [
 		isMaintainer: false,
 		isHighlighted: false,
 		tags: ['performance', 'user-experience', 'open-source'],
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-open-source/avif/small/0-la-velada-del-ano-v.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-open-source/avif/medium/0-la-velada-del-ano-v.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-open-source/avif/large/0-la-velada-del-ano-v.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-open-source/webp/small/0-la-velada-del-ano-v.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-open-source/webp/medium/0-la-velada-del-ano-v.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-open-source/webp/large/0-la-velada-del-ano-v.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-open-source/0-la-velada-del-ano-v.png'
+		),
 	},
 ];

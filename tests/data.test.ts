@@ -5,16 +5,18 @@ import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 
 import { freelanceProjects } from '../src/freelanceProjects.js';
-import type {
-	LazyImage,
-	ResponsiveImages,
-	SizedImages,
-} from '../src/models/shared.model.js';
+import type { LazyImage } from '../src/models/shared.model.js';
 import { openSourceProjects } from '../src/openSourceProjects.js';
 import { personalProjects } from '../src/personalProjects.js';
 import { technologies } from '../src/technologies.js';
 
-const SRC = path.resolve(import.meta.dirname, '../src');
+const ROOT = path.resolve(import.meta.dirname, '..');
+const SRC = path.join(ROOT, 'src');
+/**
+ * Narrowest source width that still covers the largest width a consumer asks
+ * for (galeed.link renders tiles up to 960px) with room for 1280px layouts.
+ */
+const MIN_SCREENSHOT_WIDTH = 1280;
 
 const collections = [
 	['personalProjects', personalProjects],
@@ -22,16 +24,11 @@ const collections = [
 	['openSourceProjects', openSourceProjects],
 ] as const;
 
-interface ScreenshotSlot {
-	slot: string;
-	url: string;
-}
-
 /**
  * In Vitest an image import resolves to its URL, not to Astro's metadata, so
- * the URL tells which file landed in each slot.
+ * the URL tells which file the entry points at.
  * @param image - Lazy image from the data.
- * @returns The resolved file URL.
+ * @returns The resolved file URL, relative to the repo root.
  */
 const resolveUrl = async (image: LazyImage): Promise<string> => {
 	const { default: asset } = await image;
@@ -39,18 +36,16 @@ const resolveUrl = async (image: LazyImage): Promise<string> => {
 	return asset as unknown as string;
 };
 
-const resolveSlots = (
-	screenshots: ResponsiveImages,
-): Promise<ScreenshotSlot[]> =>
-	Promise.all(
-		(Object.entries(screenshots) as [string, SizedImages][]).flatMap(
-			([format, sizes]) =>
-				Object.entries(sizes).map(async ([size, image]) => ({
-					slot: `${format}/${size}`,
-					url: await resolveUrl(image),
-				})),
-		),
-	);
+/**
+ * Reads the pixel size from a PNG header (IHDR chunk), without decoding.
+ * @param file - Absolute path to a PNG file.
+ * @returns Width and height in pixels.
+ */
+const pngSize = (file: string): { width: number; height: number } => {
+	const header = readFileSync(file).subarray(0, 24);
+
+	return { width: header.readUInt32BE(16), height: header.readUInt32BE(20) };
+};
 
 const urlsOf = (project: object): string[] =>
 	Object.entries(project).flatMap(([key, value]) =>
@@ -64,25 +59,25 @@ describe.each(collections)('%s', (_, projects) => {
 		expect(new Set(ids).size).toBe(ids.length);
 	});
 
-	it('puts every screenshot variant in its own slot, named after the id', async () => {
+	it('points each entry at one PNG screenshot named after its id', async () => {
 		const results = await Promise.all(
 			projects.map(async (project) => ({
 				id: project.id,
-				slots: await resolveSlots(project.screenshots),
+				url: await resolveUrl(project.screenshot),
 			})),
 		);
 
-		for (const { id, slots } of results) {
-			expect(slots, `id ${id}`).toHaveLength(6);
+		for (const { id, url } of results) {
+			const file = path.basename(url);
 
-			for (const { slot, url } of slots) {
-				const extension = slot.split('/')[0] ?? '';
+			expect(file.startsWith(`${id}-`), `id ${id}: ${file}`).toBe(true);
+			expect(path.extname(file), `id ${id}: ${file}`).toBe('.png');
 
-				expect(url, `id ${id} ${slot}`).toContain(`/${slot}/${id}-`);
-				expect(path.extname(url), `id ${id} ${slot}`).toBe(
-					`.${extension}`,
-				);
-			}
+			const { width } = pngSize(path.join(ROOT, url));
+
+			expect(width, `id ${id} width`).toBeGreaterThanOrEqual(
+				MIN_SCREENSHOT_WIDTH,
+			);
 		}
 	});
 

@@ -1,7 +1,35 @@
 # Changelog
 
+<!-- Same rule as .markdownlint-cli2.jsonc, for super-linter's markdownlint -->
+<!-- markdownlint-configure-file { "MD024": { "siblings_only": true } } -->
+
 Este proyecto sigue [Semantic Versioning](https://semver.org/lang/es/). Antes de
 `1.0.0`, un cambio de versión menor (`0.x.0`) puede romper la API.
+
+## 0.4.0
+
+### Cambios que rompen la API
+
+- Cada proyecto tiene una sola captura en PNG: `screenshot` (en singular)
+  reemplaza a `screenshots`, que tenía AVIF y WebP en tres tamaños. Astro genera
+  los formatos y anchos a partir de esa imagen con `<Picture>`. Para migrar:
+  `project.screenshots.webp.large` → `project.screenshot`.
+- Se eliminaron los tipos `ResponsiveImages`, `SizedImages` e `ImageSize`. El
+  nuevo tipo es `Screenshot`.
+- Las capturas pasan de
+  `images/<carpeta>/{avif,webp}/{small,medium,large}/<id>-<slug>.<ext>` a
+  `images/<carpeta>/<id>-<slug>.png`.
+
+### Novedades
+
+- Las capturas de proyectos personales son PNG de 2560×1600 (viewport de
+  1280×800 a densidad 2), sin compresión con pérdida.
+
+### Mantenimiento
+
+- Los tests validan que cada captura sea un PNG nombrado con su `id` y de al
+  menos 1280 px de ancho.
+- El workflow de compresión de imágenes ya no toca las capturas.
 
 ## 0.3.0
 
