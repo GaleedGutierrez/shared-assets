@@ -4,9 +4,9 @@ import { technologies } from './technologies.js';
 export const openSourceProjects: OpenSourceProject[] = [
 	{
 		id: 0,
-		title: 'La velada web oficial',
+		title: 'Web oficial de La Velada del Año',
 		description:
-			'La Velada V es una competición de boxeo que enfrenta a streamers, creadores de contenido y otras celebridades',
+			'La Velada del Año V es una competición de boxeo que enfrenta a streamers, creadores de contenido y otras celebridades.',
 		repository: {
 			owner: 'midudev',
 			name: 'la-velada-web-oficial',
@@ -19,12 +19,12 @@ export const openSourceProjects: OpenSourceProject[] = [
 		contributions: [
 			{
 				number: 1004,
-				title: 'Se agregó una fuente de fallback para reducir el FOUT',
+				title: 'Se agregó una fuente de respaldo para reducir el FOUT',
 				url: 'https://github.com/midudev/la-velada-web-oficial/pull/1004',
 				status: 'merged',
 				mergeDate: new Date('2024-03-20'),
 				description:
-					'Se ha agregado la variable --font-fallback dentro de @theme, incluyendo "Adjusted Arial Fallback", que es una versión ajustada de Arial con size-adjust y ascent-override. Esto permite que la fuente de respaldo mantenga proporciones más similares a Anisette, reduciendo así el Flash of Unstyled Text (FOUT).',
+					'Se agregó la variable --font-fallback en @theme con “Adjusted Arial Fallback”, una versión de Arial ajustada con size-adjust y ascent-override. Así, la fuente de respaldo mantiene proporciones más parecidas a las de Anisette y se reduce el Flash of Unstyled Text (FOUT).',
 				type: {
 					type: 'performance',
 					impact: 'minor',

@@ -8,7 +8,7 @@ export const freelanceProjects: FreelanceProject[] = [
 		description:
 			'Aplicación web para descargar videos y audio de YouTube en diferentes calidades.',
 		client: {
-			industry: 'Música y Entretenimiento',
+			industry: 'Música y entretenimiento',
 			companySize: 'entrepreneur',
 			location: 'Jujuy, Argentina',
 			projectType: 'new-build',
@@ -37,18 +37,18 @@ export const freelanceProjects: FreelanceProject[] = [
 		screenshot: import(
 			'./assets/images/screenshot-freelance-projects/0-youtube-downloader.png'
 		),
-		startDate: new Date('2025-02-24'),
+		startDate: new Date('2024-02-24'),
 		endDate: new Date('2024-09-06'),
 		status: 'completed',
 		results: {
 			metrics: ['Interfaz intuitiva y fácil de usar'],
-			businessImpact: ['Aumento en la productividad'],
+			businessImpact: ['Aumento de la productividad'],
 			technicalAchievements: [
 				'Implementación de un sistema de descarga eficiente',
 			],
 		},
-		challenges: ['Implementación de youtube-dl'],
-		solutions: ['Ver documentación de youtube-dl'],
+		challenges: ['Implementación de yt-dlp'],
+		solutions: ['Consulta de la documentación de yt-dlp'],
 		lessons: ['La importancia de las pruebas E2E'],
 		isPrivate: true,
 		isHighlighted: false,

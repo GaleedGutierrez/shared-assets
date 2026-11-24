@@ -38,7 +38,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 28,
-		title: 'To Do App con React',
+		title: 'To-Do App con React',
 		technologies: [
 			technologies.react,
 			technologies.typescript,
@@ -66,7 +66,7 @@ export const personalProjects: PersonalProject[] = [
 			},
 		},
 		description:
-			'Aplicación web de gestión de tareas, incluye registro y filtrado de tareas, interfaz amigable y gestión de estado con Hooks y Context',
+			'Aplicación web para gestionar tareas: permite registrarlas y filtrarlas, tiene una interfaz amigable y maneja el estado con Hooks y Context.',
 		author: 'Galeed Gutierrez',
 		blogPostUrl:
 			'https://galeedgutierrez.com/blog/personal-projects/28/to-do-app-react/',
@@ -101,7 +101,7 @@ export const personalProjects: PersonalProject[] = [
 			},
 		},
 		description:
-			'Creación de funcionalidades de una Todo List, permitiendo la persistencia de la misma. <span aria-hidden="true" tabindex="-1">📄</span>',
+			'Creación de las funcionalidades de una to-do list con persistencia de datos. <span aria-hidden="true" tabindex="-1">📄</span>',
 		author: 'Galeed Gutierrez',
 		blogPostUrl:
 			'https://galeedgutierrez.com/blog/personal-projects/27/my-day-app-js/',
@@ -135,7 +135,7 @@ export const personalProjects: PersonalProject[] = [
 			},
 		},
 		description:
-			'Creación de un póster elegante utilizando CSS Grid, destacando la versatilidad y fama de la fuente Helvetica Neue, un ícono en el mundo del diseño. <span aria-hidden="true" tabindex="-1">🖌️</span>',
+			'Creación de un póster elegante con CSS Grid que destaca la versatilidad y la fama de la fuente Helvetica Neue, un ícono del mundo del diseño. <span aria-hidden="true" tabindex="-1">🖌️</span>',
 		author: 'Galeed Gutierrez',
 		blogPostUrl:
 			'https://galeedgutierrez.com/blog/personal-projects/26/helvetica-neue/',
@@ -170,7 +170,7 @@ export const personalProjects: PersonalProject[] = [
 			},
 		},
 		description:
-			'Landing Page de Apeperia <span aria-hidden="true" tabindex="-1">🚀</span>, una empresa emergente que innova la forma de comprar y crear aplicaciones móviles y web.',
+			'Landing page de Apeperia <span aria-hidden="true" tabindex="-1">🚀</span>, una empresa emergente que innova en la forma de comprar y crear aplicaciones móviles y web.',
 		author: 'Galeed Gutierrez',
 		blogPostUrl:
 			'https://galeedgutierrez.com/blog/personal-projects/25/apeperia/',
@@ -205,7 +205,7 @@ export const personalProjects: PersonalProject[] = [
 			},
 		},
 		description:
-			'En este proyecto <span aria-hidden="true" tabindex="-1">🚀</span> se mejoró el portafolio de Juliana Gómez, pasando de una web con casi nula accesibilidad a una web con una buena accesibilidad. <span aria-hidden="true" tabindex="-1">🌐</span>',
+			'En este proyecto <span aria-hidden="true" tabindex="-1">🚀</span> se mejoró el portafolio de Juliana Gómez, que pasó de tener una accesibilidad casi nula a tener una buena accesibilidad. <span aria-hidden="true" tabindex="-1">🌐</span>',
 		author: 'Galeed Gutierrez',
 		blogPostUrl:
 			'https://galeedgutierrez.com/blog/personal-projects/24/mi-portafolio-juliana-gomez/',
@@ -225,7 +225,7 @@ export const personalProjects: PersonalProject[] = [
 		screenshot: import('./assets/images/screenshot-projects/23-lego.png'),
 		date: new Date('2023-04-22T03:00:00.000Z'),
 		course: {
-			name: 'Curso Practico de Maquetacion y Animaciones con CSS',
+			name: 'Curso Práctico de Maquetación y Animaciones con CSS',
 			platform: 'Platzi',
 			url: 'https://platzi.com/cursos/animaciones-css-practico/',
 			logo: {
@@ -238,7 +238,7 @@ export const personalProjects: PersonalProject[] = [
 			},
 		},
 		description:
-			'En este proyecto <span aria-hidden="true" tabindex="-1">🚀</span>, cree una página web con temática de LEGO, utilizando diferentes técnicas de animación para darle vida y dinamismo al sitio. <span aria-hidden="true" tabindex="-1">🎨</span>',
+			'En este proyecto <span aria-hidden="true" tabindex="-1">🚀</span> creé una página web con temática de LEGO y usé diferentes técnicas de animación para darle vida y dinamismo al sitio. <span aria-hidden="true" tabindex="-1">🎨</span>',
 		author: 'Galeed Gutierrez',
 		blogPostUrl:
 			'https://galeedgutierrez.com/blog/personal-projects/23/lego/',
@@ -273,7 +273,7 @@ export const personalProjects: PersonalProject[] = [
 			},
 		},
 		description:
-			'Web <span aria-hidden="true" tabindex="-1">🌐</span> que usa API de rickandmortyapi.com para ver detalles de personajes de “Rick y Morty” <span aria-hidden="true" tabindex="-1">🧪</span>.',
+			'Web <span aria-hidden="true" tabindex="-1">🌐</span> que usa la API de rickandmortyapi.com para ver los detalles de los personajes de “Rick y Morty” <span aria-hidden="true" tabindex="-1">🧪</span>.',
 		author: 'Galeed Gutierrez',
 		blogPostUrl:
 			'https://galeedgutierrez.com/blog/personal-projects/22/rick-and-morty-api/',
@@ -343,7 +343,7 @@ export const personalProjects: PersonalProject[] = [
 			},
 		},
 		description:
-			'Es un ejemplo de un link in bio <span aria-hidden="true" tabindex="-1">🔗</span>, que dirige a una página con varios enlaces de redes sociales <span aria-hidden="true" tabindex="-1">📱</span> y otros sitios de interés <span aria-hidden="true" tabindex="-1">💡</span>.',
+			'Ejemplo de un link in bio <span aria-hidden="true" tabindex="-1">🔗</span>: una página con enlaces a redes sociales <span aria-hidden="true" tabindex="-1">📱</span> y a otros sitios de interés <span aria-hidden="true" tabindex="-1">💡</span>.',
 		author: 'Galeed Gutierrez',
 		blogPostUrl:
 			'https://galeedgutierrez.com/blog/personal-projects/20/link-in-bio/',
@@ -364,7 +364,7 @@ export const personalProjects: PersonalProject[] = [
 		),
 		date: new Date('2023-01-01T03:00:00.000Z'),
 		course: {
-			name: 'Curso de API REST con Javascript: Performance y Usabilidad',
+			name: 'Curso de API REST con JavaScript: Performance y Usabilidad',
 			platform: 'Platzi',
 			url: 'https://platzi.com/cursos/api-profesional/',
 			logo: {
@@ -384,7 +384,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 18,
-		title: 'Platziv - Juego Online',
+		title: 'Platziv - Juego online',
 		technologies: [
 			technologies.pug,
 			technologies.sass,
@@ -414,7 +414,7 @@ export const personalProjects: PersonalProject[] = [
 			},
 		},
 		description:
-			'El juego trata de un programador <span aria-hidden="true" tabindex="-1">👨‍💻</span> que tiene que llegar a su meta <span aria-hidden="true" tabindex="-1">✅</span> evitando los diferentes bugs <span aria-hidden="true" tabindex="-1">👾</span> que puede tener en el camino.',
+			'El juego trata de un programador <span aria-hidden="true" tabindex="-1">👨‍💻</span> que tiene que llegar a su meta <span aria-hidden="true" tabindex="-1">✅</span> esquivando los bugs <span aria-hidden="true" tabindex="-1">👾</span> que se encuentra en el camino.',
 		author: 'Galeed Gutierrez',
 		blogPostUrl:
 			'https://galeedgutierrez.com/blog/personal-projects/18/platziv-juego-online/',
@@ -451,14 +451,14 @@ export const personalProjects: PersonalProject[] = [
 			},
 		},
 		description:
-			'Una página que consume una API REST de gatitos, se pueden agregar y eliminar gatitos en favoritos.',
+			'Página que consume una API REST de gatitos y permite agregarlos a favoritos o quitarlos.',
 		author: 'Galeed Gutierrez',
 		blogPostUrl:
 			'https://galeedgutierrez.com/blog/personal-projects/17/michi-app/',
 	},
 	{
 		id: 16,
-		title: 'Figura Geométricas',
+		title: 'Figuras geométricas',
 		technologies: [
 			technologies.pug,
 			technologies.sass,
@@ -487,14 +487,14 @@ export const personalProjects: PersonalProject[] = [
 			},
 		},
 		description:
-			'Página para poder calcular el perímetro y área de una figura geométrica.',
+			'Página para calcular el perímetro y el área de una figura geométrica.',
 		author: 'Galeed Gutierrez',
 		blogPostUrl:
 			'https://galeedgutierrez.com/blog/personal-projects/16/figura-geometricas/',
 	},
 	{
 		id: 15,
-		title: 'Tienda Online',
+		title: 'Tienda online',
 		technologies: [
 			technologies.pug,
 			technologies.sass,
@@ -510,7 +510,7 @@ export const personalProjects: PersonalProject[] = [
 		),
 		date: new Date('2021-12-01T03:00:00.000Z'),
 		course: {
-			name: 'Curso Practico de JavaScript',
+			name: 'Curso Práctico de JavaScript',
 			platform: 'Platzi',
 			url: 'https://platzi.com/clases/2327-javascript-practico/38654-cual-es-tu-sueno-con-javascript/',
 			logo: {
@@ -523,7 +523,7 @@ export const personalProjects: PersonalProject[] = [
 			},
 		},
 		description:
-			'Página calculadora del total a pagar después de aplicar un cupón de descuento.',
+			'Página que calcula el total a pagar después de aplicar un cupón de descuento.',
 		author: 'Galeed Gutierrez',
 		blogPostUrl:
 			'https://galeedgutierrez.com/blog/personal-projects/15/tienda-online/',
@@ -557,7 +557,7 @@ export const personalProjects: PersonalProject[] = [
 				),
 			},
 		},
-		description: 'Una pequeña animación con el perrito de Cheems.',
+		description: 'Una pequeña animación con el perrito Cheems.',
 		author: 'Galeed Gutierrez',
 		blogPostUrl:
 			'https://galeedgutierrez.com/blog/personal-projects/14/animationland/',
@@ -722,7 +722,7 @@ export const personalProjects: PersonalProject[] = [
 			},
 		},
 		description:
-			'Maquetación del home, login, registro y page not found de Platzi Video.',
+			'Maquetación del home, el login, el registro y la página 404 de Platzi Video.',
 		author: 'Galeed Gutierrez',
 		blogPostUrl:
 			'https://galeedgutierrez.com/blog/personal-projects/9/platzi-video/',
@@ -751,7 +751,7 @@ export const personalProjects: PersonalProject[] = [
 				),
 			},
 		},
-		description: 'Un clone del home de Wikipedia.',
+		description: 'Un clon de la página principal de Wikipedia.',
 		author: 'Galeed Gutierrez',
 		blogPostUrl:
 			'https://galeedgutierrez.com/blog/personal-projects/8/wikipedia-clone/',
@@ -780,7 +780,7 @@ export const personalProjects: PersonalProject[] = [
 				),
 			},
 		},
-		description: 'Un clone de la clásica página de búsqueda de Google.',
+		description: 'Un clon de la clásica página de búsqueda de Google.',
 		author: 'Galeed Gutierrez',
 		blogPostUrl:
 			'https://galeedgutierrez.com/blog/personal-projects/7/google-clone/',
@@ -808,7 +808,7 @@ export const personalProjects: PersonalProject[] = [
 				),
 			},
 		},
-		description: 'Una pequeña granja en donde puedes mover a un cerdo.',
+		description: 'Una pequeña granja donde puedes mover a un cerdo.',
 		author: 'Galeed Gutierrez',
 		blogPostUrl:
 			'https://galeedgutierrez.com/blog/personal-projects/6/villa-platzi/',
@@ -844,7 +844,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 4,
-		title: 'Mi Blog',
+		title: 'Mi blog',
 		technologies: [
 			technologies.pug,
 			technologies.sass,
@@ -897,7 +897,7 @@ export const personalProjects: PersonalProject[] = [
 				),
 			},
 		},
-		description: 'Maquetación de una web reproductora de videos.',
+		description: 'Maquetación de una web para reproducir videos.',
 		author: 'Galeed Gutierrez',
 		blogPostUrl:
 			'https://galeedgutierrez.com/blog/personal-projects/3/platzi-video/',
@@ -932,7 +932,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		id: 1,
-		title: 'Portfolio Leonidas Esteban',
+		title: 'Portafolio de Leonidas Esteban',
 		technologies: [technologies.html, technologies.css],
 		repository:
 			'https://github.com/GaleedGutierrez/Portafolio-LeonidasEsteban',
@@ -982,7 +982,7 @@ export const personalProjects: PersonalProject[] = [
 			},
 		},
 		description:
-			'Mi primer proyecto web, es una tienda de gatitos muy simple que usa PayPal para procesar los pagos.',
+			'Mi primer proyecto web: una tienda de gatitos muy simple que usa PayPal para procesar los pagos.',
 		author: 'Galeed Gutierrez',
 		blogPostUrl:
 			'https://galeedgutierrez.com/blog/personal-projects/0/brand/',
