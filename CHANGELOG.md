@@ -6,7 +6,14 @@
 Este proyecto sigue [Semantic Versioning](https://semver.org/lang/es/). Antes de
 `1.0.0`, un cambio de versión menor (`0.x.0`) puede romper la API.
 
-## Sin publicar
+## 0.6.1
+
+### Correcciones
+
+- Accesibilidad (WCAG 2.2, criterio 3.1.4, Abreviaturas): en la contribución a
+  La Velada Web Oficial, el título, la descripción, el impacto, el desafío y la
+  solución explican la sigla FOUT: "parpadeo de texto sin estilo (FOUT)". La
+  descripción decía "Flash of Unstyled Text" en inglés.
 
 ### Mantenimiento
 
