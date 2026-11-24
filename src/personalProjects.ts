@@ -15,31 +15,10 @@ export const personalProjects: PersonalProject[] = [
 		],
 		repository:
 			'https://github.com/GaleedGutierrez/pv_tp_integrador_grupo13_TS',
-		url: 'https://galeedgutierrez.com/pv_tp_integrador_grupo13_TS/iniciar-sesion',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/29-shop.co.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/29-shop.co.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/29-shop.co.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/29-shop.co.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/29-shop.co.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/29-shop.co.webp'
-				),
-			},
-		},
+		url: 'https://galeedgutierrez.com/pv_tp_integrador_grupo13_TS/',
+		screenshot: import(
+			'./assets/images/screenshot-projects/29-shop.co.png'
+		),
 		date: new Date('2025-07-05T03:00:00.000Z'),
 		course: {
 			name: 'Facultad de Ingeniería',
@@ -69,30 +48,9 @@ export const personalProjects: PersonalProject[] = [
 		],
 		repository: 'https://github.com/GaleedGutierrez/Curso-de-React-js-2023',
 		url: 'https://galeedgutierrez.com/Curso-de-React-js-2023/#all',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/28-to-do-app-con-react.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/28-to-do-app-con-react.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/28-to-do-app-con-react.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/28-to-do-app-con-react.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/28-to-do-app-con-react.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/28-to-do-app-con-react.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/28-to-do-app-con-react.png'
+		),
 		date: new Date('2024-07-16T03:00:00.000Z'),
 		course: {
 			name: 'Curso de React.js',
@@ -125,30 +83,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/laboratorio-mydayapp-js',
 		url: 'https://galeedgutierrez.com/laboratorio-mydayapp-js/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/27-mydayapp-js.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/27-mydayapp-js.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/27-mydayapp-js.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/27-mydayapp-js.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/27-mydayapp-js.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/27-mydayapp-js.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/27-mydayapp-js.png'
+		),
 		date: new Date('2024-01-02T03:00:00.000Z'),
 		course: {
 			name: 'Prueba Técnica: Desarrollo Frontend con JavaScript',
@@ -180,30 +117,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-CSS-Grid-a-fondo-Codely-2021',
 		url: 'https://galeedgutierrez.com/Curso-CSS-Grid-a-fondo-Codely-2021/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/26-helvetica-neue-css-gird-codely.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/26-helvetica-neue-css-gird-codely.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/26-helvetica-neue-css-gird-codely.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/26-helvetica-neue-css-gird-codely.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/26-helvetica-neue-css-gird-codely.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/26-helvetica-neue-css-gird-codely.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/26-helvetica-neue-css-gird-codely.png'
+		),
 		date: new Date('2023-09-25T03:00:00.000Z'),
 		course: {
 			name: 'CSS Grid a fondo',
@@ -236,30 +152,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Layouts-Responsivos-Trabajando-con-layouts-mobile-Alura-G5-2023',
 		url: 'https://galeedgutierrez.com/Curso-de-Layouts-Responsivos-Trabajando-con-layouts-mobile-Alura-G5-2023/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/25-apeperia-alura.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/25-apeperia-alura.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/25-apeperia-alura.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/25-apeperia-alura.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/25-apeperia-alura.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/25-apeperia-alura.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/25-apeperia-alura.png'
+		),
 		date: new Date('2023-08-14T03:00:00.000Z'),
 		course: {
 			name: 'Curso de Layouts Responsivos: Trabajando con layouts mobile',
@@ -292,30 +187,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Accesibilidad-Web-2019',
 		url: 'https://galeedgutierrez.com/Curso-de-Accesibilidad-Web-2019/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/24-mi-portafolio-juliana-gomez.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/24-mi-portafolio-juliana-gomez.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/24-mi-portafolio-juliana-gomez.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/24-mi-portafolio-juliana-gomez.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/24-mi-portafolio-juliana-gomez.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/24-mi-portafolio-juliana-gomez.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/24-mi-portafolio-juliana-gomez.png'
+		),
 		date: new Date('2023-08-04T03:00:00.000Z'),
 		course: {
 			name: 'Curso de Accesibilidad Web',
@@ -348,30 +222,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-Practico-de-Maquetacion-y-Animaciones-con-CSS-2021',
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-Maquetacion-y-Animaciones-con-CSS-2021/dist/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/23-lego.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/23-lego.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/23-lego.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/23-lego.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/23-lego.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/23-lego.webp'
-				),
-			},
-		},
+		screenshot: import('./assets/images/screenshot-projects/23-lego.png'),
 		date: new Date('2023-04-22T03:00:00.000Z'),
 		course: {
 			name: 'Curso Practico de Maquetacion y Animaciones con CSS',
@@ -404,30 +255,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Single-Page-Application-con-JavaScript-Vanilla-2021',
 		url: 'https://galeedgutierrez.com/Curso-de-Single-Page-Application-con-JavaScript-Vanilla-2021/dist/public/index.html',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/22-100rifi.co.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/22-100rifi.co.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/22-100rifi.co.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/22-100rifi.co.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/22-100rifi.co.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/22-100rifi.co.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/22-100rifi.co.png'
+		),
 		date: new Date('2023-04-12T03:00:00.000Z'),
 		course: {
 			name: 'Curso de Single Page Application con JavaScript Vanilla 2021',
@@ -460,30 +290,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Encriptador-de-texto-Alura-Challenges-ONE-2023',
 		url: 'https://galeedgutierrez.com/Encriptador-de-texto-Alura-Challenges-ONE-2023/dist/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/21-encriptador-de-texto-alura-challenges-one.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/21-encriptador-de-texto-alura-challenges-one.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/21-encriptador-de-texto-alura-challenges-one.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/21-encriptador-de-texto-alura-challenges-one.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/21-encriptador-de-texto-alura-challenges-one.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/21-encriptador-de-texto-alura-challenges-one.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/21-encriptador-de-texto-alura-challenges-one.png'
+		),
 		date: new Date('2023-04-01T03:00:00.000Z'),
 		course: {
 			name: 'Challenge ONE: Principiante en programación',
@@ -516,30 +325,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Introduccion-a-Empaquetadores-Web/tree/main/webpack',
 		url: 'https://galeedgutierrez.com/Curso-de-Introduccion-a-Empaquetadores-Web/webpack/dist/index.html',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/20-my-link-in-bio.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/20-my-link-in-bio.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/20-my-link-in-bio.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/20-my-link-in-bio.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/20-my-link-in-bio.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/20-my-link-in-bio.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/20-my-link-in-bio.png'
+		),
 		date: new Date('2023-03-11T03:00:00.000Z'),
 		course: {
 			name: 'Curso de Introducción a Empaquetadores Web',
@@ -571,30 +359,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-Profesional-de-Consumo-de-API-REST-con-JavaScript-2022',
 		url: 'https://galeedgutierrez.com/Curso-Profesional-de-Consumo-de-API-REST-con-JavaScript-2022/html/#home',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/19-platzi-movies-2022.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/19-platzi-movies-2022.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/19-platzi-movies-2022.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/19-platzi-movies-2022.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/19-platzi-movies-2022.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/19-platzi-movies-2022.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/19-platzi-movies-2022.png'
+		),
 		date: new Date('2023-01-01T03:00:00.000Z'),
 		course: {
 			name: 'Curso de API REST con Javascript: Performance y Usabilidad',
@@ -629,30 +396,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego-2022',
 		url: 'https://galeedgutierrez.com/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego-2022/html/index.html',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/18-platziv-juego-online.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/18-platziv-juego-online.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/18-platziv-juego-online.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/18-platziv-juego-online.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/18-platziv-juego-online.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/18-platziv-juego-online.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/18-platziv-juego-online.png'
+		),
 		date: new Date('2022-11-09T03:00:00.000Z'),
 		course: {
 			name: 'Taller Práctico de JavaScript: ¡Crea tu Primer Videojuego!',
@@ -687,30 +433,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Consumo-de-API-REST-con-JavaScript',
 		url: 'https://galeedgutierrez.com/Curso-de-Consumo-de-API-REST-con-JavaScript/html/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/17-michis-app.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/17-michis-app.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/17-michis-app.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/17-michis-app.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/17-michis-app.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/17-michis-app.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/17-michis-app.png'
+		),
 		date: new Date('2022-05-01T03:00:00.000Z'),
 		course: {
 			name: 'Curso de Consumo de API REST con JavaScript',
@@ -744,30 +469,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Programacion-Orientada-a-Objetos-en-JavaScript/tree/main/TallerN1',
 		url: 'https://galeedgutierrez.com/Curso-de-Programacion-Orientada-a-Objetos-en-JavaScript/TallerN1/html/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/16-curso-practico-de-javascript.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/16-curso-practico-de-javascript.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/16-curso-practico-de-javascript.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/16-curso-practico-de-javascript.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/16-curso-practico-de-javascript.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/16-curso-practico-de-javascript.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/16-curso-practico-de-javascript.png'
+		),
 		date: new Date('2022-02-01T03:00:00.000Z'),
 		course: {
 			name: 'Curso de Programación Orientada a Objetos en JavaScript',
@@ -801,30 +505,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-Practico-de-JavaScript/tree/main/TallerN2',
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-JavaScript/TallerN2/html/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/15-curso-practico-de-javascript-02.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/15-curso-practico-de-javascript-02.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/15-curso-practico-de-javascript-02.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/15-curso-practico-de-javascript-02.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/15-curso-practico-de-javascript-02.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/15-curso-practico-de-javascript-02.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/15-curso-practico-de-javascript-02.png'
+		),
 		date: new Date('2021-12-01T03:00:00.000Z'),
 		course: {
 			name: 'Curso Practico de JavaScript',
@@ -857,30 +540,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Animaciones-con-CSS',
 		url: 'https://galeedgutierrez.com/Curso-de-Animaciones-con-CSS/html/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/14-curso-de-animaciones-con-css.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/14-curso-de-animaciones-con-css.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/14-curso-de-animaciones-con-css.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/14-curso-de-animaciones-con-css.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/14-curso-de-animaciones-con-css.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/14-curso-de-animaciones-con-css.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/14-curso-de-animaciones-con-css.png'
+		),
 		date: new Date('2021-12-01T03:00:00.000Z'),
 		course: {
 			name: 'Curso de Animaciones con CSS',
@@ -907,30 +569,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-CSS-Grid-Basico',
 		url: 'https://galeedgutierrez.com/Curso-de-CSS-Grid-Basico/Proyecto/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/13-check-the-best-food.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/13-check-the-best-food.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/13-check-the-best-food.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/13-check-the-best-food.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/13-check-the-best-food.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/13-check-the-best-food.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/13-check-the-best-food.png'
+		),
 		date: new Date('2021-11-01T03:00:00.000Z'),
 		course: {
 			name: 'Curso de CSS Grid Básico',
@@ -962,30 +603,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Responsive-Design-Maquetacion-Mobile-First',
 		url: 'https://galeedgutierrez.com/Curso-de-Responsive-Design-Maquetacion-Mobile-First/html/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/12-batabit.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/12-batabit.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/12-batabit.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/12-batabit.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/12-batabit.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/12-batabit.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/12-batabit.png'
+		),
 		date: new Date('2021-11-01T03:00:00.000Z'),
 		course: {
 			name: 'Curso de Responsive Design: Maquetación Mobile First',
@@ -1018,30 +638,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-Practico-de-Frontend-Developer',
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-Frontend-Developer/html/homepage.html',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/11-curso-practico-de-frontend-developer.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/11-curso-practico-de-frontend-developer.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/11-curso-practico-de-frontend-developer.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/11-curso-practico-de-frontend-developer.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/11-curso-practico-de-frontend-developer.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/11-curso-practico-de-frontend-developer.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/11-curso-practico-de-frontend-developer.png'
+		),
 		date: new Date('2021-10-01T03:00:00.000Z'),
 		course: {
 			name: 'Curso de Frontend Developer',
@@ -1073,30 +672,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Disenio-para-Programadores',
 		url: 'https://galeedgutierrez.com/Curso-de-Disenio-para-Programadores/html/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/10-steam.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/10-steam.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/10-steam.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/10-steam.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/10-steam.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/10-steam.webp'
-				),
-			},
-		},
+		screenshot: import('./assets/images/screenshot-projects/10-steam.png'),
 		date: new Date('2021-09-01T03:00:00.000Z'),
 		course: {
 			name: 'Curso de Diseño para Developers',
@@ -1128,30 +704,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Frontend-Developer-2019',
 		url: 'https://galeedgutierrez.com/Curso-de-Frontend-Developer-2019/platzi-video/html/homepage.html',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/9-platzi-video-curso-frontend-developer-2019.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/9-platzi-video-curso-frontend-developer-2019.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/9-platzi-video-curso-frontend-developer-2019.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/9-platzi-video-curso-frontend-developer-2019.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/9-platzi-video-curso-frontend-developer-2019.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/9-platzi-video-curso-frontend-developer-2019.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/9-platzi-video-curso-frontend-developer-2019.png'
+		),
 		date: new Date('2021-09-01T03:00:00.000Z'),
 		course: {
 			name: 'Curso de Frontend Developer 2019',
@@ -1179,30 +734,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-practico-de-HTML-y-CSS/tree/main/WikipediaClone',
 		url: 'https://galeedgutierrez.com/Curso-practico-de-HTML-y-CSS/WikipediaClone/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/8-wikipedia-clone.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/8-wikipedia-clone.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/8-wikipedia-clone.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/8-wikipedia-clone.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/8-wikipedia-clone.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/8-wikipedia-clone.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/8-wikipedia-clone.png'
+		),
 		date: new Date('2021-09-01T03:00:00.000Z'),
 		course: {
 			name: 'Curso Práctico de HTML y CSS',
@@ -1229,30 +763,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-practico-de-HTML-y-CSS/tree/main/my-Google-clone',
 		url: 'https://galeedgutierrez.com/Curso-practico-de-HTML-y-CSS/my-Google-clone/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/7-google-clone.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/7-google-clone.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/7-google-clone.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/7-google-clone.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/7-google-clone.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/7-google-clone.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/7-google-clone.png'
+		),
 		date: new Date('2021-09-01T03:00:00.000Z'),
 		course: {
 			name: 'Curso Práctico de HTML y CSS',
@@ -1278,30 +791,9 @@ export const personalProjects: PersonalProject[] = [
 		technologies: [technologies.html, technologies.javascript],
 		repository: 'https://github.com/GaleedGutierrez/Villa-Platzi',
 		url: 'https://galeedgutierrez.com/Villa-Platzi/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/6-villa-platzi.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/6-villa-platzi.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/6-villa-platzi.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/6-villa-platzi.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/6-villa-platzi.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/6-villa-platzi.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/6-villa-platzi.png'
+		),
 		date: new Date('2021-01-01T03:00:00.000Z'),
 		course: {
 			name: 'Curso Gratis de Programación Básica',
@@ -1328,30 +820,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Proyecto-generador-de-figuras',
 		url: 'https://galeedgutierrez.com/Proyecto-generador-de-figuras/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/5-proyecto-generador-de-figuras.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/5-proyecto-generador-de-figuras.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/5-proyecto-generador-de-figuras.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/5-proyecto-generador-de-figuras.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/5-proyecto-generador-de-figuras.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/5-proyecto-generador-de-figuras.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/5-proyecto-generador-de-figuras.png'
+		),
 		date: new Date('2021-01-01T03:00:00.000Z'),
 		course: {
 			name: 'Curso Gratis de Programación Básica',
@@ -1383,30 +854,7 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/galeedgutierrez.github.io',
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-Maquetacion-en-CSS/html/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/4-mi-blog.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/4-mi-blog.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/4-mi-blog.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/4-mi-blog.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/4-mi-blog.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/4-mi-blog.webp'
-				),
-			},
-		},
+		screenshot: import('./assets/images/screenshot-projects/4-mi-blog.png'),
 		date: new Date('2020-07-01T03:00:00.000Z'),
 		course: {
 			name: 'Curso Práctico de Maquetación en CSS',
@@ -1432,30 +880,9 @@ export const personalProjects: PersonalProject[] = [
 		technologies: [technologies.html, technologies.css],
 		repository: 'https://github.com/GaleedGutierrez/Platzi-Video',
 		url: 'https://galeedgutierrez.com/Platzi-Video/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/3-platzi-video.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/3-platzi-video.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/3-platzi-video.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/3-platzi-video.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/3-platzi-video.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/3-platzi-video.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/3-platzi-video.png'
+		),
 		date: new Date('2020-05-01T03:00:00.000Z'),
 		course: {
 			name: 'Curso de CSS Grid Layout 2017',
@@ -1481,30 +908,9 @@ export const personalProjects: PersonalProject[] = [
 		technologies: [technologies.html, technologies.css],
 		repository: 'https://github.com/GaleedGutierrez/Movi.es',
 		url: 'https://galeedgutierrez.com/Movi.es/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/2-movie.es.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/2-movie.es.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/2-movie.es.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/2-movie.es.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/2-movie.es.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/2-movie.es.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/2-movie.es.png'
+		),
 		date: new Date('2020-05-01T03:00:00.000Z'),
 		course: {
 			name: 'Curso de CSS Grid Layout 2017',
@@ -1531,30 +937,9 @@ export const personalProjects: PersonalProject[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Portafolio-LeonidasEsteban',
 		url: 'https://galeedgutierrez.com/Portafolio-LeonidasEsteban/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/1-portfolio-leonidas-esteban.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/1-portfolio-leonidas-esteban.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/1-portfolio-leonidas-esteban.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/1-portfolio-leonidas-esteban.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/1-portfolio-leonidas-esteban.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/1-portfolio-leonidas-esteban.webp'
-				),
-			},
-		},
+		screenshot: import(
+			'./assets/images/screenshot-projects/1-portfolio-leonidas-esteban.png'
+		),
 		date: new Date('2020-02-01T03:00:00.000Z'),
 		course: {
 			name: 'Curso de Responsive Design',
@@ -1581,30 +966,7 @@ export const personalProjects: PersonalProject[] = [
 		technologies: [technologies.html, technologies.css],
 		repository: 'https://github.com/GaleedGutierrez/Brand-Platzi',
 		url: 'https://galeedgutierrez.com/Brand-Platzi/',
-		screenshots: {
-			avif: {
-				small: import(
-					'./assets/images/screenshot-projects/avif/small/0-brand.avif'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/avif/medium/0-brand.avif'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/avif/large/0-brand.avif'
-				),
-			},
-			webp: {
-				small: import(
-					'./assets/images/screenshot-projects/webp/small/0-brand.webp'
-				),
-				medium: import(
-					'./assets/images/screenshot-projects/webp/medium/0-brand.webp'
-				),
-				large: import(
-					'./assets/images/screenshot-projects/webp/large/0-brand.webp'
-				),
-			},
-		},
+		screenshot: import('./assets/images/screenshot-projects/0-brand.png'),
 		date: new Date('2020-01-01T03:00:00.000Z'),
 		course: {
 			name: 'Curso de HTML y CSS 2019',

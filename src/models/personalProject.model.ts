@@ -1,7 +1,7 @@
 import type {
 	LazyImage,
 	LazySvg,
-	ResponsiveImages,
+	Screenshot,
 	Technology,
 } from './shared.model.js';
 
@@ -24,7 +24,7 @@ export interface PersonalProject {
 	technologies: Technology[];
 	repository: string;
 	url: string;
-	screenshots: ResponsiveImages;
+	screenshot: Screenshot;
 	date: Date;
 	course: CoursePlatform;
 	description: string;

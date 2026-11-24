@@ -1,4 +1,4 @@
-import type { ResponsiveImages, Technology } from './shared.model.js';
+import type { Screenshot, Technology } from './shared.model.js';
 
 export interface ClientInfo {
 	// Datos públicos y generalizados
@@ -53,7 +53,7 @@ export interface FreelanceProject {
 	scope: ProjectScope;
 	budget: ProjectBudget;
 	technologies: Technology[];
-	screenshots: ResponsiveImages; // Screenshots anonimizados o mockups
+	screenshot: Screenshot; // Screenshots anonimizados o mockups
 	startDate: Date;
 	endDate?: Date; // Opcional para proyectos en curso
 	status: 'completed' | 'in-progress' | 'on-hold';

@@ -3,6 +3,13 @@
 // (Astro) declares these modules. The shapes match `ImageAsset` in
 // models/shared.model.ts.
 
+declare module '*.png' {
+	const image: { src: string; width: number; height: number; format: 'png' };
+
+	export default image;
+}
+
+// Course logos still ship as AVIF and WebP.
 declare module '*.avif' {
 	const image: { src: string; width: number; height: number; format: 'avif' };
 
