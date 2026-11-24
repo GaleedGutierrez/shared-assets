@@ -1,9 +1,5 @@
 import type { OpenSourceProject } from './models/openSource.model.js';
-
-// URLs to publicly hosted assets
-const TAILWINDCSS_ICON = import(
-	'./assets/icons/technologies/tailwindcss/tailwindcss.svg?raw'
-);
+import { technologies } from './technologies.js';
 
 export const openSourceProjects: OpenSourceProject[] = [
 	{
@@ -19,8 +15,7 @@ export const openSourceProjects: OpenSourceProject[] = [
 		},
 		myRole: 'contributor',
 		startDate: new Date('2024-03-19'),
-		technologies: ['TailwindCSS'],
-		technologiesIcons: [TAILWINDCSS_ICON],
+		technologies: [technologies.tailwindcss],
 		contributions: [
 			{
 				number: 1004,

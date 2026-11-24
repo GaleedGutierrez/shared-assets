@@ -1,7 +1,14 @@
+import type {
+	LazyImage,
+	LazySvg,
+	ResponsiveImages,
+	Technology,
+} from './shared.model.js';
+
 export interface ImageCoursePlatform {
-	avif?: Promise<{ default: string }>;
-	webp?: Promise<{ default: string }>;
-	svg?: Promise<{ default: string }>;
+	avif?: LazyImage;
+	webp?: LazyImage;
+	svg?: LazySvg;
 }
 
 export interface CoursePlatform {
@@ -11,25 +18,13 @@ export interface CoursePlatform {
 	logo: ImageCoursePlatform;
 }
 
-export interface SizesImages {
-	small: Promise<{ default: string }>;
-	medium: Promise<{ default: string }>;
-	large: Promise<{ default: string }>;
-}
-
-export interface ImagesProject {
-	avif: SizesImages;
-	webp: SizesImages;
-}
-
 export interface PersonalProject {
 	id: number;
 	title: string;
-	technologies: string[];
-	technologiesIcons: Promise<{ default: string }>[];
+	technologies: Technology[];
 	repository: string;
 	url: string;
-	screenshots: ImagesProject;
+	screenshots: ResponsiveImages;
 	date: Date;
 	course: CoursePlatform;
 	description: string;
