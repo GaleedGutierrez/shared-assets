@@ -6,6 +6,38 @@
 Este proyecto sigue [Semantic Versioning](https://semver.org/lang/es/). Antes de
 `1.0.0`, un cambio de versión menor (`0.x.0`) puede romper la API.
 
+## 0.5.0
+
+### Cambios que rompen la API
+
+- `ImageCoursePlatform` pasa de `models/personalProject.model` a
+  `models/shared.model` y suma `png`. Si se importa desde `.` o `./models`, no
+  cambia nada.
+
+### Novedades
+
+- `certificates`: los 137 certificados, del más nuevo al más viejo. Cada uno
+  tiene `id`, `kind` (`course`, `learning-path` o `program`), `title`,
+  `platform`, `date` y `diploma`. Los de Platzi suman `badge`. `url` es la
+  página pública del diploma (Platzi y Alura) y `credentialId`, su código de
+  verificación (todos menos Codely, que no tiene).
+  - Platzi: 119 cursos y 2 rutas (HTML y CSS desde cero, y JavaScript para
+    Frontend).
+  - Codely: 9 cursos. Código Facilito: 6 cursos.
+  - Alura: el programa ONE (Oracle Next Education) de frontend.
+- `certificatePlatforms`: el catálogo de plataformas (`alura`, `codely`,
+  `codigo-facilito`, `platzi`) con nombre, URL y logo.
+- Nuevos tipos: `Certificate`, `CertificateKind`, `CertificatePlatform` y
+  `CertificatePlatformId`.
+- Los diplomas y las insignias de las rutas de Platzi, en
+  `assets/images/certificates/platzi/paths/`.
+
+### Mantenimiento
+
+- Los tests validan los certificados: IDs únicos, orden por fecha, diploma JPEG
+  con el año en el nombre, insignia con el mismo nombre que su diploma y códigos
+  con formato UUID.
+
 ## 0.4.2
 
 ### Novedades
