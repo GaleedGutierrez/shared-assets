@@ -122,7 +122,11 @@ describe('technologies', () => {
 
 describe('assets', () => {
 	// Exported by path through `./assets/*`, not referenced by any entry.
-	const EXPORTED_BY_PATH = ['assets/favicon/', 'assets/images/me/'];
+	const EXPORTED_BY_PATH = [
+		'assets/favicon/',
+		'assets/images/me/',
+		'assets/images/certificates/',
+	];
 
 	// Unused files from before; delete them and empty this list.
 	const KNOWN_UNUSED = new Set([
