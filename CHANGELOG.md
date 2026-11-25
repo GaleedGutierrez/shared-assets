@@ -11,7 +11,7 @@ Este proyecto sigue [Semantic Versioning](https://semver.org/lang/es/). Antes de
 ### Correcciones
 
 - El catálogo de tecnologías escribe "webpack" en minúscula, como el propio
-  proyecto. El certificado "Curso de webpack" conserva el título de Platzi.
+  proyecto. El certificado del curso de Platzi conserva su título original.
 
 ## 0.6.1
 
