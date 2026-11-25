@@ -83,7 +83,7 @@ export const technologies: { readonly [Id in TechnologyId]: Technology<Id> } = {
 	},
 	webpack: {
 		id: 'webpack',
-		name: 'Webpack',
+		name: 'webpack',
 		icon: import('./assets/icons/technologies/webpack/webpack.svg?raw'),
 	},
 	ytdlp: {
