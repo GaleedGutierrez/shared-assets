@@ -6,6 +6,13 @@
 Este proyecto sigue [Semantic Versioning](https://semver.org/lang/es/). Antes de
 `1.0.0`, un cambio de versión menor (`0.x.0`) puede romper la API.
 
+## 0.6.2
+
+### Correcciones
+
+- El catálogo de tecnologías escribe "webpack" en minúscula, como el propio
+  proyecto. El certificado "Curso de webpack" conserva el título de Platzi.
+
 ## 0.6.1
 
 ### Correcciones
